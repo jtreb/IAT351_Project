@@ -5,8 +5,8 @@
   --main-bg-gray: #E4E4E4;
   --main-border-color: rgb(121, 121, 121);
 
-  /*Font_color*/
-  --main-text-color: gray;
+  /*Font*/
+  --dark-text-color: #333;
   --main-font: sans-serif;
 
   /*Hovering colors*/
@@ -15,11 +15,13 @@
 
 body {
   margin: 0;
+  font-family: var(--main-font);
+  color: var(--dark-text-color);
 }
 
-ul li {
+a {
   text-decoration: none;
-  color: var(--main-text-color);
+  color: var(--dark-text-color);
 }
 
 .float-left {
