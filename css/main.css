@@ -1,0 +1,35 @@
+/*Defining Variables*/
+:root {
+  /*Main color*/
+  --main-bg-red: #D10C0C;
+  --main-bg-gray: #E4E4E4;
+  --main-border-color: rgb(121, 121, 121);
+
+  /*Font_color*/
+  --main-text-color: gray;
+  --main-font: sans-serif;
+
+  /*Hovering colors*/
+
+}
+
+body {
+  margin: 0;
+}
+
+ul li {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-none {
+  float: none;
+}
