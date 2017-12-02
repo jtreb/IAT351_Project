@@ -16,23 +16,74 @@
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src=""></script>
+    <script src="../js/nav.js"></script>
 
   </head>
 
   <body>
     <!-- Nav -->
+    <nav>
+      <div class="hamburger-bar">
+        <img class="hamburger-icon" src="../img/hamburger-icon.png" alt="A hamburger icon">
+      </div>
+      <div class="menu-items-container">
+        <div class="menu-items">
+          <a href="major-requirements.html" class="nav-item first-nav-item current-nav-item">Major Requirements</a>
+          <a href="wqb-requirements.html" class="nav-item">WQB Requirements</a>
+          <a href="co-op-requirements.html" class="nav-item">Co-op Requirements</a>
+          <a href="highschool-requirements.html" class="nav-item">Foundation Requirements</a>
+          <a href="advising-help.html" class="nav-item">Advising & Help</a>
+          <a href="share.html" class="nav-item">Share</a>
+          <a href="plan.html" class="nav-item">Plan</a>
+        </div>
+      </div>
+    </nav>
 
-    <!-- Side bars -->
-    <section class="side-bar-container">
+    <!-- Right Side bars -->
+    <div class="side-bar-container">
       <ul>
-        <li><h3>Content</h3></li>
-        <li><a href="#lower-division-requirement">Lower Division Requirements</a></li>
-        <li><a href="#upper-division-requirement">Upper Division Requirements</a></li>
-        <li><a href="#concentration-requirement">Concentration (IS) Requirements</a></li>
-        <li><a href="#apply-grad-school">Apply for Convocation/Grad School</a></li>
+        <!-- Content -->
+        <li>
+          <input type="checkbox" id="checkbox-1" name="checkbox-collapse" />
+          <label for="checkbox-1" class="sidebar-title">Content</label>
+          <div class="sidebar-content">
+            <a href="#lower-division-requirement">Lower Division Requirements</a>
+            <a href="#upper-division-requirement">Upper Division Requirements</a>
+            <a href="#concentration-requirement">Concentration (IS) Requirements</a>
+            <a href="#apply-grad-school">Apply for Convocation/Grad School</a>
+          </div>
+        </li>
+        <!-- Legend -->
+        <li>
+          <input type="checkbox" id="checkbox-2" name="checkbox-collapse" />
+          <label for="checkbox-2" class="sidebar-title">Legend</label>
+          <div class="sidebar-content">
+            <div class="content-container">
+              <div class="content-item">
+                <p class="content-text">Completed</p>
+                <p class="content-text-box box-color-1">Course No.</p>
+              </div>
+              <div class="content-item">
+                <p class="content-text">Incomplete</p>
+                <p class="content-text-box box-color-2">Course No.</p>
+              </div>
+              <div class="content-item">
+                <p class="content-text">Optional</p>
+                <p class="content-text-box box-color-3">Course No.</p>
+              </div>
+              <div class="content-item">
+                <p class="content-text">Enrolled</p>
+                <p class="content-text-box box-color-4">Course No.</p>
+              </div>
+              <div class="content-item">
+                <p class="content-text">Planned</p>
+                <p class="content-text-box box-color-5">Course No.</p>
+              </div>
+            </div>
+          </div>
+        </li>
       </ul>
-    </section>
+    </div>
 
     <!-- Main content -->
     <section class="central-req-area">
