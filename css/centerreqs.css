@@ -1,0 +1,6 @@
+.req-item{
+  background-color:  var(--main-bg-gray);
+  min-height: 100px;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 75% 70%, 52% 100%, 40% 70%, 0% 70%);
+clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 64% 70%, 52% 100%, 40% 70%, 0% 70%);
+}
