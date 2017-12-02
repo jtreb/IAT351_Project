@@ -4,7 +4,7 @@ $(document).ready(function() {
     $(".menu-items-container")
       .toggle(150);
     });
-
+//Testing comment
     //If the window is larger than 70 rem, show the menu items
     $(window).resize(function() {
       if ($(window).width() > rem(70)) {
