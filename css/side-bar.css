@@ -74,7 +74,7 @@
 }
 
 .box-color-1 {
-
+  background: var(--main-bg-red);
 }
 .box-color-2 {
 
