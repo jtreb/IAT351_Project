@@ -22,12 +22,14 @@ nav {
 
   border-style: solid;
   border-width: 0.04rem 0.0625rem;
+  border-color: white;
 
   padding-top: 0.875rem;
   padding-bottom: 0.875rem;
 
   font-size: 1rem;
   text-decoration: none;
+  color: white;
 }
 
 .nav-item:visited, .nav-item:hover, .nav-item:focus {
