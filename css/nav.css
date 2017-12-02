@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: #DB8C8C;
+  color: #FFF;
+
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  flex-basis: 100%;
+
+  border-style: solid;
+  border-width: 0.04rem 0.0625rem;
+  border-color: white;
+
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item:visited, .nav-item:hover, .nav-item:focus {
+   color: white;
+}
+
+.first-nav-item {
+  border-width: 0.0625rem 0.0625rem 0.04rem 0.0625rem;
+}
+
+.current-nav-item {
+  background-color: #D10C0C;
+}
+
+.hamburger-bar {
+  flex-basis: 100%;
+
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: black;
+  height: 3.05rem;
+  padding: 0;
+}
+
+.hamburger-bar:visited, .hamburger-bar-item:hover, .hamburger-bar:focus {
+   color: white;
+}
+
+@media (min-width: 70rem){
+  .nav-item {
+    flex-basis: auto;
+    flex-grow: 1;
+    border-width: 0.0625rem 0.04rem;
+  }
+  .hamburger-bar {
+    display: none;
+  }
+}

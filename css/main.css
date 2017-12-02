@@ -5,9 +5,13 @@
   --main-bg-gray: #E4E4E4;
   --main-border-color: rgb(121, 121, 121);
 
-  /*Font*/
-  --dark-text-color: #333;
+  /*Font family & colors*/
   --main-font: sans-serif;
+  --dark-text-color: #333;
+  --white-text-color: #FFF;
+  --light-text-color: #A1A1A1;
+  --dark-text-color: #333;
+  --link-text-color: #169BD5;
 
   /*Hovering colors*/
 
@@ -16,11 +20,6 @@
 body {
   margin: 0;
   font-family: var(--main-font);
-  color: var(--dark-text-color);
-}
-
-a {
-  text-decoration: none;
   color: var(--dark-text-color);
 }
 
