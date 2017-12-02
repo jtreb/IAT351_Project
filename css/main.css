@@ -23,6 +23,11 @@ body {
   color: var(--dark-text-color);
 }
 
+a {
+  text-decoration: none;
+  color: var(--dark-text-color);
+}
+
 .float-left {
   float: left;
 }
@@ -33,4 +38,8 @@ body {
 
 .float-none {
   float: none;
+}
+
+.center-align {
+  text-align: center;
 }
