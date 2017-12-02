@@ -33,3 +33,10 @@
   text-decoration: none;
   color: var(--link-text-color);
 }
+
+
+@media (max-width: 70em) {
+  .side-bar-container {
+    display: block;
+  }
+}
