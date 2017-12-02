@@ -4,7 +4,8 @@ MAKE SURE YOU ARE ON YOUR BRANCH
 3) Commit the files
 4) Switch to master
 5) Merge your branch into master
-6) Push
-7) Pull
+6) Pull first - always
+7) then Push
 8) GO BACK TO YOUR BRANCH
 9) Merge master into your branch
+10) Push your own branch
