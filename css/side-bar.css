@@ -56,15 +56,15 @@
   margin: 1.5em 1em;
 }
 
-.content-text {
-  margin: auto 0em;
-}
-
 .content-item {
   margin: 1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.content-text {
+  margin: auto 0;
 }
 
 .content-text-box {
@@ -101,6 +101,7 @@
 
   .side-bar-container label.sidebar-title {
     cursor: pointer;
+    border-bottom: none;
   }
 
   .side-bar-container ul li .sidebar-content {
@@ -109,5 +110,19 @@
 
   .side-bar-container [type=checkbox]:checked ~ label ~ .sidebar-content {
     height:auto;
+  }
+
+  .content-text, .content-text-box {
+    flex: 1;
+    -ms-flex: 1;
+    -moz-flex: 1;
+    -webkit-flex: 1;
+  }
+}
+
+
+@media (max-width: 18em) {
+  .content-item {
+    display: block;
   }
 }
