@@ -12,6 +12,11 @@ nav {
   text-align: center;
 }
 
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .nav-item {
   flex-basis: 100%;
 
@@ -56,5 +61,8 @@ nav {
     flex-basis: auto;
     flex-grow: 1;
     border-width: 0.0625rem 0.04rem;
+  }
+  .hamburger-bar {
+    display: none;
   }
 }
