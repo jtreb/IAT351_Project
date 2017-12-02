@@ -1,27 +1,110 @@
 .side-bar-container {
-  border: 1px solid var(--dark-text-color);
-  padding-bottom: 1em;
+  display: inline-block;
 }
 
-.side-bar-container h3 {
-  background: var(--main-bg-red);
-  color: var(--white-text-color);
-  padding: 0.75em 0;
-  border: 1px solid var(--dark-text-color);
-  margin: 0;
-}
-
-
-.side-bar-container ul li {
+.side-bar-container ul {
   list-style: none;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.side-bar-container ul:not(:first-child) {
-  padding: 0.5em 0;
+.side-bar-container li {
+  border: 1px solid var(--dark-text-color);
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
 }
 
-ul li a {
+.side-bar-container [type=checkbox] {
+  display: none;
+}
+
+.side-bar-container label.sidebar-title {
+  font-size: 1em;
+  display: block;
+  background: var(--main-bg-red);
+  color: var(--white-text-color);
+  border-bottom: 1px solid var(--dark-text-color);
+  padding: 0.75em 0;
+  margin: 0;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.side-bar-container .sidebar-content {
+  font-size: 0.8em;
+  padding: 0 10px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.side-bar-container ul li label {
+  padding:10px;
+}
+
+.side-bar-container ul li a {
   text-decoration: none;
   color: var(--link-text-color);
+  word-break: break-all;
+  display: block;
+  margin: 1.5em 1em;
+}
+
+.content-text {
+  margin: auto 0em;
+}
+
+.content-item {
+  margin: 0 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content-text-box {
+  border: 1px solid var(--dark-text-color);
+  padding: 0.5em 0.75em;
+  margin: 0.5em 0em;
+}
+
+.box-color-1 {
+
+}
+.box-color-2 {
+
+}
+.box-color-3 {
+
+}
+.box-color-4 {
+
+}
+.box-color-5 {
+
+}
+
+
+
+@media (max-width: 70em) {
+  .side-bar-container {
+    display: block;
+  }
+
+  .side-bar-container label.sidebar-title {
+    cursor: pointer;
+  }
+
+  .side-bar-container ul li .sidebar-content {
+    height:0px;
+  }
+
+  .side-bar-container [type=checkbox]:checked ~ label ~ .sidebar-content {
+    height:auto;
+  }
 }
