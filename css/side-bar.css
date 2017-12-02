@@ -1,13 +1,21 @@
 .side-bar-container {
   border: 1px solid var(--dark-text-color);
-  padding-bottom: 1em;
+  display: inline-block;
 }
 
-.side-bar-container h3 {
+.sidebar-title {
+  font-size: 1em;
+}
+
+.sidebar-content {
+  font-size: 0.8em;
+}
+
+.side-bar-container p {
   background: var(--main-bg-red);
   color: var(--white-text-color);
   padding: 0.75em 0;
-  border: 1px solid var(--dark-text-color);
+  border-bottom: 1px solid var(--dark-text-color);
   margin: 0;
 }
 
@@ -17,8 +25,8 @@
   text-align: center;
 }
 
-.side-bar-container ul:not(:first-child) {
-  padding: 0.5em 0;
+.side-bar-container ul li:not(:first-child) {
+  margin: 1.5em 1em;
 }
 
 .side-bar-container ul li a {
