@@ -1,0 +1,10 @@
+MAKE SURE YOU ARE ON YOUR BRANCH
+1) Add a meaningful comment to your commit
+2) Stage the files in your own branch
+3) Commit the files
+4) Switch to master
+5) Merge your branch into master
+6) Push
+7) Pull
+8) GO BACK TO YOUR BRANCH
+9) Merge master into your branch
