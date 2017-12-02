@@ -1,17 +1,18 @@
 /*Defining Variables*/
 :root {
+  /*Font family & colors*/
+  --main-font: sans-serif;
+
   /*Main color*/
   --main-bg-red: #D10C0C;
   --main-bg-gray: #E4E4E4;
-  --main-border-color: rgb(121, 121, 121);
-
-  /*Font family & colors*/
-  --main-font: sans-serif;
+  --main-border-color: #797979;
+  /*Secondary Color*/
   --dark-text-color: #333;
   --white-text-color: #FFF;
   --light-text-color: #A1A1A1;
   --dark-text-color: #333;
-  --link-text-color: #169BD5;
+  --blue-text-color: #169BD5;
 
   /*Hovering colors*/
 
@@ -20,6 +21,11 @@
 body {
   margin: 0;
   font-family: var(--main-font);
+  color: var(--dark-text-color);
+}
+
+a {
+  text-decoration: none;
   color: var(--dark-text-color);
 }
 
@@ -33,4 +39,8 @@ body {
 
 .float-none {
   float: none;
+}
+
+.center-align {
+  text-align: center;
 }
