@@ -1,5 +1,6 @@
 .side-bar-container {
   display: inline-block;
+  width: 16em;
 }
 
 .side-bar-container ul {
@@ -99,6 +100,7 @@
 @media (max-width: 70em) {
   .side-bar-container {
     display: block;
+    width: 100%;
   }
 
   .side-bar-container label.sidebar-title {
