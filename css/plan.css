@@ -1,0 +1,30 @@
+#planbyreq{
+  margin:2rem;
+}
+.planarea{
+  display: flex;
+  flex-direction: horizontal;
+  flex-wrap: wrap;
+  padding: 1rem;
+
+    border-width: 0.0625rem;
+    border-color: var(--main-border-color);
+    border-style: solid;
+}
+
+.term{
+  margin: 1rem;
+}
+.plancourse{
+  border-width: 0.0625rem;
+  border-color: var(--main-border-color);
+  padding: 0.8rem;
+  border-style: solid;
+  margin:0rem;
+}
+
+.termtitle{
+  padding: 1rem;
+  width: 10rem;
+  font-size: 1.5rem;
+}
