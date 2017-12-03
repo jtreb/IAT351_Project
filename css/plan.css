@@ -3,13 +3,34 @@
 }
 .planarea{
   display: flex;
-  flex-direction: horizontal;
-  flex-wrap: wrap;
+  align-items: start;
   padding: 1rem;
 
     border-width: 0.0625rem;
     border-color: var(--main-border-color);
     border-style: solid;
+}
+
+#plan1{
+  display: none;
+}
+#plan2{
+  display: none;
+}
+#plan3{
+  display: none;
+}
+
+
+.addtermbutton{
+  padding: 1rem;
+}
+
+.planareagrid{
+
+    display: flex;
+    flex-direction: horizontal;
+    flex-wrap: wrap;
 }
 
 .term{
