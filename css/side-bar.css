@@ -10,7 +10,6 @@
 }
 
 .side-bar-container li {
-  border: 1px solid var(--dark-text-color);
   list-style: none;
   text-align: center;
   margin: 0;
@@ -27,7 +26,6 @@
   display: block;
   background: var(--main-bg-red);
   color: var(--white-text-color);
-  border-bottom: 1px solid var(--dark-text-color);
   padding: 0.75em 0;
   margin: 0;
   -webkit-transition: all 0.2s ease-out;
@@ -54,6 +52,10 @@
   word-break: break-all;
   display: block;
   margin: 1.5em 1em;
+}
+
+.sidebar-content {
+  border: 1px solid var(--dark-text-color);
 }
 
 .content-item {
@@ -105,11 +107,13 @@
   }
 
   .side-bar-container ul li .sidebar-content {
-    height:0px;
+    height: 0;
+    display: none;
   }
 
   .side-bar-container [type=checkbox]:checked ~ label ~ .sidebar-content {
-    height:auto;
+    height: auto;
+    display: block;
   }
 
   .content-text, .content-text-box {
@@ -117,6 +121,10 @@
     -ms-flex: 1;
     -moz-flex: 1;
     -webkit-flex: 1;
+  }
+
+  .side-bar-container li {
+    margin-bottom: 0.0625em;
   }
 }
 
