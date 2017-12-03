@@ -70,6 +70,22 @@ nav {
    color: white;
 }
 
+.banner {
+  text-align: center;
+}
+
+h1 {
+  font-size: 7vw;
+  margin-top: 1.7rem;
+  margin-bottom: 0rem;
+}
+
+h2 {
+  font-size: 6vw;
+  margin-top: -1rem;
+  margin-bottom: 2.2rem;
+}
+
 @media (min-width: 70rem){
   .menu-items-container {
     display: block;
@@ -85,5 +101,14 @@ nav {
   }
   .hamburger-bar {
     display: none;
+  }
+}
+
+@media (min-width: 22.5rem){
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
   }
 }
