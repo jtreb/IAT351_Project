@@ -16,74 +16,23 @@
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="../js/nav.js"></script>
+    <script src=""></script>
 
   </head>
 
   <body>
     <!-- Nav -->
-    <nav>
-      <div class="hamburger-bar">
-        <img class="hamburger-icon" src="../img/hamburger-icon.png" alt="A hamburger icon">
-      </div>
-      <div class="menu-items-container">
-        <div class="menu-items">
-          <a href="major-requirements.html" class="nav-item first-nav-item current-nav-item">Major Requirements</a>
-          <a href="wqb-requirements.html" class="nav-item">WQB Requirements</a>
-          <a href="co-op-requirements.html" class="nav-item">Co-op Requirements</a>
-          <a href="highschool-requirements.html" class="nav-item">Foundation Requirements</a>
-          <a href="advising-help.html" class="nav-item">Advising & Help</a>
-          <a href="share.html" class="nav-item">Share</a>
-          <a href="plan.html" class="nav-item">Plan</a>
-        </div>
-      </div>
-    </nav>
 
-    <!-- Right Side bars -->
-    <div class="side-bar-container">
+    <!-- Side bars -->
+    <section class="side-bar-container">
       <ul>
-        <!-- Content -->
-        <li>
-          <input type="checkbox" id="checkbox-1" name="checkbox-collapse" />
-          <label for="checkbox-1" class="sidebar-title">Content</label>
-          <div class="sidebar-content">
-            <a href="#lower-division-requirement">Lower Division Requirements</a>
-            <a href="#upper-division-requirement">Upper Division Requirements</a>
-            <a href="#concentration-requirement">Concentration (IS) Requirements</a>
-            <a href="#apply-grad-school">Apply for Convocation/Grad School</a>
-          </div>
-        </li>
-        <!-- Legend -->
-        <li>
-          <input type="checkbox" id="checkbox-2" name="checkbox-collapse" />
-          <label for="checkbox-2" class="sidebar-title">Legend</label>
-          <div class="sidebar-content">
-            <div class="content-container">
-              <div class="content-item">
-                <p class="content-text">Completed</p>
-                <p class="content-text-box box-color-1">Course No.</p>
-              </div>
-              <div class="content-item">
-                <p class="content-text">Incomplete</p>
-                <p class="content-text-box box-color-2">Course No.</p>
-              </div>
-              <div class="content-item">
-                <p class="content-text">Optional</p>
-                <p class="content-text-box box-color-3">Course No.</p>
-              </div>
-              <div class="content-item">
-                <p class="content-text">Enrolled</p>
-                <p class="content-text-box box-color-4">Course No.</p>
-              </div>
-              <div class="content-item">
-                <p class="content-text">Planned</p>
-                <p class="content-text-box box-color-5">Course No.</p>
-              </div>
-            </div>
-          </div>
-        </li>
+        <li><h3>Content</h3></li>
+        <li><a href="#lower-division-requirement">Lower Division Requirements</a></li>
+        <li><a href="#upper-division-requirement">Upper Division Requirements</a></li>
+        <li><a href="#concentration-requirement">Concentration (IS) Requirements</a></li>
+        <li><a href="#apply-grad-school">Apply for Convocation/Grad School</a></li>
       </ul>
-    </div>
+    </section>
 
     <!-- Main content -->
     <section class="central-req-area">
@@ -95,10 +44,12 @@
                 <ul class="req-class-list">
                     <li class="req-class" id="completed">IAT 100</li>
                     <li class="req-class" id="completed">IAT 102</li>
-                    <li class="req-class" id="incomplete">IAT 103W</li>
+                    <li class="req-class" id="completed">IAT 103W</li>
                     <li class="req-class" id="completed">IAT 106</li>
                     <li class="req-class" id="completed">IAT 167</li>
                 </ul>
+            </div>
+            <div class="req-item-triangle">
             </div>
             <div class="req-item" id="firstyearcmpt">
                 <h5 class="req-item-title" id="first-cmpt-title">First Year Core Courses (CMPT):</h5>
@@ -111,6 +62,8 @@
                     <li class="req-class" id="completed">CMPT 166</li>
                 </ul>
             </div>
+            <div class="req-item-triangle">
+            </div>
             <div class="req-item" id="lowerbsc1">
               <h5 class="req-item-title" id="lowerbsc1-title">BSc Lower Division Req Part 1:</h5>
               <h5 class="req-item-desc" id="lowerbsc1-desc">Must complete THIS course</h5>
@@ -118,10 +71,12 @@
                   <li class="req-class" id="completed">MACM 101</li>
               </ul>
             </div>
+            <div class="req-item-triangle">
+            </div>
             <div class="req-item" id="lowerbsc2">
               <h5 class="req-item-title" id="lowerbsc2-title">BSc Lower Division Req Part 2:</h5>
               <h5 class="req-item-desc" id="lowerbsc2-desc">Must complete ANY 3 Credits worth lower division course in these departments</h5>
-              <ul class="req-class-list">
+              <ul class="req-class-list-wc">
                 <div class="connected-classes">
                   <li class="req-connected-class" id="completed">CMPT</li>
                   <li class="connector-line"> </li>
@@ -132,6 +87,11 @@
                   <li class="req-class" id="optional">STAT</li>
                   <li class="req-class" id="optional">PHYS</li>
               </ul>
+            </div>
+            <div class="req-item-triangle">
+              <h5 class="req-item-credits" id="upper-iat-credits">Total Credits Completed</h5>
+              <h4 class="req-item-credit-count" id="upper-iat-credit-count">03</h4>
+
             </div>
             <div class="req-item" id="secondyeariat">
               <h5 class="req-item-title" id="second-iat-title">Second Year Core Courses (IAT):</h5>
@@ -147,6 +107,9 @@
                   <li class="req-class" id="completed">IAT 265</li>
                   <li class="req-class" id="completed">IAT 267</li>
               </ul>
+            </div>
+            <div class="req-item-triangle">
+
             </div>
         </div>
         <div class="req-category" id="upper-div">
@@ -190,8 +153,12 @@
                     <li class="req-connected-class" id="enrolled">PSYC 362</li>
                   </div>
                 </ul>
-                <h5 class="req-item-credits" id="upperbsc-credits">Total Credits Completed</h5>
-                <h4 class="req-item-credit-count" id="upperbsc-credit-count">24</h4>
+              </div>
+            <div class="req-item-triangle">
+
+              <h5 class="req-item-credits" id="upperbsc-credits">Total Credits Completed</h5>
+              <h4 class="req-item-credit-count" id="upperbsc-credit-count">24</h4>
+
             </div>
             <div class="req-item" id="upperiat">
                 <h5 class="req-item-title" id="upper-iat-title">Upper Division Courses (IAT):</h5>
@@ -203,8 +170,12 @@
                     <li class="req-class" id="enrolled">IAT 381</li>
                     <li class="req-class" id="completed">IAT 445</li>
                 </ul>
-                <h5 class="req-item-credits" id="upper-iat-credits">Total Credits Completed</h5>
-                <h4 class="req-item-credit-count" id="upper-iat-credit-count">09</h4>
+                </div>
+            <div class="req-item-triangle">
+
+              <h5 class="req-item-credits" id="upper-iat-credits">Total Credits Completed</h5>
+              <h4 class="req-item-credit-count" id="upper-iat-credit-count">09</h4>
+
             </div>
         </div>
         <div class="req-category" id="concentration">
@@ -212,11 +183,30 @@
             <div class="req-item" id="interactivesystems">
                   <h5 class="req-item-title" id="interactivesystems-title">Interactive Systems Req:</h5>
                   <h5 class="req-item-desc" id="interactivesystems-desc">Must complete ALL of these courses</h5>
-
+                  <ul class="row1-req-class-list">
+                      <li class="req-class" id="incomplete">IAT 351</li>
+                      <li class="req-class" id="planned">IAT 352</li>
+                      <li class="req-class" id="enrolled">IAT 355</li>
+                      <li class="req-class" id="incomplete">IAT 410</li>
+                      <li class="req-class" id="planned">IAT 452</li>
+                  </ul>
+                  <ul class="row2-req-class-list">
+                      <li class="req-class" id="completed">IAT 455</li>
+                  </ul>
             </div>
+            <div class="triangle-box">
+              <div class="test-box"/>
+            <!-- <div class="req-item-triangle"> -->
+            <!-- </div> -->
+          </div>
         </div>
         <div class="req-category" id="gradschool">
             <h3 id="gradtitle">Apply for Convocation/Grad School</h3>
+            <ul class="req-grad-list">
+                <li class="req-class" id="gradbutton">APPLY FOR CONVOCATION</li>
+                <li class="req-class" id="gradbutton">APPLY FOR GRADUATE SCHOOL</li>
+            </ul>
+            <h5 class="note">*Please make sure that all Major, WQB, High School Requirements are completed before applying</h5>
         </div>
     </section>
   </body>
