@@ -17,6 +17,7 @@
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/nav.js"></script>
+    <script src="../js/plan.js"></script>
 
   </head>
 
@@ -88,52 +89,87 @@
     </div>
 
     <!-- Main content -->
+    <div id="confirm" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <h3 id="confirmtitle">Wait!</h3>
+        <p>Are you sure? You cannot undo this decision.</p>
+      <div class="close">
+        <h5 class="closebtn" onclick="yesconfirm()">YES</h5>
+        <h5 class="closebtn" onclick="noconfirm()">NO</h5>
+      </div>
+      </div>
+
+    </div>
+
     <div class="req-category" id="planbyreq">
         <h3 id="planbyreqtitle">Plan By Requirements</h3>
         <div class="planarea" >
-          <div class="term" id="spring19">
-            <h3 class="termtitle" id="planned">Spring 2019</h3>
-            <h5 class="plancourse"> </h5>
-          </div><div class="term" id="fall18">
-            <h3 class="termtitle" id="planned">Fall 2018</h3>
-            <h5 class="plancourse"> </h5>
-          </div><div class="term" id="summer18">
-            <h3 class="termtitle" id="planned">Summer 2018</h3>
-            <h5 class="plancourse"> </h5>
-          </div>
-          <div class="term" id="spring18">
-            <h3 class="termtitle" id="planned">Spring 2018</h3>
-            <h5 class="plancourse">IAT 352</h5>
-            <h5 class="plancourse">IAT 452</h5>
-            <h5 class="plancourse">PSYC 130</h5>
-            <h5 class="plancourse">CMPT 450</h5>
-          </div>
-          <div class="term" id="fall17">
-            <h3 class="termtitle" id="enrolled">Fall 2017</h3>
-            <h5 class="plancourse">IAT 103W</h5>
-            <h5 class="plancourse">IAT 351</h5>
-            <h5 class="plancourse">IAT 381</h5>
-            <h5 class="plancourse">PSYC 362</h5>
-          </div>
-          <div class="term" id="summer17">
-            <h3 class="termtitle" id="completed">Summer 2017</h3>
-            <h5 class="plancourse">IAT 100</h5>
-            <h5 class="plancourse">IAT 100</h5>
-          </div>
-          <div class="term" id="spring17">
-            <h3 class="termtitle" id="completed">Spring 2017</h3>
-            <h5 class="plancourse">IAT 100</h5>
-            <h5 class="plancourse">IAT 100</h5>
-            <h5 class="plancourse">IAT 100</h5>
-            <h5 class="plancourse">IAT 100</h5>
-          </div>
-          <div class="term" id="fall16">
-            <h3 class="termtitle" id="completed">Fall 2016</h3>
-            <h5 class="plancourse">IAT 100</h5>
-            <h5 class="plancourse">IAT 100</h5>
-            <h5 class="plancourse">IAT 100</h5>
-          </div>
+          <div class="termbtns">
+          <img src="../img/plus.svg" class="addtermbutton" id="plusbtn" onclick="addTerm()"/>
         </div>
+            <div class="planareagrid">
+              <div class="term" id="plan7">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm7()"/>
+
+                  <h3 class="termtitle" id="planned"> Spring 2019 </h3>
+                  <h5 class="plancourse"> </h5>
+              </div><div class="term" id="plan6">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm6()"/>
+
+                  <h3 class="termtitle" id="planned">Fall 2018</h3>
+                  <h5 class="plancourse"> </h5>
+              </div><div class="term" id="plan5">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm5()"/>
+
+                  <h3 class="termtitle" id="planned">Summer 2018</h3>
+                  <h5 class="plancourse"> </h5>
+              </div>
+              <div class="term" id="plan4" >
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm4()"/>
+
+                  <h3 class="termtitle" id="planned">Spring 2018</h3>
+                  <h5 class="plancourse">IAT 352</h5>
+                  <h5 class="plancourse">IAT 452</h5>
+                  <h5 class="plancourse">PSYC 130</h5>
+                  <h5 class="plancourse">CMPT 450</h5>
+              </div>
+              <div class="term" id="plan3">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm3()"/>
+
+                  <h3 class="termtitle" id="enrolled">Fall 2017</h3>
+                  <h5 class="plancourse">IAT 103W</h5>
+                  <h5 class="plancourse">IAT 351</h5>
+                  <h5 class="plancourse">IAT 381</h5>
+                  <h5 class="plancourse">PSYC 362</h5>
+              </div>
+              <div class="term" id="plan2">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm2()"/>
+
+                  <h3 class="termtitle" id="completed">Summer 2017</h3>
+                  <h5 class="plancourse">IAT 100</h5>
+                  <h5 class="plancourse">IAT 100</h5>
+              </div>
+              <div class="term" id="plan1">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm1()"/>
+
+                  <h3 class="termtitle" id="completed">Spring 2017</h3>
+                  <h5 class="plancourse">IAT 100</h5>
+                  <h5 class="plancourse">IAT 100</h5>
+                  <h5 class="plancourse">IAT 100</h5>
+                  <h5 class="plancourse">IAT 100</h5>
+              </div>
+              <div class="term" id="plan0">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm0()"/>
+
+                  <h3 class="termtitle" id="completed">Fall 2016</h3>
+                  <h5 class="plancourse">IAT 100</h5>
+                  <h5 class="plancourse">IAT 100</h5>
+                  <h5 class="plancourse">IAT 100</h5>
+              </div>
+          </div>
+      </div>
       </div>
     </div>
   </body>
