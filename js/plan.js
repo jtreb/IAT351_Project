@@ -74,3 +74,14 @@ function  noconfirm() {
   var modal = document.getElementById('confirm');
     modal.style.display = "none";
 }
+
+function openshare(){
+
+  var modal = document.getElementById('sharemodal');
+  modal.style.display = "block";
+}
+
+function  closeshare() {
+  var modal = document.getElementById('sharemodal');
+    modal.style.display = "none";
+}

@@ -103,6 +103,20 @@
 
     </div>
 
+    <!-- Share Modal content -->
+    <div id="sharemodal" class="modal">
+      <div class="modal-content">
+        <h3 id="confirmtitle">Share</h3>
+        <p>Please enter a share message</p>
+        <input type="text"></input>
+      <div class="close">
+        <h5 class="closebtn" onclick="closeshare()">SHARE</h5>
+        <h5 class="closebtn" onclick="closeshare()">CANCEL</h5>
+      </div>
+      </div>
+
+    </div>
+
     <div class="req-category" id="planbyreq">
         <h3 id="planbyreqtitle">Plan By Requirements</h3>
         <div class="planarea" >
@@ -181,7 +195,14 @@
         </h5>
 
         <div class="shareicons">
-            
+              <img src="../img/facebook.svg" class="socialmedia" id="facebook" onclick="openshare()" />
+              <img src="../img/messenger.svg" class="socialmedia" id="messenger" onclick="openshare()" />
+              <img src="../img/google plus.svg" class="socialmedia" id="google" onclick="openshare()" />
+              <img src="../img/slack.svg" class="socialmedia" id="slack" onclick="openshare()" />
+              <img src="../img/email.svg" class="socialmedia" id="email" onclick="openshare()" />
+              <img src="../img/twitter.svg" class="socialmedia" id="twitter" onclick="openshare()" />
+              <img src="../img/wechat.svg" class="socialmedia" id="wechat" onclick="openshare()"  />
+              <img src="../img/printer.svg" class="socialmedia" id="print" onclick="openshare()" />
         </div>
     </div>
   </body>
