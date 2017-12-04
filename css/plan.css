@@ -113,3 +113,36 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+#enrolled {
+  background-color: var(--dark-gray);
+}
+
+#incomplete {
+  background-color: white;
+  color: var(--dark-gray);
+}
+
+#optional {
+  background-color: var(--main-bg-gray);
+  color: var(--dark-gray);
+}
+
+#planned {
+  background-color: var(--blue-text-color);
+}
+
+.modal h5{
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+
+}
+.plan-category{
+  text-align: center;
+  padding: 1rem;
+}
+.plan-category h5{
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+
+}
