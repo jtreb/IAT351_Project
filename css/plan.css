@@ -43,6 +43,26 @@
   padding-left: 13rem;
 }
 
+#modalxbtn{
+  padding-top: 0rem;
+  margin-top:-1rem;
+  max-width: 2rem;
+  max-height: 2rem;
+  min-width: 0.5rem;
+  position: absolute;
+  padding-left: 59%;
+  display: block;
+}
+
+#modalplusbtn{
+  max-width: 4rem;
+  max-height: 4rem;
+  min-width: 1rem;
+  width: 10%;
+  padding: 1rem;
+  margin: auto;
+}
+
 .planareagrid{
 
     display: flex;
@@ -60,6 +80,14 @@
   border-style: solid;
   margin:0rem;
 }
+.potentialcourse{
+  border-width: 0.0625rem;
+  border-color: var(--main-border-color);
+  padding: 0.8rem;
+  border-style: solid;
+  margin:0rem;
+  display: none;
+}
 
 .termtitle{
   padding: 1rem;
@@ -69,6 +97,58 @@
 
 /*popup*/
 
+#specreqselect1{
+  display: none;
+}
+
+#specreqselect2{
+  display: none;
+}
+#courseselect1{
+  display: none;
+}
+#courseselect2{
+  display: none;
+}
+#courseselect3{
+  display: none;
+}
+#courseselect4{
+  display: none;
+}
+#courseselect5{
+  display: none;
+}
+#courseselect6{
+  display: none;
+}
+#courseselect7{
+  display: none;
+}
+.addbtns{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+#canceladd{
+  background-color: var(--main-border-color);
+}
+#addbtn{
+  background-color: var(--blue-text-color);
+}
+#savebtn{
+  background-color: var(--main-bg-red);
+}
+
+#addcourses{
+  display: none;
+}
+
+#semselect{
+  width: 20%;
+  margin: auto;
+  margin: 1rem;
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -80,7 +160,7 @@
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -90,7 +170,7 @@
     padding: 0rem;
     text-align: center;
     border: 0.0625rem solid var(--main-border-color);
-    width: 20rem; /* Could be more or less, depending on screen size */
+    width: 60%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
