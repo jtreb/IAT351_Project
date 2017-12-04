@@ -146,3 +146,22 @@
   padding-bottom: 0.66rem;
 
 }
+
+.shareicons{
+  display: flex;
+  margin: auto;
+  width: 40%;
+  text-align: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.socialmedia{
+  width: 10%;
+  min-width: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+
+}
