@@ -12,16 +12,77 @@
 
 .advdesc{
   font-weight: 400;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  margin: auto;
 }
-.advlbl{
+#advlbl{
   font-weight: 400;
-  padding-left: 5.3rem;
-  padding-right: 5.3rem;
+  flex-basis: 50%;
+  margin: auto;
+  text-align: center;
+}
+.lbl1{
+  font-weight: 400;
+  flex-basis: 50%;
+  margin: auto;
+  text-align: center;
+}
+.lbl2{
+  font-weight: 400;
+  flex-basis: 50%;
+  margin: auto;
   text-align: center;
 }
 
+.advdropdowns{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+select{
+  margin: auto;
+}
+@media all and (max-width: 700px) and (min-width: 100px) {
+  .advdropdowns{
+    width: 80%;
+  }
+
+  .lbl1{
+    order:0;
+  }
+
+  .dayselect{
+    order: 1;
+  }
+.lbl2{
+  order:3;
+}
+
+.timeselect{
+  order: 4;
+}
+}
+@media all and (max-width: 1000px) and (min-width: 700px) {
+  .advdropdowns{
+    width: 20%;
+  }
+  .lbl1{
+    order:0;
+  }
+
+  .dayselect{
+    order: 1;
+  }
+.lbl2{
+  order:3;
+}
+
+.timeselect{
+  order: 4;
+}
+}
 .repeattable{
   display: flex;
   width: 15rem;
@@ -55,18 +116,6 @@ margin: auto;
   padding: 1rem;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
-}
-
-.advdropdowns{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 25rem;
-  margin: auto;
-  text-align: center;
-}
-select{
-  margin: auto;
 }
 
 .descbox{
