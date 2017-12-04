@@ -371,14 +371,41 @@ function addcoursetoterm(){
     j=j+1;
     list = document.getElementById("courseselect"+j);
   }
+  for(var i = 0; i<4;i++){
+    var name =  document.getElementById("tempcourse"+i).innerHTML;
+
+    var j = 0;
+    var term = document.getElementById("plan"+num);
+    var course = document.getElementById("plan"+num+""+j);
+    while(course.style.display == "block"){
+      j=j+1;
+      course = document.getElementById("plan"+num+""+j);
+    }
+    if(name != ""){
+      course.innerHTML = name;
+      course.style.display  = "block";
+    }
+}
+}
+
+function tempaddcourse(){
+
+  var sel = document.getElementById("semselect");
+  num = sel.options [sel.selectedIndex] .value;
+  var j = 0;
+  var list = document.getElementById("courseselect"+j);
+  while(list.style.display == "none"){
+    j=j+1;
+    list = document.getElementById("courseselect"+j);
+  }
     var name = list.options [list.selectedIndex] .text;
 
     var i = 0;
     var term = document.getElementById("plan"+num);
-    var course = document.getElementById("plan"+num+""+i);
+    var course = document.getElementById("tempcourse"+i);
     while(course.style.display == "block"){
       i=i+1;
-      course = document.getElementById("plan"+num+""+i);
+      course = document.getElementById("tempcourse"+i);
     }
     course.innerHTML = name;
     course.style.display  = "block";
