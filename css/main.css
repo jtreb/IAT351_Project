@@ -3,7 +3,7 @@
   /*Main color*/
   --main-bg-red: #D10C0C;
   --main-bg-gray: #E4E4E4;
-  --main-border-color: rgb(121, 121, 121);
+  --main-border-color: #333;
 
   /*Font family & colors*/
   --main-font: sans-serif;
@@ -11,7 +11,7 @@
   --white-text-color: #FFF;
   --light-text-color: #A1A1A1;
   --blue-text-color: #169BD5;
-  
+
 
   /*Hovering colors*/
 

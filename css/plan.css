@@ -11,19 +11,36 @@
     border-style: solid;
 }
 
-#plan1{
+.term{
+  display: block;
+}
+
+#plan5{
   display: none;
 }
-#plan2{
+#plan6{
   display: none;
 }
-#plan3{
+#plan7{
   display: none;
 }
 
 
-.addtermbutton{
+
+.termbtns{
   padding: 1rem;
+  width: 4rem;
+  min-width: 2.5rem;
+}
+
+#xbtn{
+  padding-bottom: 13rem;
+  margin-top:-1rem;
+  max-width: 2rem;
+  max-height: 2rem;
+  min-width: 0.5rem;
+  position: absolute;
+  padding-left: 13rem;
 }
 
 .planareagrid{
@@ -46,6 +63,53 @@
 
 .termtitle{
   padding: 1rem;
-  width: 10rem;
+  width: 12rem;
   font-size: 1.5rem;
+}
+
+/*popup*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 0rem;
+    text-align: center;
+    border: 0.0625rem solid var(--main-border-color);
+    width: 20rem; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: var(--dark-text-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.closebtn{
+
+  padding-left:5rem;
+  padding: auto;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
