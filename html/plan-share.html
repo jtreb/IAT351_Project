@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="../css/side-bar.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/centerreqs.css">
-
+    <link rel="stylesheet" href="../css/plan.css">
+        <link rel="stylesheet" href="../css/advising.css">
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/nav.js"></script>
+    <script src="../js/plan.js"></script>
 
   </head>
 
@@ -27,12 +29,12 @@
       </div>
       <div class="menu-items-container">
         <div class="menu-items">
-          <a href="major-requirements.html" class="nav-item first-nav-item current-nav-item">Major Requirements</a>
+          <a href="major-requirements.html" class="nav-item first-nav-item">Major Requirements</a>
           <a href="wqb-requirements.html" class="nav-item">WQB Requirements</a>
           <a href="co-op-requirements.html" class="nav-item">Co-op Requirements</a>
           <a href="highschool-requirements.html" class="nav-item">Foundation Requirements</a>
           <a href="advising-help.html" class="nav-item">Advising & Help</a>
-          <a href="plan-share.html" class="nav-item">Plan & Share</a>
+          <a href="plan-share.html" class="nav-item current-nav-item">Plan & Share</a>
         </div>
       </div>
     </nav>
@@ -87,6 +89,270 @@
     </div>
 
     <!-- Main content -->
+    <div id="confirm" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <h3 id="confirmtitle">Wait!</h3>
+        <p>Are you sure? You cannot undo this decision.</p>
+      <div class="close">
+        <h5 class="closebtn" onclick="yesconfirm()">YES</h5>
+        <h5 class="closebtn" onclick="noconfirm()">NO</h5>
+      </div>
+      </div>
+
+    </div>
+
+    <!-- Share Modal content -->
+    <div id="sharemodal" class="modal">
+      <div class="modal-content">
+        <h3 id="confirmtitle">Share</h3>
+        <p>Please enter a share message</p>
+        <input type="text"></input>
+      <div class="close">
+        <h5 class="closebtn" onclick="closeshare()">SHARE</h5>
+        <h5 class="closebtn" onclick="closeshare()">CANCEL</h5>
+      </div>
+      </div>
+
+    </div>
+
+    <!-- select sem Modal content -->
+    <div id="semmodal" class="modal">
+      <div class="modal-content">
+      <img src="../img/delete.svg" class="deletetermbutton" id="modalxbtn" onclick="closesem()"/>
+        <h3 id="confirmtitle">Share</h3>
+        <h5>Choose a Semester</h5>
+        <select id="semselect">
+            <option value="7">Spring 2019</option>
+            <option value="6">Fall 2018</option>
+            <option value="5">Summer 2018</option>
+          </select>
+      <div class="close">
+        <img src="../img/plus.svg" class="addtermbutton" id="modalplusbtn" onclick="nextsem()"/>
+      </div>
+      <h5>Add a Course</h5>
+      <div id="addcourses">
+    <div class="advline"></div>
+      <h5>Choose a Requirement to Fulfill</h5>
+      <select id="reqselect" onchange="changespecs()">
+          <option value="0">Major Requirements</option>
+          <option value="1">WQB Requirements</option>
+          <option value="2">CO-OP Requirements</option>
+        </select>
+
+    <h5>Choose a Specific Requirement</h5>
+    <select id="specreqselect0"  onchange="changecoursesmajor()">
+        <option value="0">Lower Division Requirements</option>
+        <option value="1">Upper Division Requirements</option>
+        <option value="2">Concentration Requirements</option>
+        <option value="3">Electives</option>
+      </select>
+
+      <select id="specreqselect1" onchange="changecourseswqb()">
+          <option value="0">Writing Requirements</option>
+          <option value="1">Quantitative Requirements</option>
+          <option value="2">Breadth Requirements</option>
+        </select>
+
+        <select id="specreqselect2">
+            <option value="0">CO-OP Requirements</option>
+          </select>
+
+      <h5>Courses Available Based on Requirements Chosen</h5>
+      <select id="courseselect0">
+          <option value="0">IAT 100</option>
+          <option value="1">IAT 102</option>
+          <option value="2">IAT 103W</option>
+          <option value="3">IAT 106</option>
+          <option value="4">IAT 167</option>
+          <option value="5">CMPT 120</option>
+          <option value="6">CMPT 125</option>
+          <option value="7">CMPT 126</option>
+          <option value="8">CMPT 128</option>
+          <option value="9">CMPT 166</option>
+          <option value="10">MACM 101</option>
+          <option value="11">IAT 201</option>
+          <option value="12">IAT 202</option>
+          <option value="13">IAT 222</option>
+          <option value="14">IAT 233</option>
+          <option value="15">IAT 235</option>
+          <option value="16">IAT 265</option>
+          <option value="17">IAT 267</option>
+        </select>
+        <select id="courseselect1">
+            <option value="0">IAT 333</option>
+            <option value="1">IAT 334</option>
+            <option value="2">IAT 355</option>
+            <option value="3">IAT 381</option>
+            <option value="4">IAT 445</option>
+            <option value="5">CMPT 320</option>
+            <option value="6">CMPT 354</option>
+            <option value="7">COGS 381</option>
+            <option value="8">PSYC 128</option>
+            <option value="9">PSYC 352</option>
+            <option value="10">PSYC 362</option>
+          </select>
+          <select id="courseselect2">
+              <option value="0">IAT 351</option>
+              <option value="1">IAT 352</option>
+              <option value="2">IAT 355</option>
+              <option value="3">IAT 410</option>
+              <option value="4">IAT 452</option>
+              <option value="5">IAT 455</option>
+            </select>
+            <select id="courseselect3">
+              <option value="0">CMPT 120</option>
+              <option value="1">CMPT 125</option>
+              <option value="2">CMPT 126</option>
+              <option value="3">CMPT 128</option>
+              <option value="4">CMPT 166</option>
+              <option value="5">MACM 101</option>
+                <option value="6">CMPT 320</option>
+                <option value="7">CMPT 354</option>
+                <option value="8">COGS 381</option>
+                <option value="9">PSYC 128</option>
+                <option value="10">PSYC 352</option>
+                <option value="11">PSYC 362</option>
+              </select>
+
+              <select id="courseselect4">
+                <option value="0">IAT 103W</option>
+                <option value="1">IAT 309W</option>
+                </select>
+
+                <select id="courseselect5">
+                  <option value="0">CMPT 166</option>
+                  <option value="1">CMPT 225</option>
+                  <option value="1">MACM 101</option>
+                  </select>
+
+                  <select id="courseselect6">
+                    <option value="0">CRIM 101</option>
+                    <option value="1">COGS 100</option>
+                    <option value="2">PHIL 100W</option>
+                    <option value="3">ARCH 131</option>
+                    <option value="4">BPK 142</option>
+                    <option value="5">CMPT 166</option>
+                    <option value="6">MACM 101</option>
+                    <option value="7">ARCH 100</option>
+                    <option value="8">BUS 237</option>
+                    </select>
+                    <select id="courseselect7">
+                      <option value="0">IAT271</option>
+                      <option value="1">IAT 272</option>
+                      <option value="2">IAT 373</option>
+                      </select>
+        <div class="addbtns">
+          <div class="button" id="canceladd" onclick="closesem()">CANCEL</div>
+          <div class="button" id="addbtn" onclick="addcoursetoterm()">ADD COURSE</div>
+          <div class="button" id="savebtn" onclick="closesem()">SAVE PLAN</div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="req-category" id="planbyreq">
+        <h3 id="planbyreqtitle">Plan By Requirements</h3>
+        <div class="planarea" >
+          <div class="termbtns">
+          <img src="../img/plus.svg" class="addtermbutton" id="plusbtn" onclick="opensem()"/>
+        </div>
+            <div class="planareagrid">
+              <div class="term" id="plan7">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm7()"/>
+
+                  <h3 class="termtitle" id="planned"> Spring 2019 </h3>
+                  <h5 class="potentialcourse" id="plan70"> </h5>
+                  <h5 class="potentialcourse" id="plan71"> </h5>
+                  <h5 class="potentialcourse" id="plan72"> </h5>
+                  <h5 class="potentialcourse" id="plan73"></h5>
+                  <h5 class="potentialcourse" id="plan74"></h5>
+              </div><div class="term" id="plan6">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm6()"/>
+
+                  <h3 class="termtitle" id="planned">Fall 2018</h3>
+                  <h5 class="potentialcourse" id="plan60"></h5>
+                  <h5 class="potentialcourse" id="plan61"></h5>
+                  <h5 class="potentialcourse" id="plan62"></h5>
+                  <h5 class="potentialcourse" id="plan63"></h5>
+                  <h5 class="potentialcourse" id="plan64"> </h5>
+              </div><div class="term" id="plan5">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm5()"/>
+
+                  <h3 class="termtitle" id="planned">Summer 2018</h3>
+                  <h5 class="potentialcourse" id="plan50"> </h5>
+                  <h5 class="potentialcourse" id="plan51"></h5>
+                  <h5 class="potentialcourse" id="plan52"> </h5>
+                  <h5 class="potentialcourse" id="plan53"></h5>
+                  <h5 class="potentialcourse" id="plan54"> </h5>
+              </div>
+              <div class="term" id="plan4" >
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm4()"/>
+
+                  <h3 class="termtitle" id="planned">Spring 2018</h3>
+                  <h5 class="plancourse">IAT 352</h5>
+                  <h5 class="plancourse">IAT 452</h5>
+                  <h5 class="plancourse">PSYC 130</h5>
+                  <h5 class="plancourse">CMPT 450</h5>
+              </div>
+              <div class="term" id="plan3">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm3()"/>
+
+                  <h3 class="termtitle" id="enrolled">Fall 2017</h3>
+                  <h5 class="plancourse">IAT 103W</h5>
+                  <h5 class="plancourse">IAT 351</h5>
+                  <h5 class="plancourse">IAT 381</h5>
+                  <h5 class="plancourse">PSYC 362</h5>
+              </div>
+              <div class="term" id="plan2">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm2()"/>
+
+                  <h3 class="termtitle" id="completed">Summer 2017</h3>
+                  <h5 class="plancourse">IAT 100</h5>
+                  <h5 class="plancourse">IAT 100</h5>
+              </div>
+              <div class="term" id="plan1">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm1()"/>
+
+                  <h3 class="termtitle" id="completed">Spring 2017</h3>
+                  <h5 class="plancourse">IAT 100</h5>
+                  <h5 class="plancourse">IAT 100</h5>
+                  <h5 class="plancourse">IAT 100</h5>
+                  <h5 class="plancourse">IAT 100</h5>
+              </div>
+              <div class="term" id="plan0">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm0()"/>
+
+                  <h3 class="termtitle" id="completed">Fall 2016</h3>
+                  <h5 class="plancourse">IAT 100</h5>
+                  <h5 class="plancourse">IAT 100</h5>
+                  <h5 class="plancourse">IAT 100</h5>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+    <div class="plan-category" id="share">
+        <h3 id="sharetitle">Share</h3>
+        <h5 class="subtitle">Notice</h5>
+        <h5 class="advdesc"> We would like to encourage our students to communicate,
+          collaborate and share their planned  with their friends and colleagues to
+          have the best experience at SFU.
+        </h5>
+
+        <div class="shareicons">
+              <img src="../img/facebook.svg" class="socialmedia" id="facebook" onclick="openshare()" />
+              <img src="../img/messenger.svg" class="socialmedia" id="messenger" onclick="openshare()" />
+              <img src="../img/google plus.svg" class="socialmedia" id="google" onclick="openshare()" />
+              <img src="../img/slack.svg" class="socialmedia" id="slack" onclick="openshare()" />
+              <img src="../img/email.svg" class="socialmedia" id="email" onclick="openshare()" />
+              <img src="../img/twitter.svg" class="socialmedia" id="twitter" onclick="openshare()" />
+              <img src="../img/wechat.svg" class="socialmedia" id="wechat" onclick="openshare()"  />
+              <img src="../img/printer.svg" class="socialmedia" id="print" onclick="openshare()" />
+        </div>
+    </div>
   </body>
 
 </html>
