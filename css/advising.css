@@ -79,4 +79,20 @@ select{
   width: 60%;
   height: 0.065rem;
   margin:auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.central-adv-area h5{
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+
+}
+
+.central-adv-area em{
+  color: var(--main-bg-red);
+  font-weight: bold;
+  text-transform: none;
+
 }
