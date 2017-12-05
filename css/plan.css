@@ -33,16 +33,45 @@
   min-width: 2.5rem;
 }
 
+.addtermbutton, .deletetermbutton {
+  cursor: pointer;
+}
+
 #xbtn{
-  padding-bottom: 13rem;
+  max-width: 2rem;
+  max-height: 2rem;
+  min-width: 0.5rem;
+  position: relative;
+  top: 1.2em;
+  left: 13em;
+}
+
+#modalxbtn{
+  padding-top: 0rem;
   margin-top:-1rem;
   max-width: 2rem;
   max-height: 2rem;
   min-width: 0.5rem;
   position: absolute;
-  padding-left: 13rem;
+  padding-left: 59%;
+  display: block;
+  cursor: pointer;
 }
 
+#modalplusbtn{
+  max-width: 4rem;
+  max-height: 4rem;
+  min-width: 1rem;
+  width: 10%;
+  padding: 1rem;
+  margin: auto;
+  cursor: pointer;
+}
+
+#plusbtn{
+
+  cursor: pointer;
+}
 .planareagrid{
 
     display: flex;
@@ -56,19 +85,124 @@
 .plancourse{
   border-width: 0.0625rem;
   border-color: var(--main-border-color);
+  border-style: solid;
+  margin:0rem;
+  border-bottom: none;
+}
+.plancourse p {
+  font-size: 0.83em;
+  padding: 0.8rem;
+  margin: 0rem;
+  border-bottom: 0.0625em solid var(--main-border-color);
+}
+.potentialcourse{
+  border-width: 0.0625rem;
+  border-color: var(--main-border-color);
   padding: 0.8rem;
   border-style: solid;
   margin:0rem;
+  display: none;
 }
 
 .termtitle{
   padding: 1rem;
   width: 12rem;
   font-size: 1.5rem;
+  text-align: left;
 }
 
 /*popup*/
 
+.tempclass{
+    color: white;
+    text-transform: uppercase;
+    background-color: var(--blue-text-color);
+    text-decoration: none;
+    font-size: 0.8125rem;
+    border-width: 0.0625rem;
+    border-style: solid;
+    border-color: var(--main-border-color);
+    padding:1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 1.5rem 0.375rem 0.75rem 0.375rem;
+}
+.tmpplan{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+#tempcourse0{
+  display: none;
+}
+#tempcourse1{
+  display: none;
+}
+#tempcourse2{
+  display: none;
+}
+#tempcourse3{
+  display: none;
+}
+#tempcourse4{
+  display: none;
+}
+#specreqselect1{
+  display: none;
+}
+
+#specreqselect2{
+  display: none;
+}
+#courseselect1{
+  display: none;
+}
+#courseselect2{
+  display: none;
+}
+#courseselect3{
+  display: none;
+}
+#courseselect4{
+  display: none;
+}
+#courseselect5{
+  display: none;
+}
+#courseselect6{
+  display: none;
+}
+#courseselect7{
+  display: none;
+}
+.addbtns{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+#canceladd{
+  background-color: var(--main-border-color);
+  cursor: pointer;
+}
+#addbtn{
+  background-color: var(--blue-text-color);
+  cursor: pointer;
+}
+#savebtn{
+  background-color: var(--main-bg-red);
+  cursor: pointer;
+}
+
+#addcourses{
+  display: none;
+}
+
+#semselect{
+  width: 20%;
+  margin: auto;
+  margin: 1rem;
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -80,7 +214,7 @@
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
@@ -90,7 +224,7 @@
     padding: 0rem;
     text-align: center;
     border: 0.0625rem solid var(--main-border-color);
-    width: 20rem; /* Could be more or less, depending on screen size */
+    width: 60%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -145,4 +279,27 @@
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
 
+}
+
+.shareicons{
+  display: flex;
+  margin: auto;
+  width: 40%;
+  text-align: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.socialmedia{
+  width: 10%;
+  min-width: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+  cursor: pointer;
+
+}
+#sharemodalcontent {
+    width: 40%; /* Full width */
 }
