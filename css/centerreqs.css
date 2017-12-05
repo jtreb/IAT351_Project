@@ -517,18 +517,21 @@ em {
 }
 
 
-
+.modal h3{
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: var(--main-border-color);
+}
 .modal-info {
   background-color: #fefefe;
   text-align: center;
   border: 0.0625rem solid var(--main-border-color);
   width: 20%; /* Could be more or less, depending on screen size */
 }
-.coursemoreinfo a{
+.modal-info a{
   color: var(--main-bg-red);
-  text-align: right;
-  font-size: 0.7rem;
-  margin-bottom: 1rem;
+  float: right;
+  font-size: 0.8rem;
 }
 
 
@@ -557,6 +560,7 @@ em {
 .coursemoreinfo{
 padding-left: 2rem;
 padding-right: 2rem;
+margin-bottom: 2rem;
 }
 
 .infoline{
