@@ -69,6 +69,7 @@ em {
   border-style: solid;
 
   margin: 0.3125rem;
+  cursor: pointer;
 }
 
 .enrolled {
