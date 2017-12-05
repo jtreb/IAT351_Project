@@ -55,6 +55,7 @@
   position: absolute;
   padding-left: 59%;
   display: block;
+  cursor: pointer;
 }
 
 #modalplusbtn{
@@ -64,8 +65,13 @@
   width: 10%;
   padding: 1rem;
   margin: auto;
+  cursor: pointer;
 }
 
+#plusbtn{
+
+  cursor: pointer;
+}
 .planareagrid{
 
     display: flex;
@@ -107,6 +113,41 @@
 
 /*popup*/
 
+.tempclass{
+    color: white;
+    text-transform: uppercase;
+    background-color: var(--blue-text-color);
+    text-decoration: none;
+    font-size: 0.8125rem;
+    border-width: 0.0625rem;
+    border-style: solid;
+    border-color: var(--main-border-color);
+    padding:1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 1.5rem 0.375rem 0.75rem 0.375rem;
+}
+.tmpplan{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+#tempcourse0{
+  display: none;
+}
+#tempcourse1{
+  display: none;
+}
+#tempcourse2{
+  display: none;
+}
+#tempcourse3{
+  display: none;
+}
+#tempcourse4{
+  display: none;
+}
 #specreqselect1{
   display: none;
 }
@@ -142,12 +183,15 @@
 }
 #canceladd{
   background-color: var(--main-border-color);
+  cursor: pointer;
 }
 #addbtn{
   background-color: var(--blue-text-color);
+  cursor: pointer;
 }
 #savebtn{
   background-color: var(--main-bg-red);
+  cursor: pointer;
 }
 
 #addcourses{
@@ -253,5 +297,9 @@
   padding-left: 5%;
   padding-right: 5%;
   align-items: center;
+  cursor: pointer;
 
+}
+#sharemodalcontent {
+    width: 40%; /* Full width */
 }

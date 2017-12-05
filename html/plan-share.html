@@ -97,10 +97,11 @@
 
     <!-- Share Modal content -->
     <div id="sharemodal" class="modal">
-      <div class="modal-content">
+      <div class="modal-content" id="sharemodalcontent">
         <h3 id="confirmtitle">Share</h3>
         <p>Please enter a share message</p>
-        <input type="text"></input>
+        <textarea rows="4" cols="50">
+        </textarea>
       <div class="close">
         <h5 class="closebtn" onclick="closeshare()">SHARE</h5>
         <h5 class="closebtn" onclick="closeshare()">CANCEL</h5>
@@ -120,6 +121,14 @@
             <option value="6">Fall 2018</option>
             <option value="5">Summer 2018</option>
           </select>
+
+          <div class="tmpplan">
+            <div class="tempclass" id="tempcourse0" ></div>
+            <div class="tempclass" id="tempcourse1"></div>
+            <div class="tempclass" id="tempcourse2"></div>
+            <div class="tempclass" id="tempcourse3" ></div>
+            <div class="tempclass" id="tempcourse4"></div>
+          </div>
       <div class="close">
         <img src="../img/plus.svg" class="addtermbutton" id="modalplusbtn" onclick="nextsem()"/>
       </div>
@@ -237,8 +246,8 @@
                       </select>
         <div class="addbtns">
           <div class="button" id="canceladd" onclick="closesem()">CANCEL</div>
-          <div class="button" id="addbtn" onclick="addcoursetoterm()">ADD COURSE</div>
-          <div class="button" id="savebtn" onclick="closesem()">SAVE PLAN</div>
+          <div class="button" id="addbtn" onclick="tempaddcourse()">ADD COURSE</div>
+          <div class="button" id="savebtn" onclick="addcoursetoterm()">SAVE PLAN</div>
       </div>
       </div>
     </div>
