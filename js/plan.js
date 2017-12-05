@@ -87,9 +87,6 @@ function opensem(){
 function  closesem() {
   var modal = document.getElementById('semmodal');
     modal.style.display = "none";
-  var e = document.getElementById ("addcourses");
-  e.style.display = "none";
-
     var nocourses = document.getElementById("nocourses");
     nocourses.style.display="block";
     for(var i =0; i<5; i++){
@@ -97,10 +94,6 @@ function  closesem() {
           m.innerHTML = "";
           m.style.display = "none";
     }
-}
-function  nextsem() {
-    var e = document.getElementById ("addcourses");
-    e.style.display = "block";
 }
 function  changespecs() {
     var e = document.getElementById ("reqselect");
