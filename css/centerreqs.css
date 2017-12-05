@@ -1,6 +1,151 @@
-.req-item{
-  background-color:  var(--main-bg-gray);
-  min-height: 100px;
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 75% 70%, 52% 100%, 40% 70%, 0% 70%);
-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 64% 70%, 52% 100%, 40% 70%, 0% 70%);
+.req-section {
+  margin-bottom: 1rem;
+}
+
+h3{
+  padding: 0.66rem;
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+  text-align: center;
+  margin: 0rem;
+  font-size: 0.8125rem;
+}
+
+.req-section-container {
+  border-style: solid;
+  border-width: 0.0625rem;
+  background-color: white;
+}
+
+.req-section-inner-container {
+  background-color: var(--main-bg-gray);
+  margin: 0 2.375rem;
+}
+
+.req-title {
+  padding: 0.8125rem;
+}
+
+.req-instructions {
+  text-align: center;
+  margin-bottom: 0.5875rem;
+}
+
+.req-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1.6875rem;
+
+  margin: 0 1rem;
+}
+
+h5 {
+  margin: 0;
+}
+
+em {
+  text-transform: uppercase;
+  color: var(--main-bg-red);
+  font-style: normal;
+}
+
+.course {
+  width: 6.1875rem;
+  height: 2.1875rem;
+  line-height: 2.1875rem;
+  text-align: center;
+
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+  font-size: 0.8125rem;
+
+  border-color: var( --main-border-color);
+  border-width: 0.0625rem;
+  border-style: solid;
+
+  margin: 0.3125rem;
+}
+
+.enrolled {
+  background-color: var(--dark-gray);
+}
+
+.incomplete {
+  background-color: white;
+  color: var(--dark-gray);
+}
+
+.optional {
+  background-color: var(--main-bg-gray);
+  color: var(--dark-gray);
+}
+
+.planned {
+  background-color: var(--blue-text-color);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 7rem solid transparent;
+  border-right: 7rem solid transparent;
+  border-top: 3.8rem solid var(--main-bg-gray);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 1rem;
+}
+
+.credits-completed {
+  margin-top: -4rem;
+  margin-left: -5rem;
+  width: 10rem;
+  text-align: center;
+}
+
+.number-of-credits {
+  color: var(--main-bg-red);
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: -0.7rem;
+  margin-top: 0.6rem;
+}
+
+.pre-reqs {
+  margin-top: -0.3125rem;
+  margin-bottom: 0.3125rem;
+}
+
+.pre-reqs > .course {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.line {
+  width: 0.078rem;
+  height: 1rem;
+  background-color: var(--main-bg-red);
+  margin: 0 auto;
+}
+
+.button {
+  color: white;
+  text-transform: uppercase;
+  background-color: var(--blue-text-color);
+  text-decoration: none;
+  font-size: 0.8125rem;
+
+  padding:1rem;
+  border-radius: 0.3125rem;
+  margin: 1.5rem 0.375rem 0.75rem 0.375rem;
+}
+
+.last-set {
+  padding-bottom: 0;
+}
+
+.last-container {
+  padding-bottom: 1.5rem;
 }

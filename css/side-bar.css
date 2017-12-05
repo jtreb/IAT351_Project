@@ -1,6 +1,6 @@
 .side-bar-container {
-  border: 1px solid var(--dark-text-color);
   display: inline-block;
+  width: 16em;
 }
 
 .side-bar-container ul {
@@ -10,6 +10,14 @@
   padding: 0;
 }
 
+.side-bar-container li {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+}
+
 .side-bar-container [type=checkbox] {
   display: none;
 }
@@ -17,7 +25,6 @@
 .side-bar-container label.sidebar-title {
   font-size: 1em;
   display: block;
-  cursor: pointer;
   background: var(--main-bg-red);
   color: var(--white-text-color);
   padding: 0.75em 0;
@@ -42,23 +49,91 @@
 
 .side-bar-container ul li a {
   text-decoration: none;
-  color: var(--link-text-color);
+  color: var(--blue-text-color);
   word-break: break-all;
   display: block;
   margin: 1.5em 1em;
 }
 
+.sidebar-content {
+  border: 1px solid var(--dark-text-color);
+}
+
+.content-item {
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content-text {
+  margin: auto 0;
+}
+
+.content-text-box {
+  border: 1px solid var(--dark-text-color);
+  padding: 0.5em 1em;
+  margin: 0;
+}
+
+.box-color-1 {
+  background: var(--main-bg-red);
+  color: var(--white-text-color);
+}
+.box-color-2 {
+  background: var(--white-text-color);
+}
+.box-color-3 {
+  background: var(--main-bg-gray);
+}
+.box-color-4 {
+  background: var(--dark-text-color);
+  color: var(--white-text-color);
+}
+.box-color-5 {
+  background: var(--blue-text-color);
+  color: var(--white-text-color);
+}
+
+
+
 @media (max-width: 70em) {
   .side-bar-container {
     display: block;
+    width: 100%;
+  }
+
+  .side-bar-container label.sidebar-title {
+    cursor: pointer;
+    border-bottom: none;
   }
 
   .side-bar-container ul li .sidebar-content {
-    height:0px;
+    height: 0;
+    display: none;
   }
 
   .side-bar-container [type=checkbox]:checked ~ label ~ .sidebar-content {
-    height:auto;
+    height: auto;
+    display: block;
+  }
+
+  .content-text, .content-text-box {
+    flex: 1;
+    -ms-flex: 1;
+    -moz-flex: 1;
+    -webkit-flex: 1;
+  }
+
+  .side-bar-container li {
+    margin-bottom: 0.0625em;
+  }
+}
+
+
+@media (max-width: 18em) {
+  .content-item {
+    display: block;
   }
 }
 

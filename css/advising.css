@@ -1,0 +1,147 @@
+
+.central-adv-area{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.adv-category{
+  text-align: center;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.advdesc{
+  font-weight: 400;
+  margin: auto;
+}
+#advlbl{
+  font-weight: 400;
+  flex-basis: 50%;
+  margin: auto;
+  text-align: center;
+}
+.lbl1{
+  font-weight: 400;
+  flex-basis: 50%;
+  margin: auto;
+  text-align: center;
+}
+.lbl2{
+  font-weight: 400;
+  flex-basis: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.advdropdowns{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+select{
+  margin: auto;
+}
+@media all and (max-width: 700px) and (min-width: 100px) {
+  .advdropdowns{
+    width: 80%;
+  }
+
+  .lbl1{
+    order:0;
+  }
+
+  .dayselect{
+    order: 1;
+  }
+.lbl2{
+  order:3;
+}
+
+.timeselect{
+  order: 4;
+}
+}
+@media all and (max-width: 1000px) and (min-width: 700px) {
+  .advdropdowns{
+    width: 20%;
+  }
+  .lbl1{
+    order:0;
+  }
+
+  .dayselect{
+    order: 1;
+  }
+.lbl2{
+  order:3;
+}
+
+.timeselect{
+  order: 4;
+}
+}
+.repeattable{
+  display: flex;
+  width: 15rem;
+  flex-wrap: wrap;
+  border-color: var( --main-border-color);
+  border-style: solid;
+  border-width: 0.0625rem;
+padding: 0rem;
+margin: auto;
+}
+.tabletitle{
+  flex-basis: 100%;
+}
+
+.tablecourse{
+  flex-basis: 63%;
+  border-color: var( --main-border-color);
+  border-style: solid;
+  border-width: 0.0625rem;
+  padding: 1rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  margin: 0rem;
+}
+.tablenum{
+  flex-basis: 30.03%;
+  border-color: var( --main-border-color);
+  border-style: solid;
+  border-width: 0.0625rem;
+  margin: 0rem;
+  padding: 1rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.descbox{
+  width: 60%;
+  height: 20rem;
+  margin-bottom: 2rem;
+}
+.advline{
+  background-color: var(--main-bg-red);
+  width: 60%;
+  height: 0.065rem;
+  margin:auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.central-adv-area h5{
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+
+}
+
+.central-adv-area em{
+  color: var(--main-bg-red);
+  font-weight: bold;
+  text-transform: none;
+
+}
