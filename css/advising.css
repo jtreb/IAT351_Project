@@ -10,10 +10,16 @@
   flex-basis: 100%;
 }
 
-.advdesc{
-  font-weight: 400;
-  margin: auto;
+h5.subtitle, h5.advdesc {
+  margin: 1.67em auto;
+  text-align: center;
+  width: 60%;
 }
+h5.advdesc{
+  font-weight: 400;
+  margin: 0 auto;
+}
+
 #advlbl{
   font-weight: 400;
   flex-basis: 50%;

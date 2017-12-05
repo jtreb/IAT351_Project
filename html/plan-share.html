@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/centerreqs.css">
     <link rel="stylesheet" href="../css/plan.css">
-        <link rel="stylesheet" href="../css/advising.css">
+    <link rel="stylesheet" href="../css/advising.css">
+
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/nav.js"></script>
@@ -44,43 +45,201 @@
       <h2>Bachelor of Science (BSc) | Interactive Systems (IS)</h2>
     </section>
 
-    <!-- Right Side bars -->
-    <div class="side-bar-container">
-      <ul>
-        <!-- Content -->
-        <li>
-          <input type="checkbox" id="checkbox-3" name="checkbox-collapse" />
-          <label for="checkbox-3" class="sidebar-title">Content</label>
-          <div class="sidebar-content">
-            <a href="#plan-by-requirement">Plan By Requirement</a>
-            <a href="#share-plan">Share Plan</a>
-          </div>
-        </li>
-        <!-- Legend -->
-        <li>
-          <input type="checkbox" id="checkbox-4" name="checkbox-collapse" />
-          <label for="checkbox-4" class="sidebar-title">Legend</label>
-          <div class="sidebar-content">
-            <div class="content-container">
-              <div class="content-item">
-                <p class="content-text">Completed</p>
-                <p class="content-text-box box-color-1">Semester Yr.</p>
+    <div class="layout-container">
+      <!-- Right Side bars -->
+      <div class="side-bar-container">
+        <ul>
+          <!-- Content -->
+          <li>
+            <input type="checkbox" id="checkbox-3" name="checkbox-collapse" />
+            <label for="checkbox-3" class="sidebar-title">Content</label>
+            <div class="sidebar-content">
+              <a href="#plan-by-requirement">Plan By Requirement</a>
+              <a href="#share-plan">Share Plan</a>
+            </div>
+          </li>
+          <!-- Legend -->
+          <li>
+            <input type="checkbox" id="checkbox-4" name="checkbox-collapse" />
+            <label for="checkbox-4" class="sidebar-title">Legend</label>
+            <div class="sidebar-content">
+              <div class="content-container">
+                <div class="content-item">
+                  <p class="content-text">Completed</p>
+                  <p class="content-text-box box-color-1">Semester Yr.</p>
+                </div>
+                <div class="content-item">
+                  <p class="content-text">Enrolled</p>
+                  <p class="content-text-box box-color-4">Semester Yr.</p>
+                </div>
+                <div class="content-item">
+                  <p class="content-text">Planned</p>
+                  <p class="content-text-box box-color-5">Semester Yr.</p>
+                </div>
               </div>
-              <div class="content-item">
-                <p class="content-text">Enrolled</p>
-                <p class="content-text-box box-color-4">Semester Yr.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Side bars -->
+      <div class="rightBar side-bar-container layout-container-item">
+        <ul>
+          <!-- Overview sidebar -->
+          <li>
+            <input type="checkbox" id="checkbox-3" name="checkbox-collapse" />
+            <label for="checkbox-3" class="sidebar-title">Overview</label>
+            <div class="sidebar-content left-side-bar">
+              <h4>Major:</h4>
+              <p>School of Interactive Arts & Technology (IAT)</p>
+              <h4>Degree:</h4>
+              <p>Bachelor of Science (BSc)</p>
+              <h4>Concentration Declared:</h4>
+              <p>Interactive Systems (IS)</p>
+            </div>
+          </li>
+          <!-- Currently enrolled sidebar -->
+          <li>
+            <input type="checkbox" id="checkbox-4" name="checkbox-collapse" />
+            <label for="checkbox-4" class="sidebar-title">Currently Enrolled In</label>
+            <div class="sidebar-content left-side-bar course-current-in">
+              <p>IAT 103W</p>
+              <p>IAT 355</p>
+              <p>IAT 381</p>
+              <p>PSYC 362</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main content -->
+      <div class="middle-container layout-container-item">
+        <!-- Plan By Requirements section -->
+        <section class="req-section" id="plan-by-requirement">
+          <h3 id="planbyreqtitle">Plan By Requirements</h3>
+          <div class="planarea container-border" >
+            <div class="termbtns">
+              <img src="../img/plus.svg" class="addtermbutton" id="plusbtn" onclick="opensem()"/>
+            </div>
+            <div class="planareagrid">
+              <div class="term" id="plan7">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm7()"/>
+
+                <h3 class="termtitle" id="planned"> Spring 2019 </h3>
+                <div class="plancourse">
+                  <p class="potentialcourse" id="plan70"></p>
+                  <p class="potentialcourse" id="plan71"></p>
+                  <p class="potentialcourse" id="plan72"></p>
+                  <p class="potentialcourse" id="plan73"></p>
+                  <p class="potentialcourse" id="plan74"></p>
+                </div>
               </div>
-              <div class="content-item">
-                <p class="content-text">Planned</p>
-                <p class="content-text-box box-color-5">Semester Yr.</p>
+              <div class="term" id="plan6">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm6()"/>
+
+                <h3 class="termtitle" id="planned">Fall 2018</h3>
+                <div class="plancourse">
+                  <p class="potentialcourse" id="plan60"></p>
+                  <p class="potentialcourse" id="plan61"></p>
+                  <p class="potentialcourse" id="plan62"></p>
+                  <p class="potentialcourse" id="plan63"></p>
+                  <p class="potentialcourse" id="plan64"></p>
+                </div>
+              </div>
+              <div class="term" id="plan5">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm5()"/>
+
+                <h3 class="termtitle" id="planned">Summer 2018</h3>
+                <div class="plancourse">
+                  <p class="potentialcourse" id="plan50"></p>
+                  <p class="potentialcourse" id="plan51"></p>
+                  <p class="potentialcourse" id="plan52"></p>
+                  <p class="potentialcourse" id="plan53"></p>
+                  <p class="potentialcourse" id="plan54"></p>
+                </div>
+              </div>
+              <div class="term" id="plan4" >
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm4()"/>
+
+                <h3 class="termtitle" id="planned">Spring 2018</h3>
+                <div class="plancourse">
+                  <p>IAT 352</p>
+                  <p>IAT 452</p>
+                  <p>PSYC 130</p>
+                  <p>CMPT 450</p>
+                </div>
+              </div>
+              <div class="term" id="plan3">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm3()"/>
+
+                <h3 class="termtitle" id="enrolled">Fall 2017</h3>
+                <div class="plancourse">
+                  <p>IAT 103W</p>
+                  <p>IAT 351</p>
+                  <p>IAT 381</p>
+                  <p>PSYC 362</p>
+                </div>
+              </div>
+              <div class="term" id="plan2">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm2()"/>
+
+                <h3 class="termtitle" id="completed">Summer 2017</h3>
+                <div class="plancourse">
+                  <p>IAT 100</p>
+                  <p>IAT 100</p>
+                </div>
+              </div>
+              <div class="term" id="plan1">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm1()"/>
+
+                <h3 class="termtitle" id="completed">Spring 2017</h3>
+                <div class="plancourse">
+                  <p>IAT 100</p>
+                  <p>IAT 100</p>
+                  <p>IAT 100</p>
+                  <p>IAT 100</p>
+                </div>
+              </div>
+              <div class="term" id="plan0">
+                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm0()"/>
+
+                <h3 class="termtitle" id="completed">Fall 2016</h3>
+                <div class="plancourse">
+                  <p>IAT 100</p>
+                  <p>IAT 100</p>
+                  <p>IAT 100</p>
+                </div>
               </div>
             </div>
           </div>
-        </li>
-      </ul>
+        </section>
+        <!-- Share plan section -->
+        <section class="req-section" id="share-plan">
+          <h3 id="sharetitle">Share</h3>
+          <div class="container-border">
+            <h5 class="subtitle">Notice</h5>
+            <h5 class="advdesc"> We would like to encourage our students to communicate,
+              collaborate and share their planned  with their friends and colleagues to
+              have the best experience at SFU.
+            </h5>
+
+            <div class="shareicons">
+              <img src="../img/facebook.svg" class="socialmedia" id="facebook" onclick="openshare()" />
+              <img src="../img/messenger.svg" class="socialmedia" id="messenger" onclick="openshare()" />
+              <img src="../img/google plus.svg" class="socialmedia" id="google" onclick="openshare()" />
+              <img src="../img/slack.svg" class="socialmedia" id="slack" onclick="openshare()" />
+              <img src="../img/email.svg" class="socialmedia" id="email" onclick="openshare()" />
+              <img src="../img/twitter.svg" class="socialmedia" id="twitter" onclick="openshare()" />
+              <img src="../img/wechat.svg" class="socialmedia" id="wechat" onclick="openshare()"  />
+              <img src="../img/printer.svg" class="socialmedia" id="print" onclick="openshare()" />
+            </div>
+          </div>
+        </section>
+      </div>
+
     </div>
 
-    <!-- Main content -->
+
     <div id="confirm" class="modal">
 
       <!-- Modal content -->
@@ -113,75 +272,75 @@
     <!-- select sem Modal content -->
     <div id="semmodal" class="modal">
       <div class="modal-content">
-      <img src="../img/delete.svg" class="deletetermbutton" id="modalxbtn" onclick="closesem()"/>
+        <img src="../img/delete.svg" class="deletetermbutton" id="modalxbtn" onclick="closesem()"/>
         <h3 id="confirmtitle">Add a Semester Plan</h3>
         <h5>Choose a Semester</h5>
         <select id="semselect">
-            <option value="7">Spring 2019</option>
-            <option value="6">Fall 2018</option>
-            <option value="5">Summer 2018</option>
+          <option value="7">Spring 2019</option>
+          <option value="6">Fall 2018</option>
+          <option value="5">Summer 2018</option>
+        </select>
+
+        <h5>Courses Added to Plan</h5>
+        <div class="tmpplan">
+          <h5 id="nocourses"><em>none</em></h5>
+          <div class="tempclass" id="tempcourse0" ></div>
+          <div class="tempclass" id="tempcourse1"></div>
+          <div class="tempclass" id="tempcourse2"></div>
+          <div class="tempclass" id="tempcourse3" ></div>
+          <div class="tempclass" id="tempcourse4"></div>
+        </div>
+
+        <h5>Add a Course</h5>
+        <div id="addcourses">
+          <div class="advline"></div>
+          <h5>Choose a Requirement to Fulfill</h5>
+          <select id="reqselect" onchange="changespecs()">
+            <option value="0">Major Requirements</option>
+            <option value="1">WQB Requirements</option>
+            <option value="2">CO-OP Requirements</option>
           </select>
 
-          <h5>Courses Added to Plan</h5>
-          <div class="tmpplan">
-          <h5 id="nocourses"><em>none</em></h5>
-            <div class="tempclass" id="tempcourse0" ></div>
-            <div class="tempclass" id="tempcourse1"></div>
-            <div class="tempclass" id="tempcourse2"></div>
-            <div class="tempclass" id="tempcourse3" ></div>
-            <div class="tempclass" id="tempcourse4"></div>
-          </div>
+          <h5>Choose a Specific Requirement</h5>
+          <select id="specreqselect0"  onchange="changecoursesmajor()">
+            <option value="0">Lower Division Requirements</option>
+            <option value="1">Upper Division Requirements</option>
+            <option value="2">Concentration Requirements</option>
+            <option value="3">Electives</option>
+          </select>
 
-      <h5>Add a Course</h5>
-      <div id="addcourses">
-    <div class="advline"></div>
-      <h5>Choose a Requirement to Fulfill</h5>
-      <select id="reqselect" onchange="changespecs()">
-          <option value="0">Major Requirements</option>
-          <option value="1">WQB Requirements</option>
-          <option value="2">CO-OP Requirements</option>
-        </select>
+          <select id="specreqselect1" onchange="changecourseswqb()">
+            <option value="0">Writing Requirements</option>
+            <option value="1">Quantitative Requirements</option>
+            <option value="2">Breadth Requirements</option>
+          </select>
 
-    <h5>Choose a Specific Requirement</h5>
-    <select id="specreqselect0"  onchange="changecoursesmajor()">
-        <option value="0">Lower Division Requirements</option>
-        <option value="1">Upper Division Requirements</option>
-        <option value="2">Concentration Requirements</option>
-        <option value="3">Electives</option>
-      </select>
-
-      <select id="specreqselect1" onchange="changecourseswqb()">
-          <option value="0">Writing Requirements</option>
-          <option value="1">Quantitative Requirements</option>
-          <option value="2">Breadth Requirements</option>
-        </select>
-
-        <select id="specreqselect2">
+          <select id="specreqselect2">
             <option value="0">CO-OP Requirements</option>
           </select>
 
-      <h5>Courses Available Based on Requirements Chosen</h5>
-      <select id="courseselect0">
-          <option value="0">IAT 100</option>
-          <option value="1">IAT 102</option>
-          <option value="2">IAT 103W</option>
-          <option value="3">IAT 106</option>
-          <option value="4">IAT 167</option>
-          <option value="5">CMPT 120</option>
-          <option value="6">CMPT 125</option>
-          <option value="7">CMPT 126</option>
-          <option value="8">CMPT 128</option>
-          <option value="9">CMPT 166</option>
-          <option value="10">MACM 101</option>
-          <option value="11">IAT 201</option>
-          <option value="12">IAT 202</option>
-          <option value="13">IAT 222</option>
-          <option value="14">IAT 233</option>
-          <option value="15">IAT 235</option>
-          <option value="16">IAT 265</option>
-          <option value="17">IAT 267</option>
-        </select>
-        <select id="courseselect1">
+          <h5>Courses Available Based on Requirements Chosen</h5>
+          <select id="courseselect0">
+            <option value="0">IAT 100</option>
+            <option value="1">IAT 102</option>
+            <option value="2">IAT 103W</option>
+            <option value="3">IAT 106</option>
+            <option value="4">IAT 167</option>
+            <option value="5">CMPT 120</option>
+            <option value="6">CMPT 125</option>
+            <option value="7">CMPT 126</option>
+            <option value="8">CMPT 128</option>
+            <option value="9">CMPT 166</option>
+            <option value="10">MACM 101</option>
+            <option value="11">IAT 201</option>
+            <option value="12">IAT 202</option>
+            <option value="13">IAT 222</option>
+            <option value="14">IAT 233</option>
+            <option value="15">IAT 235</option>
+            <option value="16">IAT 265</option>
+            <option value="17">IAT 267</option>
+          </select>
+          <select id="courseselect1">
             <option value="0">IAT 333</option>
             <option value="1">IAT 334</option>
             <option value="2">IAT 355</option>
@@ -195,180 +354,62 @@
             <option value="10">PSYC 362</option>
           </select>
           <select id="courseselect2">
-              <option value="0">IAT 351</option>
-              <option value="1">IAT 352</option>
-              <option value="2">IAT 355</option>
-              <option value="3">IAT 410</option>
-              <option value="4">IAT 452</option>
-              <option value="5">IAT 455</option>
-            </select>
-            <select id="courseselect3">
-              <option value="0">CMPT 120</option>
-              <option value="1">CMPT 125</option>
-              <option value="2">CMPT 126</option>
-              <option value="3">CMPT 128</option>
-              <option value="4">CMPT 166</option>
-              <option value="5">MACM 101</option>
-                <option value="6">CMPT 320</option>
-                <option value="7">CMPT 354</option>
-                <option value="8">COGS 381</option>
-                <option value="9">PSYC 128</option>
-                <option value="10">PSYC 352</option>
-                <option value="11">PSYC 362</option>
-              </select>
+            <option value="0">IAT 351</option>
+            <option value="1">IAT 352</option>
+            <option value="2">IAT 355</option>
+            <option value="3">IAT 410</option>
+            <option value="4">IAT 452</option>
+            <option value="5">IAT 455</option>
+          </select>
+          <select id="courseselect3">
+            <option value="0">CMPT 120</option>
+            <option value="1">CMPT 125</option>
+            <option value="2">CMPT 126</option>
+            <option value="3">CMPT 128</option>
+            <option value="4">CMPT 166</option>
+            <option value="5">MACM 101</option>
+            <option value="6">CMPT 320</option>
+            <option value="7">CMPT 354</option>
+            <option value="8">COGS 381</option>
+            <option value="9">PSYC 128</option>
+            <option value="10">PSYC 352</option>
+            <option value="11">PSYC 362</option>
+          </select>
 
-              <select id="courseselect4">
-                <option value="0">IAT 103W</option>
-                <option value="1">IAT 309W</option>
-                </select>
+          <select id="courseselect4">
+            <option value="0">IAT 103W</option>
+            <option value="1">IAT 309W</option>
+          </select>
 
-                <select id="courseselect5">
-                  <option value="0">CMPT 166</option>
-                  <option value="1">CMPT 225</option>
-                  <option value="1">MACM 101</option>
-                  </select>
+          <select id="courseselect5">
+            <option value="0">CMPT 166</option>
+            <option value="1">CMPT 225</option>
+            <option value="1">MACM 101</option>
+          </select>
 
-                  <select id="courseselect6">
-                    <option value="0">CRIM 101</option>
-                    <option value="1">COGS 100</option>
-                    <option value="2">PHIL 100W</option>
-                    <option value="3">ARCH 131</option>
-                    <option value="4">BPK 142</option>
-                    <option value="5">CMPT 166</option>
-                    <option value="6">MACM 101</option>
-                    <option value="7">ARCH 100</option>
-                    <option value="8">BUS 237</option>
-                    </select>
-                    <select id="courseselect7">
-                      <option value="0">IAT271</option>
-                      <option value="1">IAT 272</option>
-                      <option value="2">IAT 373</option>
-                      </select>
-        <div class="addbtns">
-          <div class="button" id="canceladd" onclick="closesem()">CANCEL</div>
-          <div class="button" id="addbtn" onclick="tempaddcourse()">ADD COURSE</div>
-          <div class="button" id="savebtn" onclick="addcoursetoterm()">SAVE PLAN</div>
-      </div>
-      </div>
-    </div>
-  </div>
-
-
-    <div class="req-category" id="planbyreq">
-        <h3 id="planbyreqtitle">Plan By Requirements</h3>
-        <div class="planarea" >
-          <div class="termbtns">
-          <img src="../img/plus.svg" class="addtermbutton" id="plusbtn" onclick="opensem()"/>
-        </div>
-            <div class="planareagrid">
-              <div class="term" id="plan7">
-                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm7()"/>
-
-                  <h3 class="termtitle" id="planned"> Spring 2019 </h3>
-                  <div class="plancourse">
-                    <p class="potentialcourse" id="plan70"></p>
-                    <p class="potentialcourse" id="plan71"></p>
-                    <p class="potentialcourse" id="plan72"></p>
-                    <p class="potentialcourse" id="plan73"></p>
-                    <p class="potentialcourse" id="plan74"></p>
-                  </div>
-              </div><div class="term" id="plan6">
-                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm6()"/>
-
-                  <h3 class="termtitle" id="planned">Fall 2018</h3>
-                  <div class="plancourse">
-                    <p class="potentialcourse" id="plan60"></p>
-                    <p class="potentialcourse" id="plan61"></p>
-                    <p class="potentialcourse" id="plan62"></p>
-                    <p class="potentialcourse" id="plan63"></p>
-                    <p class="potentialcourse" id="plan64"></p>
-                  </div>
-              </div><div class="term" id="plan5">
-                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm5()"/>
-
-                  <h3 class="termtitle" id="planned">Summer 2018</h3>
-                  <div class="plancourse">
-                    <p class="potentialcourse" id="plan50"></p>
-                    <p class="potentialcourse" id="plan51"></p>
-                    <p class="potentialcourse" id="plan52"></p>
-                    <p class="potentialcourse" id="plan53"></p>
-                    <p class="potentialcourse" id="plan54"></p>
-                  </div>
-              </div>
-              <div class="term" id="plan4" >
-                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm4()"/>
-
-                  <h3 class="termtitle" id="planned">Spring 2018</h3>
-                  <div class="plancourse">
-                    <p>IAT 352</p>
-                    <p>IAT 452</p>
-                    <p>PSYC 130</p>
-                    <p>CMPT 450</p>
-                  </div>
-              </div>
-              <div class="term" id="plan3">
-                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm3()"/>
-
-                  <h3 class="termtitle" id="enrolled">Fall 2017</h3>
-                  <div class="plancourse">
-                    <p>IAT 103W</p>
-                    <p>IAT 351</p>
-                    <p>IAT 381</p>
-                    <p>PSYC 362</p>
-                  </div>
-              </div>
-              <div class="term" id="plan2">
-                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm2()"/>
-
-                  <h3 class="termtitle" id="completed">Summer 2017</h3>
-                  <div class="plancourse">
-                    <p>IAT 100</p>
-                    <p>IAT 100</p>
-                  </div>
-              </div>
-              <div class="term" id="plan1">
-                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm1()"/>
-
-                  <h3 class="termtitle" id="completed">Spring 2017</h3>
-                  <div class="plancourse">
-                    <p>IAT 100</p>
-                    <p>IAT 100</p>
-                    <p>IAT 100</p>
-                    <p>IAT 100</p>
-                  </div>
-              </div>
-              <div class="term" id="plan0">
-                <img src="../img/delete.svg" class="deletetermbutton" id="xbtn" onclick="deleteTerm0()"/>
-
-                  <h3 class="termtitle" id="completed">Fall 2016</h3>
-                  <div class="plancourse">
-                    <p>IAT 100</p>
-                    <p>IAT 100</p>
-                    <p>IAT 100</p>
-                  </div>
-              </div>
+          <select id="courseselect6">
+            <option value="0">CRIM 101</option>
+            <option value="1">COGS 100</option>
+            <option value="2">PHIL 100W</option>
+            <option value="3">ARCH 131</option>
+            <option value="4">BPK 142</option>
+            <option value="5">CMPT 166</option>
+            <option value="6">MACM 101</option>
+            <option value="7">ARCH 100</option>
+            <option value="8">BUS 237</option>
+          </select>
+          <select id="courseselect7">
+            <option value="0">IAT271</option>
+            <option value="1">IAT 272</option>
+            <option value="2">IAT 373</option>
+          </select>
+          <div class="addbtns">
+            <div class="button" id="canceladd" onclick="closesem()">CANCEL</div>
+            <div class="button" id="addbtn" onclick="tempaddcourse()">ADD COURSE</div>
+            <div class="button" id="savebtn" onclick="addcoursetoterm()">SAVE PLAN</div>
           </div>
-      </div>
-      </div>
-    </div>
-    <div class="plan-category" id="share">
-        <h3 id="sharetitle">Share</h3>
-        <h5 class="subtitle">Notice</h5>
-        <h5 class="advdesc"> We would like to encourage our students to communicate,
-          collaborate and share their planned  with their friends and colleagues to
-          have the best experience at SFU.
-        </h5>
-
-        <div class="shareicons">
-              <img src="../img/facebook.svg" class="socialmedia" id="facebook" onclick="openshare()" />
-              <img src="../img/messenger.svg" class="socialmedia" id="messenger" onclick="openshare()" />
-              <img src="../img/google plus.svg" class="socialmedia" id="google" onclick="openshare()" />
-              <img src="../img/slack.svg" class="socialmedia" id="slack" onclick="openshare()" />
-              <img src="../img/email.svg" class="socialmedia" id="email" onclick="openshare()" />
-              <img src="../img/twitter.svg" class="socialmedia" id="twitter" onclick="openshare()" />
-              <img src="../img/wechat.svg" class="socialmedia" id="wechat" onclick="openshare()"  />
-              <img src="../img/printer.svg" class="socialmedia" id="print" onclick="openshare()" />
         </div>
+      </div>
     </div>
   </body>
 
