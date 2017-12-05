@@ -36,6 +36,10 @@ body {
   float: none;
 }
 
+.intext-link {
+  word-break: break-all;
+}
+
 .layout-container {
   display: flex;
   flex-wrap: nowrap;

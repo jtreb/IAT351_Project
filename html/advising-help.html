@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/centerreqs.css">
     <link rel="stylesheet" href="../css/plan.css">
-        <link rel="stylesheet" href="../css/advising.css">
+    <link rel="stylesheet" href="../css/advising.css">
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -44,11 +44,58 @@
       <h2>Bachelor of Science (BSc) | Interactive Systems (IS)</h2>
     </section>
 
-    <!-- Side bars -->
+    <div class="layout-container">
+      <!-- Right Side bars -->
+      <div class="side-bar-container">
+        <ul>
+          <!-- Content -->
+          <li>
+            <input type="checkbox" id="checkbox-6" name="checkbox-collapse" />
+            <label for="checkbox-6" class="sidebar-title">Content</label>
+            <div class="sidebar-content">
+              <a href="#general">General Advising Information</a>
+              <a href="#repeats">Course Repeats</a>
+              <a href="#contactlower">Contact Advising <br> (Less than or 60 Credits)</a>
+              <a href="#contactupper">Contact Advising <br> (More than 60 Credits)</a>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-    <!-- Main content -->
-    <section class="central-adv-area">
-        <div class="adv-category" id="general">
+      <!-- Right Side bars -->
+      <div class="rightBar side-bar-container layout-container-item">
+        <ul>
+          <!-- Overview sidebar -->
+          <li>
+            <input type="checkbox" id="checkbox-3" name="checkbox-collapse" />
+            <label for="checkbox-3" class="sidebar-title">Overview</label>
+            <div class="sidebar-content left-side-bar">
+              <h4>Major:</h4>
+              <p>School of Interactive Arts & Technology (IAT)</p>
+              <h4>Degree:</h4>
+              <p>Bachelor of Science (BSc)</p>
+              <h4>Concentration Declared:</h4>
+              <p>Interactive Systems (IS)</p>
+            </div>
+          </li>
+          <!-- Currently enrolled sidebar -->
+          <li>
+            <input type="checkbox" id="checkbox-4" name="checkbox-collapse" />
+            <label for="checkbox-4" class="sidebar-title">Currently Enrolled In</label>
+            <div class="sidebar-content left-side-bar course-current-in">
+              <p>IAT 103W</p>
+              <p>IAT 355</p>
+              <p>IAT 381</p>
+              <p>PSYC 362</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main content -->
+      <div class="middle-container layout-container-item">
+        <!-- General Advising Information -->
+        <div class="container-border req-section adv-category" id="general">
             <h3 id="generaltitle">General Advising Information</h3>
             <h5 class="subtitle"> Disclaimers </h5>
             <h5 class="advdesc">This web application report for requirements and planning
@@ -75,7 +122,9 @@
             <h5 class="advdesc">In progress courses are treated as if they are completed satisfactorily.
             </h5>
         </div>
-        <div class="adv-category" id="repeats">
+
+        <!-- Course Repeats -->
+        <div class="container-border req-section adv-category" id="repeats">
             <h3 id="repeatstitle">Course Repeats</h3>
             <h5 class="subtitle">Limits on Course Repeats</h5>
             <h5 class="advdesc">The number of courses which a
@@ -84,10 +133,16 @@
 
             <div class="repeattable">
                 <h3 class="tabletitle"> Repeated Course(s) </h3>
-                <h5 class="tablecourse">IAT 484</h5>
-                <h5 class="tablenum"> <em>2x</em> </h5>
-                <h5 class="tablecourse">CMPT 275</h5>
-                <h5 class="tablenum"> <em>2x</em> </h5>
+                <table>
+                  <tr>
+                    <td class="tablecourse">IAT 484</td>
+                    <td class="tablenum"><em>2x</em></td>
+                  </tr>
+                  <tr>
+                    <td class="tablecourse">CMPT 275</td>
+                    <td class="tablenum"><em>2x</em></td>
+                  </tr>
+                </table>
             </div>
 
             <h5 class="advdesc">You have<em> (1) </em>more available chance to repeat any course.
@@ -97,40 +152,46 @@
               contact your Academic Advisor for more information. Please re-run the APR
               after receiving your final grade(s) to review your outstanding requirement(s).
             </h5>
-            <h5 class="advdesc">For more information about the Course Repeat policy, please
-              visit http://www.sfu.ca/students/calendar/fees-and-regulations/enrolment/policies-and-procedures.html#repeated-SFU-courses
+            <h5 class="advdesc">For more information about the Course Repeat policy, please visit
+               <a href="http://www.sfu.ca/students/calendar/fees-and-regulations/enrolment/policies-and-procedures.html#repeated-SFU-courses" class="intext-link">http://www.sfu.ca/students/calendar/fees-and-regulations/enrolment/policies-and-procedures.html#repeated-SFU-courses</a>
             </h5>
             <h5 class="advdesc">(Since Last Cumulative Statistics Reset)
             </h5>
         </div>
-        <div class="adv-category" id="contactlower">
-            <h3 id="contactlowertitle">Contact Advising (Less than or 60 Credits)</h3>
-            <h5 class="subtitle">Notice</h5>
-            <h5 class="advdesc"><em> If you have a total of less than or 60 credits, please
-             use this contact form. Otherwise, use the contact form for more than 60 Credits.</em>
-            </h5>
-            <h5 class="advdesc"> For more advising for students with less than or equal to
-              60 credits, please visit http://www.sfu.ca/students/academicadvising/
-            </h5>
-              <div class="advline"></div>
-            <h5 class="subtitle">Contact Us</h5>
-            <h5 class="advdesc"> Your SFU E-mail
-            </h5>
-            <input  class="emailbox" type="text"></input>
-            <div class="advdropdowns">
-            <h5 id="advlbl" class="lbl1"> Day
-            </h5>
-            <h5 id="advlbl" class="lbl2"> Time
-            </h5>
 
-            <select class="dayselect">
-                <option value="day1">December 11, 2017</option>
-                <option value="day2">December 12, 2017</option>
-                <option value="day3">December 13, 2017</option>
-                <option value="day4">December 14, 2017</option>
-                <option value="day5">December 15, 2017</option>
-              </select>
-              <select class="timeselect">
+        <!-- Contact Advising (Less than or 60 Credits) -->
+        <div class="container-border req-section adv-category" id="contactlower">
+          <h3 id="contactlowertitle">Contact Advising (Less than or 60 Credits)</h3>
+          <h5 class="subtitle">Notice</h5>
+          <h5 class="advdesc"><em> If you have a total of less than or 60 credits, please
+           use this contact form. Otherwise, use the contact form for more than 60 Credits.</em>
+          </h5>
+          <h5 class="advdesc"> For more advising for students with less than or equal to
+            60 credits, please visit
+            <a href="http://www.sfu.ca/students/academicadvising/" class="intext-link">http://www.sfu.ca/students/academicadvising/</a>
+          </h5>
+
+          <div class="advline"></div>
+
+          <h5 class="subtitle">Contact Us</h5>
+          <h5 class="advdesc"> Your SFU E-mail
+          </h5>
+          <input  class="emailbox" type="text"></input>
+          <div class="advdropdowns">
+            <div class="selector-container">
+              <div class="selector-container-item">
+                <h5 class="advlbl lbl1"> Day </h5>
+                <select class="dayselect">
+                  <option value="day1">December 11, 2017</option>
+                  <option value="day2">December 12, 2017</option>
+                  <option value="day3">December 13, 2017</option>
+                  <option value="day4">December 14, 2017</option>
+                  <option value="day5">December 15, 2017</option>
+                </select>
+              </div>
+              <div class="selector-container-item">
+                <h5 class="advlbl lbl2"> Time </h5>
+                <select class="timeselect">
                   <option value="time1">9:30 am - 9:50 am</option>
                   <option value="time2">10:00 am - 10:20 am</option>
                   <option value="time3">10:30 am - 10:50 am</option>
@@ -141,42 +202,48 @@
                   <option value="time8">1:00 pm - 1:20 pm</option>
                   <option value="time9">1:30 pm - 1:50 pm</option>
                   <option value="time10">2:00 pm - 2:20 pm</option>
-                </select>
+              </select>
               </div>
-            <h5 class="advdesc"> Write a short description of the topic(s) you would like to
-              discuss to help us prepare for your appointment.
-            </h5>
-            <input  class="descbox" type="text"></input>
+            </div>
+          </div>
+          <h5 class="advdesc"> Write a short description of the topic(s) you would like to
+            discuss to help us prepare for your appointment.
+          </h5>
+          <textarea  class="descbox" type="text"></textarea>
         </div>
 
-        <div class="adv-category" id="contactupper">
-            <h3 id="contactuppertitle">Contact Advising (More than 60 Credits)</h3>
-            <h5 class="subtitle">Notice</h5>
-            <h5 class="advdesc"> <em>If you have a total of more than 60 credits, please
-              use this contact form. Otherwise, use the contact form for less than or 60 Credits.</em>
-            </h5>
-            <h5 class="advdesc"> For more advising for students with more than
-              60 credits, please visit http://www.sfu.ca/students/academicadvising/
-            </h5>
-              <div class="advline"></div>
-            <h5 class="subtitle">Contact Us</h5>
-            <h5 class="advdesc"> Your SFU E-mail
-            </h5>
-            <input  class="emailbox" type="text"></input>
-            <div class="advdropdowns">
-            <h5 id="advlbl" class="lbl1"> Day
-            </h5>
-            <h5 id="advlbl" class="lbl2"> Time
-            </h5>
+        <!-- Contact Advising (More than 60 Credits) -->
+        <div class="container-border req-section adv-category" id="contactupper">
+          <h3 id="contactuppertitle">Contact Advising (More than 60 Credits)</h3>
+          <h5 class="subtitle">Notice</h5>
+          <h5 class="advdesc"> <em>If you have a total of more than 60 credits, please
+            use this contact form. Otherwise, use the contact form for less than or 60 Credits.</em>
+          </h5>
+          <h5 class="advdesc"> For more advising for students with more than
+            60 credits, please visit
+            <a href="http://www.sfu.ca/students/academicadvising/" class="intext-link">http://www.sfu.ca/students/academicadvising/</a>
+          </h5>
 
-            <select class="dayselect">
-                <option value="day1">December 11, 2017</option>
-                <option value="day2">December 12, 2017</option>
-                <option value="day3">December 13, 2017</option>
-                <option value="day4">December 14, 2017</option>
-                <option value="day5">December 15, 2017</option>
-              </select>
-              <select class="timeselect">
+          <div class="advline"></div>
+
+          <h5 class="subtitle">Contact Us</h5>
+          <h5 class="advdesc"> Your SFU E-mail</h5>
+          <input  class="emailbox" type="text"></input>
+          <div class="advdropdowns">
+            <div class="selector-container">
+              <div class="selector-container-item">
+                <h5 class="advlbl lbl1"> Day </h5>
+                <select class="dayselect">
+                  <option value="day1">December 11, 2017</option>
+                  <option value="day2">December 12, 2017</option>
+                  <option value="day3">December 13, 2017</option>
+                  <option value="day4">December 14, 2017</option>
+                  <option value="day5">December 15, 2017</option>
+                </select>
+              </div>
+              <div class="selector-container-item">
+                <h5 class="advlbl lbl2"> Time </h5>
+                <select class="timeselect">
                   <option value="time1">9:30 am - 9:50 am</option>
                   <option value="time2">10:00 am - 10:20 am</option>
                   <option value="time3">10:30 am - 10:50 am</option>
@@ -187,16 +254,19 @@
                   <option value="time8">1:00 pm - 1:20 pm</option>
                   <option value="time9">1:30 pm - 1:50 pm</option>
                   <option value="time10">2:00 pm - 2:20 pm</option>
-                </select>
+              </select>
               </div>
-            <h5 class="advdesc"> Write a short description of the topic(s) you would like to
-              discuss to help us prepare for your appointment.
-            </h5>
-            <input  class="descbox" type="text"></input>
+            </div>
+          </div>
+          <h5 class="advdesc"> Write a short description of the topic(s) you would like to
+            discuss to help us prepare for your appointment.
+          </h5>
+          <textarea  class="descbox" type="text"></textarea>
         </div>
 
         </div>
-    </section>
+      </div>
+    </div>
   </body>
 
 </html>

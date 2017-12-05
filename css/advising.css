@@ -1,5 +1,5 @@
 
-.central-adv-area{
+.middle-container{
   display: flex;
   flex-wrap: wrap;
 }
@@ -11,19 +11,19 @@
 }
 
 h5.subtitle, h5.advdesc {
-  margin: 1.67em auto;
+  margin: 1.55em auto;
   text-align: center;
   width: 60%;
 }
 h5.advdesc{
   font-weight: 400;
-  margin: 0 auto;
+  margin: 1.6em auto;
 }
 
-#advlbl{
+.advlbl{
   font-weight: 400;
   flex-basis: 50%;
-  margin: auto;
+  margin: 1em auto;
   text-align: center;
 }
 .lbl1{
@@ -39,41 +39,45 @@ h5.advdesc{
   text-align: center;
 }
 
+.emailbox {
+  width: 40%;
+  margin: auto;
+}
+
 .advdropdowns{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 30%;
+  width: 40%;
   margin: auto;
   text-align: center;
 }
-select{
-  margin: auto;
+
+.selector-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
+
+
 @media all and (max-width: 700px) and (min-width: 100px) {
-  .advdropdowns{
-    width: 80%;
+  .selector-container{
+    display: block;
   }
 
-  .lbl1{
-    order:0;
+  .selector-container-item {
+    margin-bottom: 1.5em;
   }
 
-  .dayselect{
-    order: 1;
+  .dayselect, .timeselect{
+    width: 100%;
   }
-.lbl2{
-  order:3;
-}
 
-.timeselect{
-  order: 4;
-}
+  .advlbl {
+    margin: 1em auto 0.5em;
+  }
 }
 @media all and (max-width: 1000px) and (min-width: 700px) {
-  .advdropdowns{
-    width: 20%;
-  }
   .lbl1{
     order:0;
   }
@@ -81,29 +85,38 @@ select{
   .dayselect{
     order: 1;
   }
-.lbl2{
-  order:3;
+  .lbl2{
+    order:3;
+  }
+
+  .timeselect{
+    order: 4;
+  }
 }
 
-.timeselect{
-  order: 4;
-}
-}
-.repeattable{
+.repeattable {
   display: flex;
   width: 15rem;
   flex-wrap: wrap;
-  border-color: var( --main-border-color);
-  border-style: solid;
-  border-width: 0.0625rem;
-padding: 0rem;
-margin: auto;
+  padding: 0rem;
+  margin: auto;
 }
-.tabletitle{
+.tabletitle {
   flex-basis: 100%;
 }
 
-.tablecourse{
+.repeattable table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.repeattable tr {
+  width: auto;
+}
+
+.tablecourse, .tablenum {
+  font-size: 0.83em;
+  font-weight: bold;
   flex-basis: 63%;
   border-color: var( --main-border-color);
   border-style: solid;
@@ -113,20 +126,15 @@ margin: auto;
   padding-right: 0.2rem;
   margin: 0rem;
 }
-.tablenum{
+.tablenum {
   flex-basis: 30.03%;
-  border-color: var( --main-border-color);
-  border-style: solid;
-  border-width: 0.0625rem;
-  margin: 0rem;
-  padding: 1rem;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
 }
 
 .descbox{
   width: 60%;
-  height: 20rem;
+  height: 10rem;
   margin-bottom: 2rem;
 }
 .advline{
@@ -139,13 +147,7 @@ margin: auto;
 }
 
 
-.central-adv-area h5{
-  padding-top: 0.66rem;
-  padding-bottom: 0.66rem;
-
-}
-
-.central-adv-area em{
+.middle-container em{
   color: var(--main-bg-red);
   font-weight: bold;
   text-transform: none;
