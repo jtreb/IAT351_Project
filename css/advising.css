@@ -29,13 +29,13 @@ h5.advdesc{
 .lbl1{
   font-weight: 400;
   flex-basis: 50%;
-  margin: auto;
+  margin: 1em auto;
   text-align: center;
 }
 .lbl2{
   font-weight: 400;
   flex-basis: 50%;
-  margin: auto;
+  margin: 1em auto;
   text-align: center;
 }
 
