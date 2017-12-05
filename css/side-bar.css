@@ -23,11 +23,12 @@
 }
 
 .side-bar-container label.sidebar-title {
-  font-size: 1em;
+  font-size: 0.8125rem;
+  font-weight: bold;
   display: block;
   background: var(--main-bg-red);
   color: var(--white-text-color);
-  padding: 0.75em 0;
+  padding: 0.66rem;
   margin: 0;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -36,7 +37,7 @@
 
 .side-bar-container .sidebar-content {
   font-size: 0.8em;
-  padding: 0 10px;
+  padding: 0 1em;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
@@ -50,9 +51,8 @@
 .side-bar-container ul li a {
   text-decoration: none;
   color: var(--blue-text-color);
-  word-break: break-all;
   display: block;
-  margin: 1.5em 1em;
+  margin: 1.5em 0;
 }
 
 .sidebar-content {
@@ -96,6 +96,12 @@
 }
 
 
+@media (max-width: 74em) {
+  .content-item {
+    display: block;
+  }
+}
+
 
 @media (max-width: 70em) {
   .side-bar-container {
@@ -118,6 +124,10 @@
     display: block;
   }
 
+  .content-item {
+    display: flex;
+  }
+
   .content-text, .content-text-box {
     flex: 1;
     -ms-flex: 1;
@@ -135,4 +145,74 @@
   .content-item {
     display: block;
   }
+}
+
+.left-side-bar {
+  text-align: left;
+}
+
+.left-side-bar h3 {
+  text-align: center;
+  background: var(--main-bg-red);
+  color: var(--white-text-color);
+  padding: 0.75em 0;
+  border: 0.062rem solid var(--dark-text-color);
+  margin: 0;
+}
+
+.left-side-bar h4 {
+  color: var(--light-text-color);
+  margin: 1.5em 0 0.75em;
+}
+
+.left-side-bar p {
+  margin: 0.75em 0 1.5em;
+}
+
+.left-side-bar li {
+    padding: 0rem, 0.625rem, 0rem, 0.625rem;
+}
+
+.left-side-bar table {
+    width:100%;
+}
+
+.side-bar-container .course-current-in {
+  padding: 0;
+  border-bottom: none;
+}
+
+.course-current-in p {
+  padding: 1em;
+  margin: 0;
+  border-bottom: 0.0625em solid var(--main-border-color);
+}
+
+h4.small-header-in-table {
+  text-decoration: none;
+  color: var(--white-text-color);
+  margin: 1.5em 0 0;
+  text-align: center;
+  font-weight: normal;
+}
+
+.small-header-in-table {
+  background-color: rgba(102, 102, 102, 1);
+  color: var(--white-text-color);
+  padding: 0.1875rem 0.625rem 0.1875rem 0.625rem;
+}
+
+.left-side-bar img {
+  height: 1.171875rem;
+  width: auto;
+}
+
+img.exclamation-svg, img.check-svg {
+  background: var(--dark-text-color);
+  border-radius: 50%;
+  margin: auto;
+}
+
+img.check-svg {
+  background: var(--main-bg-red);
 }
