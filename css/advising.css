@@ -59,6 +59,14 @@ h5.advdesc{
   width: 100%;
 }
 
+@media (max-width: 70em) {
+  .middle-container {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+}
+
 
 @media all and (max-width: 700px) and (min-width: 100px) {
   .selector-container{
