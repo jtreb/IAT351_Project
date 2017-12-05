@@ -36,14 +36,18 @@ body {
   float: none;
 }
 
+.intext-link {
+  word-break: break-all;
+}
+
 .layout-container {
   display: flex;
   flex-wrap: nowrap;
 }
 
-.layout-container-item {
-  flex: 1 auto;
-}
+/*.layout-container-item {
+  flex: 1;
+}*/
 
 .leftBar {
   order: 1;
@@ -53,6 +57,11 @@ body {
 }
 .middle-container {
   order: 2;
+  flex: 1;
+}
+
+.container-border {
+  border: 0.0625em solid var(--main-border-color);
 }
 
 @media (max-width: 70em) {

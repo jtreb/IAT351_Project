@@ -1,18 +1,7 @@
-#planbyreq{
-  margin:2rem;
-}
 .planarea{
   display: flex;
-  align-items: start;
-  padding: 1rem;
-
-    border-width: 0.03125rem;
-    border-color: var(--main-border-color);
-    border-style: solid;
-}
-
-.term{
-  display: block;
+  align-items: flex-start;
+  flex-wrap: nowrap;
 }
 
 #plan5{
@@ -25,10 +14,8 @@
   display: none;
 }
 
-
-
 .termbtns{
-  padding: 1rem;
+  margin: 1em 0 1em 1em;
   width: 4rem;
   min-width: 2.5rem;
 }
@@ -41,9 +28,9 @@
   max-width: 2rem;
   max-height: 2rem;
   min-width: 0.5rem;
-  position: relative;
-  top: 1.2em;
-  left: 13em;
+  position: absolute;
+  top: 0.8em;
+  left: 81%;
 }
 
 #modalxbtn{
@@ -69,19 +56,31 @@
 }
 
 #plusbtn{
-
   cursor: pointer;
 }
+
 .planareagrid{
-
-    display: flex;
-    flex-direction: horizontal;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
-.term{
-  margin: 1rem;
+.term {
+  display: block;
+  margin: 1em;
+  position: relative;
+  max-width: 13.6em;
+  flex: 1;
 }
+
+.termtitle{
+  padding: 0.8rem;
+  width: 12rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
 .plancourse{
   border-width: 0.0625rem;
   border-color: var(--main-border-color);
@@ -102,13 +101,6 @@
   border-style: solid;
   margin:0rem;
   display: none;
-}
-
-.termtitle{
-  padding: 1rem;
-  width: 12rem;
-  font-size: 1.5rem;
-  text-align: left;
 }
 
 /*popup*/
@@ -280,7 +272,7 @@
 .shareicons{
   display: flex;
   margin: auto;
-  width: 40%;
+  width: 60%;
   text-align: center;
   padding: 1rem;
   flex-wrap: wrap;
@@ -290,12 +282,40 @@
 .socialmedia{
   width: 10%;
   min-width: 2rem;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin: 0 5%;
   align-items: center;
   cursor: pointer;
-
 }
 #sharemodalcontent {
-    width: 40%; /* Full width */
+    width: 60%; /* Full width */
+}
+
+
+@media (max-width: 70em) {
+  .planarea {
+    display: block;
+  }
+
+  .termbtns {
+    width: 20px;
+    margin: 1em auto;
+  }
+
+  .term {
+    margin: 0 1em 1em;
+  }
+}
+
+@media (max-width: 32em) {
+  .planareagrid {
+    display: block;
+  }
+
+  .term {
+    max-width: 100%;
+  }
+
+  .termtitle {
+    width: auto;
+  }
 }
