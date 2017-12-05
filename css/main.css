@@ -41,18 +41,21 @@ body {
   flex-wrap: nowrap;
 }
 
-.layout-container-item {
-  flex: 1 auto;
-}
+/*.layout-container-item {
+  flex: 1;
+}*/
 
 .leftBar {
   order: 1;
+  flex: 1.3;
 }
 .rightBar {
   order: 3;
+  flex: 1.3;
 }
 .middle-container {
   order: 2;
+  flex: 3.5;
 }
 
 @media (max-width: 70em) {
