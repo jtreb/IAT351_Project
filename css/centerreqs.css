@@ -1,3 +1,7 @@
+.middle-container {
+  margin: 0 1em;
+}
+
 .req-section {
   margin-bottom: 1rem;
 }
@@ -163,6 +167,14 @@ em {
 
 .last-container {
   padding-bottom: 1.5rem;
+}
+
+@media (max-width: 70em) {
+  .middle-container {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 #iat100modal{

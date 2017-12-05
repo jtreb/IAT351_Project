@@ -35,3 +35,28 @@ body {
 .float-none {
   float: none;
 }
+
+.layout-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.layout-container-item {
+  flex: 1 auto;
+}
+
+.leftBar {
+  order: 1;
+}
+.rightBar {
+  order: 3;
+}
+.middle-container {
+  order: 2;
+}
+
+@media (max-width: 70em) {
+  .layout-container {
+    display: block;
+  }
+}
