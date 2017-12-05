@@ -87,10 +87,13 @@ function opensem(){
 function  closesem() {
   var modal = document.getElementById('semmodal');
     modal.style.display = "none";
-}
-function  nextsem() {
-    var e = document.getElementById ("addcourses");
-    e.style.display = "block";
+    var nocourses = document.getElementById("nocourses");
+    nocourses.style.display="block";
+    for(var i =0; i<5; i++){
+          var m = document.getElementById ("tempcourse"+i);
+          m.innerHTML = "";
+          m.style.display = "none";
+    }
 }
 function  changespecs() {
     var e = document.getElementById ("reqselect");
@@ -389,7 +392,8 @@ function addcoursetoterm(){
 }
 
 function tempaddcourse(){
-
+  var nocourses = document.getElementById("nocourses");
+  nocourses.style.display="none";
   var sel = document.getElementById("semselect");
   num = sel.options [sel.selectedIndex] .value;
   var j = 0;
