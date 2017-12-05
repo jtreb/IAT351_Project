@@ -277,6 +277,161 @@ function showcmpt320(){
   modal.style.display = "block";
 
 }
+function showcmpt(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('cmptmodal');
+
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
+function showensc(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('enscmodal');
+
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
+function showstat(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('statmodal');
+
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
+function showphys(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('physmodal');
+
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
+function showiat(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('iatmodal');
+
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
+function showkin(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('kinmodal');
+
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
+function showkin2(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('kinmodal2');
+
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
+function showmssc(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('msscmodal');
+
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
+function showmath(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('mathmodal');
+
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
+function showmacm(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('macmmodal');
+
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
+function showcogs(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('cogsmodal');
+
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
+function showpsyc(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('psycmodal');
+
+    console.log(modal);
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
+function showcmpt2(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('cmptmodal2');
+
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
+function showensc2(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('enscmodal2');
+
+  modal.style.top = y+"px";
+  modal.style.left = x+"px";
+  modal.style.display = "block";
+
+}
 function showcogs381(){
   var x = event.pageX;
   var y = event.pageY;
@@ -540,6 +695,62 @@ if(senderElement != document.getElementById('iat445c')){
 }
 if(senderElement != document.getElementById('cmpt320c')){
  var modal = document.getElementById('cmpt320modal');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('cmptc')){
+ var modal = document.getElementById('cmptmodal');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('cmpt2c')){
+ var modal = document.getElementById('cmptmodal2');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('enscc')){
+ var modal = document.getElementById('enscmodal');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('ensc2c')){
+ var modal = document.getElementById('enscmodal2');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('kinc')){
+ var modal = document.getElementById('kinmodal');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('kin2c')){
+ var modal = document.getElementById('kinmodal2');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('statc')){
+ var modal = document.getElementById('statmodal');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('physc')){
+ var modal = document.getElementById('physmodal');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('iatc')){
+ var modal = document.getElementById('iatmodal');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('mathc')){
+ var modal = document.getElementById('mathmodal');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('macmc')){
+ var modal = document.getElementById('macmmodal');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('cogsc')){
+ var modal = document.getElementById('cogsmodal');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('psycc')){
+ var modal = document.getElementById('psycmodal');
+ modal.style.display = "none";
+}
+if(senderElement != document.getElementById('msscc')){
+ var modal = document.getElementById('msscmodal');
  modal.style.display = "none";
 }
 if(senderElement != document.getElementById('cmpt354c')){

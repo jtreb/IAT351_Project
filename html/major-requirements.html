@@ -218,23 +218,23 @@
               <h5 class="req-instructions">Must complete <em>any 3 credits </em>worth of lower division courses in these faculties</h5>
               <section class="req-set">
                   <div class="course-group">
-                    <div class="course" >CMPT</div>
+                    <div class="course" onclick="showcmpt()" id="cmptc">CMPT</div>
                     <div class="pre-reqs">
                       <div class="line"></div>
                       <div class="course"onclick="showcmpt1202()" id="cmpt1202c">CMPT 120</div>
                     </div>
                   </div>
                   <div class="course-group">
-                    <div class="course optional">ENSC</div>
+                    <div class="course optional" onclick="showensc()" id="enscc">ENSC</div>
                   </div>
                   <div class="course-group">
-                    <div class="course optional">KIN</div>
+                    <div class="course optional" onclick="showkin()" id="kinc">KIN</div>
                   </div>
                   <div class="course-group">
-                    <div class="course optional">STAT</div>
+                    <div class="course optional" onclick="showstat()" id="statc">STAT</div>
                   </div>
                   <div class="course-group">
-                    <div class="course optional">PHYS</div>
+                    <div class="course optional"onclick="showphys()" id="physc">PHYS</div>
                   </div>
               </section>
             </div>
@@ -285,7 +285,7 @@
               <h5 class="req-instructions">Must complete <em>24 credits</em> worth of upper division courses in these faculties</h5>
               <section class="req-set">
                   <div class="course-group">
-                    <div class="course">IAT</div>
+                    <div class="course"onclick="showiat()" id="iatc">IAT</div>
                     <div class="pre-reqs">
                       <div class="line"></div>
                       <div class="course"  onclick="showiat333()" id="iat333c">IAT 333</div>
@@ -296,7 +296,7 @@
                     </div>
                   </div>
                   <div class="course-group">
-                    <div class="course">CMPT</div>
+                    <div class="course"onclick="showcmpt2()" id="cmpt2c">CMPT</div>
                     <div class="pre-reqs">
                       <div class="line"></div>
                       <div class="course"  onclick="showcmpt320()" id="cmpt320c">CMPT 320</div>
@@ -304,31 +304,31 @@
                     </div>
                   </div>
                   <div class="course-group">
-                    <div class="course optional">ENSC</div>
+                    <div class="course optional"onclick="showensc2()" id="ensc2c">ENSC</div>
                   </div>
                   <div class="course-group">
-                    <div class="course optional">KIN</div>
+                    <div class="course optional" onclick="showkin2()" id="kin2c">KIN</div>
                   </div>
                   <div class="course-group">
-                    <div class="course optional">MSSC</div>
+                    <div class="course optional"  onclick="showmssc()" id="msscc">MSSC</div>
                   </div>
               </section>
               <section class="req-set">
                   <div class="course-group">
-                    <div class="course optional">MATH</div>
+                    <div class="course optional" onclick="showmath()" id="mathc">MATH</div>
                   </div>
                   <div class="course-group">
-                    <div class="course optional">MACM</div>
+                    <div class="course optional"onclick="showmacm()" id="macmc">MACM</div>
                   </div>
                   <div class="course-group">
-                    <div class="course">COGS</div>
+                    <div class="course"onclick="showcogs()" id="cogsc">COGS</div>
                     <div class="pre-reqs">
                       <div class="line"></div>
                       <div class="course" onclick="showcogs381()" id="cogs381c">COGS 381</div>
                     </div>
                   </div>
                   <div class="course-group">
-                    <div class="course">PSYC</div>
+                    <div class="course"onclick="showpsyc()" id="psycc">PSYC</div>
                     <div class="pre-reqs">
                       <div class="line"></div>
                       <div class="course" onclick="showpsyc352()" id="psyc352c">PSYC 352</div>
@@ -1627,7 +1627,274 @@
           </div>
         </div>
       </div>
+
+      <!-- course Modal content -->
+      <div id="cmptmodal" class="modal">
+        <div class="modal-info" id="iat100modalcontent">
+          <h3 class="confirmtitle">CMPT</h3>
+
+          <div class="coursemoreinfo">
+            <h5 class="courseinfolabel">Title:</h5>
+            <h5 class="courseinfodesc2">Computing Science</h5>
+            <h5 class="courseinfolabel">Faculty:</h5>
+            <h5 class="courseinfodesc2">Applied Science</h5>
+            <h5 class="courseinfolabel">Description:</h5>
+            <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+            </h5>
+            <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- course Modal content -->
+    <div id="cmptmodal2" class="modal">
+      <div class="modal-info" id="iat100modalcontent">
+        <h3 class="confirmtitle">CMPT</h3>
+
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Title:</h5>
+          <h5 class="courseinfodesc2">Computing Science</h5>
+          <h5 class="courseinfolabel">Faculty:</h5>
+          <h5 class="courseinfodesc2">Applied Science</h5>
+          <h5 class="courseinfolabel">Description:</h5>
+          <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+        </div>
+      </div>
+    </div>
+    <!-- course Modal content -->
+    <div id="iatmodal" class="modal">
+      <div class="modal-info" id="iat100modalcontent">
+        <h3 class="confirmtitle">IAT</h3>
+
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Title:</h5>
+          <h5 class="courseinfodesc2">Interactive Arts and Technology</h5>
+          <h5 class="courseinfolabel">Faculty:</h5>
+          <h5 class="courseinfodesc2">Faculty of Communication Art and Technology</h5>
+          <h5 class="courseinfolabel">Description:</h5>
+          <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+        </div>
+      </div>
+    </div>
+    <!-- course Modal content -->
+    <div id="enscmodal" class="modal">
+      <div class="modal-info" id="iat100modalcontent">
+        <h3 class="confirmtitle">ENSC</h3>
+
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Title:</h5>
+          <h5 class="courseinfodesc2">Engineering Science</h5>
+          <h5 class="courseinfolabel">Faculty:</h5>
+          <h5 class="courseinfodesc2">Applied Science</h5>
+          <h5 class="courseinfolabel">Description:</h5>
+          <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+        </div>
+      </div>
+    </div>
+    <!-- course Modal content -->
+    <div id="enscmodal2" class="modal">
+      <div class="modal-info" id="iat100modalcontent">
+        <h3 class="confirmtitle">ENSC</h3>
+
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Title:</h5>
+          <h5 class="courseinfodesc2">Engineering Science</h5>
+          <h5 class="courseinfolabel">Faculty:</h5>
+          <h5 class="courseinfodesc2">Applied Science</h5>
+          <h5 class="courseinfolabel">Description:</h5>
+          <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+        </div>
+      </div>
+    </div>
+    <!-- course Modal content -->
+    <div id="kinmodal" class="modal">
+      <div class="modal-info" id="iat100modalcontent">
+        <h3 class="confirmtitle">KIN</h3>
+
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Title:</h5>
+          <h5 class="courseinfodesc2">Kinesiology</h5>
+          <h5 class="courseinfolabel">Faculty:</h5>
+          <h5 class="courseinfodesc2">Science</h5>
+          <h5 class="courseinfolabel">Description:</h5>
+          <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+        </div>
+      </div>
+    </div>
+    <!-- course Modal content -->
+    <div id="kinmodal2" class="modal">
+      <div class="modal-info" id="iat100modalcontent">
+        <h3 class="confirmtitle">KIN</h3>
+
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Title:</h5>
+          <h5 class="courseinfodesc2">Kinesiology</h5>
+          <h5 class="courseinfolabel">Faculty:</h5>
+          <h5 class="courseinfodesc2">Science</h5>
+          <h5 class="courseinfolabel">Description:</h5>
+          <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+        </div>
+      </div>
+    </div>
+    <!-- course Modal content -->
+    <div id="statmodal" class="modal">
+      <div class="modal-info" id="iat100modalcontent">
+        <h3 class="confirmtitle">STAT</h3>
+
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Title:</h5>
+          <h5 class="courseinfodesc2">Statistics and Actuarial Science</h5>
+          <h5 class="courseinfolabel">Faculty:</h5>
+          <h5 class="courseinfodesc2">Science</h5>
+          <h5 class="courseinfolabel">Description:</h5>
+          <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- course Modal content -->
+    <div id="physmodal" class="modal">
+      <div class="modal-info" id="iat100modalcontent">
+        <h3 class="confirmtitle">PHYS</h3>
+
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Title:</h5>
+          <h5 class="courseinfodesc2">Physics</h5>
+          <h5 class="courseinfolabel">Faculty:</h5>
+          <h5 class="courseinfodesc2">Science</h5>
+          <h5 class="courseinfolabel">Description:</h5>
+          <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+        </div>
+      </div>
+    </div>
+    <!-- course Modal content -->
+    <div id="msscmodal" class="modal">
+      <div class="modal-info" id="iat100modalcontent">
+        <h3 class="confirmtitle">MSSC</h3>
+
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Title:</h5>
+          <h5 class="courseinfodesc2">Management & Systems Science</h5>
+          <h5 class="courseinfolabel">Faculty:</h5>
+          <h5 class="courseinfodesc2">Science</h5>
+          <h5 class="courseinfolabel">Description:</h5>
+          <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+        </div>
+      </div>
+    </div>
+    <!-- course Modal content -->
+    <div id="mathmodal" class="modal">
+      <div class="modal-info" id="iat100modalcontent">
+        <h3 class="confirmtitle">MATH</h3>
+
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Title:</h5>
+          <h5 class="courseinfodesc2">Mathematics</h5>
+          <h5 class="courseinfolabel">Faculty:</h5>
+          <h5 class="courseinfodesc2">Applied Science</h5>
+          <h5 class="courseinfolabel">Description:</h5>
+          <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+        </div>
+      </div>
+    </div>
+    <div id="macmmodal" class="modal">
+      <div class="modal-info" id="iat100modalcontent">
+        <h3 class="confirmtitle">MACM</h3>
+
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Title:</h5>
+          <h5 class="courseinfodesc2">Mathematics and Computing</h5>
+          <h5 class="courseinfolabel">Faculty:</h5>
+          <h5 class="courseinfodesc2">Applied Science</h5>
+          <h5 class="courseinfolabel">Description:</h5>
+          <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+        </div>
+      </div>
+    </div>
+    <div id="cogsmodal" class="modal">
+          <div class="modal-info" id="iat100modalcontent">
+            <h3 class="confirmtitle">COGS</h3>
+
+            <div class="coursemoreinfo">
+              <h5 class="courseinfolabel">Title:</h5>
+              <h5 class="courseinfodesc2">Cognitive Science</h5>
+              <h5 class="courseinfolabel">Faculty:</h5>
+              <h5 class="courseinfodesc2">Faculty of Arts and Social Science</h5>
+              <h5 class="courseinfolabel">Description:</h5>
+              <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+    A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+              </h5>
+              <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+            </div>
+          </div>
+        </div>
+        <div id="psycmodal" class="modal">
+                  <div class="modal-info" id="iat100modalcontent">
+                    <h3 class="confirmtitle">PSYC</h3>
+
+                    <div class="coursemoreinfo">
+                      <h5 class="courseinfolabel">Title:</h5>
+                      <h5 class="courseinfodesc2">Psychology</h5>
+                      <h5 class="courseinfolabel">Faculty:</h5>
+                      <h5 class="courseinfodesc2">Faculty of Arts and Social Science</h5>
+                      <h5 class="courseinfolabel">Description:</h5>
+                      <h5 class="courseinfodesc2">The School of Interactive Arts and Technology (SIAT) at SFU is an interdisciplinary research focused school where technologists, artists, designers and theorists collaborate in innovative research and immersive study.
+
+            A degree in Interactive Arts and Technology prepares students to play a leading role in the conception of new media and the design of inventive technologies. A SIAT education combines the science of human experience, the analysis of media and culture, the creation of original and experimental works of art, and the implementation of new technologies. Students bring these resources to bear on the most vital and innovative sectors of the economy, building the technologies and experiences that increasingly shape our lives.
+                      </h5>
+                      <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+                    </div>
+                  </div>
+                </div>
+  </div>
 
   </body>
 
