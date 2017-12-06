@@ -100,6 +100,12 @@
   border: 0.0625em solid var(--main-bg-red);
 }
 
+@media (min-width: 94em) {
+  .side-bar-container {
+    width: 20em;
+  }
+}
+
 
 @media (max-width: 74em) {
   .content-item {
