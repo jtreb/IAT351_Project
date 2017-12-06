@@ -712,11 +712,7 @@ p.coop-instruction-detail {
 }
 
 
-.modal h3{
-  border-width: 0.0625rem;
-  border-style: solid;
-  border-color: var(--main-border-color);
-}
+
 .modal-info {
   background-color: #fefefe;
   text-align: center;
