@@ -234,17 +234,16 @@
     text-align: center;
 }
 .closebtn{
-  margin: auto;
   text-align: center;
   transition: all 0.2s ease;
 }
 
-.closebtn:hover,
+/*.closebtn:hover,
 .closebtn:focus {
     color: var(--blue-text-color);
     text-decoration: none;
     cursor: pointer;
-}
+}*/
 
 #enrolled {
   background-color: var(--dark-gray);
