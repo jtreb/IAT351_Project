@@ -131,8 +131,10 @@ p.coop-instruction-detail {
   color: var(--dark-gray);
 }
 
-.planned {
-  background-color: var(--blue-text-color);
+.additional {
+  background-color: var(--white-text-color);
+  color: var(--main-bg-red);
+  border: 0.0625em solid var(--main-bg-red);
 }
 
 .triangle {
