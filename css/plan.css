@@ -263,10 +263,6 @@
   background-color: var(--blue-text-color);
 }
 
-.modal h5{
-  margin: 0.66rem auto 1rem;
-
-}
 .plan-category{
   text-align: center;
   padding: 1rem;
