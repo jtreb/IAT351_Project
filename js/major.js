@@ -1,3 +1,8 @@
+function closeup(){
+     var modal = document.getElementById('iat100modal');
+     modal.style.display = "none";
+}
+
 
 function showiat100(){
   var x = event.pageX;

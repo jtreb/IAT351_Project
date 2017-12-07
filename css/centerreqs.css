@@ -27,11 +27,13 @@ h3{
 }
 
 .req-title {
-  padding: 0.8125rem;
+  padding: 0.8125rem 0.8125rem 0;
+  text-align: left;
 }
 
 .req-instructions {
   text-align: center;
+  padding: 0.5875rem 0.8125rem 0;
   margin-bottom: 0.5875rem;
 }
 
@@ -218,6 +220,8 @@ p.coop-instruction-detail {
 .last-container {
   padding-bottom: 1.5rem;
 }
+
+
 
 #iat100modal{
   /*remove these 2 line to get a overlay background*/
@@ -725,7 +729,6 @@ p.coop-instruction-detail {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
-  padding-bottom: 1em;
   box-shadow: 3px 3px 10px rgba(51, 51, 51, 0.4);
 }
 .modal-info a{
@@ -753,20 +756,16 @@ p.coop-instruction-detail {
 }
 .courseinfoflex{
   display: flex;
-  padding: 1rem 2rem 0;
+  padding: 0.5rem 1.5rem 0;
   flex-wrap: wrap;
 }
 .coursemoreinfo{
-padding-left: 2rem;
-padding-right: 2rem;
-margin-bottom: 2rem;
+  padding: 0.5rem 1.5rem 2rem;
 }
 
 .infoline{
   background-color: var(--main-bg-red);
-  width: 85%;
-  margin:auto;
-  margin-top:0.8rem;
-  margin-bottom: 0.8rem;
+  width: auto;
+  margin: 0.8rem 1.5rem;
   height: 0.065rem;
 }
