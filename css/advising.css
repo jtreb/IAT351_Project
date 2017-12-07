@@ -146,9 +146,8 @@ h5.advdesc{
   margin-bottom: 2rem;
 }
 .advline{
-  background-color: var(--main-bg-red);
+  border-bottom: 0.0625rem solid var(--main-bg-red);
   width: 60%;
-  height: 0.065rem;
   margin:auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
