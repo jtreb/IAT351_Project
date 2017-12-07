@@ -88,7 +88,7 @@
           <!-- Overview sidebar -->
           <li>
             <input type="checkbox" id="checkbox-3" name="checkbox-collapse" />
-            <label for="checkbox-3" class="sidebar-title">Overview</label>
+            <label for="checkbox-3" class="sidebar-title">Degree Overview</label>
             <div class="sidebar-content left-side-bar">
               <h4>Major:</h4>
               <p>School of Interactive Arts & Technology (IAT)</p>
@@ -282,8 +282,8 @@
           <h5 class="closebtn" onclick="noconfirm()">NO</h5>
         </div> -->
         <div class="addbtns close">
-          <div class="button closebtn" id="savebtn" onclick="yesconfirm()">YES</div>
           <div class="button closebtn" id="canceladd" onclick="noconfirm()">NO</div>
+          <div class="button closebtn" id="savebtn" onclick="yesconfirm()">YES</div>
         </div>
       </div>
 
@@ -301,8 +301,8 @@
           <h5 class="closebtn" onclick="closeshare()">CANCEL</h5>
         </div> -->
         <div class="addbtns close">
-          <div class="button closebtn" id="savebtn" onclick="closeshare()">SHARE</div>
           <div class="button closebtn" id="canceladd" onclick="closeshare()">CANCEL PLAN</div>
+          <div class="button closebtn" id="savebtn" onclick="closeshare()">SHARE</div>
         </div>
       </div>
 
@@ -321,19 +321,9 @@
             <option value="5">Summer 2018</option>
           </select>
 
-          <h5>Courses Added to Plan</h5>
-          <div class="tmpplan">
-            <h5 id="nocourses"><em>none</em></h5>
-            <div class="tempclass" id="tempcourse0" ></div>
-            <div class="tempclass" id="tempcourse1"></div>
-            <div class="tempclass" id="tempcourse2"></div>
-            <div class="tempclass" id="tempcourse3" ></div>
-            <div class="tempclass" id="tempcourse4"></div>
-          </div>
-
           <div id="addcourses">
-            <h5>Add a Course</h5>
             <div class="advline"></div>
+            <h5>Adding a Course:</h5>
             <h5>Choose a Requirement to Fulfill</h5>
             <select id="reqselect" class="selector" onchange="changespecs()">
               <option value="0">Major Requirements</option>
@@ -443,6 +433,19 @@
               <option value="1">IAT 272</option>
               <option value="2">IAT 373</option>
             </select>
+
+            <div class="advline"></div>
+
+            <h5>Courses Added to Plan</h5>
+            <div class="tmpplan">
+              <h5 id="nocourses"><em>none</em></h5>
+              <div class="tempclass" id="tempcourse0" ></div>
+              <div class="tempclass" id="tempcourse1"></div>
+              <div class="tempclass" id="tempcourse2"></div>
+              <div class="tempclass" id="tempcourse3" ></div>
+              <div class="tempclass" id="tempcourse4"></div>
+            </div>
+
             <div class="addbtns">
               <div class="button" id="canceladd" onclick="closesem()">CANCEL</div>
               <div class="button" id="addbtn" onclick="tempaddcourse()">ADD COURSE</div>
