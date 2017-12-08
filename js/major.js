@@ -617,265 +617,286 @@ function show_fan_x99(){
 function closeallinfo(){
   var senderElement = event.target;
   console.log(senderElement);
-  if(senderElement != document.getElementById('iat100c')){
-     var modal = document.getElementById('iat100modal');
-     modal.style.display = "none";
-   }
-   if(senderElement != document.getElementById('iat102c')){
-      var modal = document.getElementById('iat102modal');
-      modal.style.display = "none";
-    }
-  if(senderElement != document.getElementById('iat103c')){
-     var modal = document.getElementById('iat103modal');
-     modal.style.display = "none";
-   }
-   if(senderElement != document.getElementById('iat106c')){
-        var modal = document.getElementById('iat106modal');
-        modal.style.display = "none";
-      }
-  if(senderElement != document.getElementById('iat167c')){
-       var modal = document.getElementById('iat167modal');
+  // Lower Division Requirements
+    // First Year Core Courses (IAT):
+    if(senderElement != document.getElementById('iat100c') && document.getElementById('iat100c')!=null){
+       var modal = document.getElementById('iat100modal');
        modal.style.display = "none";
      }
- if(senderElement != document.getElementById('cmpt120c')){
-      var modal = document.getElementById('cmpt120modal');
-      modal.style.display = "none";
-    }
-    if(senderElement != document.getElementById('cmpt1202c')){
-         var modal = document.getElementById('cmpt120modal2');
+    if(senderElement != document.getElementById('iat102c') && document.getElementById('iat102c')!=null){
+        var modal = document.getElementById('iat102modal');
+        modal.style.display = "none";
+      }
+    if(senderElement != document.getElementById('iat103c') && document.getElementById('iat103c')!=null){
+       var modal = document.getElementById('iat103modal');
+       modal.style.display = "none";
+     }
+    if(senderElement != document.getElementById('iat106c') && document.getElementById('iat106c')!=null){
+          var modal = document.getElementById('iat106modal');
+          modal.style.display = "none";
+        }
+    if(senderElement != document.getElementById('iat167c') && document.getElementById('iat167c')!=null){
+         var modal = document.getElementById('iat167modal');
          modal.style.display = "none";
        }
 
-  if(senderElement != document.getElementById('cmpt125c')){
-       var modal = document.getElementById('cmpt125modal');
-       modal.style.display = "none";
-     }
-  if(senderElement != document.getElementById('cmpt126c')){
-      var modal = document.getElementById('cmpt126modal');
+    // First Year Core Courses (CMPT):
+    if(senderElement != document.getElementById('cmpt120c') && document.getElementById('cmpt120c')!=null){
+        var modal = document.getElementById('cmpt120modal');
+        modal.style.display = "none";
+      }
+    if(senderElement != document.getElementById('cmpt125c') && document.getElementById('cmpt125c')!=null){
+         var modal = document.getElementById('cmpt125modal');
+         modal.style.display = "none";
+       }
+    if(senderElement != document.getElementById('cmpt126c') && document.getElementById('cmpt126c')!=null){
+        var modal = document.getElementById('cmpt126modal');
+        modal.style.display = "none";
+      }
+    if(senderElement != document.getElementById('cmpt128c') && document.getElementById('cmpt128c')!=null){
+         var modal = document.getElementById('cmpt128modal');
+         modal.style.display = "none";
+       }
+    if(senderElement != document.getElementById('cmpt166c') && document.getElementById('cmpt166c')!=null){
+        var modal = document.getElementById('cmpt166modal');
+        modal.style.display = "none";
+      }
+
+    // BSc Lower Division Req Part 1:
+    if(senderElement != document.getElementById('macm101c') && document.getElementById('macm101c')!=null){
+        var modal = document.getElementById('macm101modal');
+        modal.style.display = "none";
+      }
+
+    // BSc Lower Division Req Part 2:
+    if(senderElement != document.getElementById('cmptc') && document.getElementById('cmptc')!=null){
+     var modal = document.getElementById('cmptmodal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('cmpt1202c') && document.getElementById('cmpt1202c')!=null){
+      var modal = document.getElementById('cmpt120modal2');
       modal.style.display = "none";
     }
-  if(senderElement != document.getElementById('cmpt128c')){
-       var modal = document.getElementById('cmpt128modal');
-       modal.style.display = "none";
-     }
-  if(senderElement != document.getElementById('cmpt166c')){
-      var modal = document.getElementById('cmpt166modal');
+    if(senderElement != document.getElementById('enscc') && document.getElementById('enscc')!=null){
+      var modal = document.getElementById('enscmodal');
       modal.style.display = "none";
     }
-  if(senderElement != document.getElementById('macm101c')){
-      var modal = document.getElementById('macm101modal');
+    if(senderElement != document.getElementById('kinc') && document.getElementById('kinc')!=null){
+      var modal = document.getElementById('kinmodal');
+      modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('statc') && document.getElementById('statc')!=null){
+      var modal = document.getElementById('statmodal');
+      modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('physc') && document.getElementById('physc')!=null){
+      var modal = document.getElementById('physmodal');
       modal.style.display = "none";
     }
 
-  if(senderElement != document.getElementById('iat201c')){
-     var modal = document.getElementById('iat201modal');
+    // Second Year Core Courses (IAT):
+    if(senderElement != document.getElementById('iat201c') && document.getElementById('iat201c')!=null){
+       var modal = document.getElementById('iat201modal');
+       modal.style.display = "none";
+     }
+    if(senderElement != document.getElementById('iat202c') && document.getElementById('iat202c')!=null){
+      var modal = document.getElementById('iat202modal');
+      modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat222c') && document.getElementById('iat222c')!=null){
+     var modal = document.getElementById('iat222modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat233c') && document.getElementById('iat233c')!=null){
+     var modal = document.getElementById('iat233modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat235c') && document.getElementById('iat235c')!=null){
+     var modal = document.getElementById('iat235modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat265c') && document.getElementById('iat265c')!=null){
+     var modal = document.getElementById('iat265modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat267c') && document.getElementById('iat267c')!=null){
+     var modal = document.getElementById('iat267modal');
+     modal.style.display = "none";
+    }
+
+  // Upper Division Requirements
+    // BSc Upper Division Req:
+    if(senderElement != document.getElementById('iatc') && document.getElementById('iatc')!=null){
+     var modal = document.getElementById('iatmodal');
      modal.style.display = "none";
    }
-  if(senderElement != document.getElementById('iat202c')){
-    var modal = document.getElementById('iat202modal');
-    modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat222c')){
-   var modal = document.getElementById('iat222modal');
+    if(senderElement != document.getElementById('iat333c') && document.getElementById('iat333c')!=null){
+     var modal = document.getElementById('iat333modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat336c') && document.getElementById('iat336c')!=null){
+     var modal = document.getElementById('iat336modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat351c') && document.getElementById('iat351c')!=null){
+     var modal = document.getElementById('iat351modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat352c') && document.getElementById('iat352c')!=null){
+     var modal = document.getElementById('iat352modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat355c') && document.getElementById('iat355c')!=null){
+     var modal = document.getElementById('iat355modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat381c') && document.getElementById('iat381c')!=null){
+     var modal = document.getElementById('iat381modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat452c') && document.getElementById('iat452c')!=null){
+     var modal = document.getElementById('iat452modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat455c') && document.getElementById('iat455c')!=null){
+     var modal = document.getElementById('iat455modal');
+     modal.style.display = "none";
+    }
+
+    if(senderElement != document.getElementById('cmpt2c') && document.getElementById('cmpt2c')!=null){
+       var modal = document.getElementById('cmptmodal2');
+       modal.style.display = "none";
+     }
+    if(senderElement != document.getElementById('cmpt320c') && document.getElementById('cmpt320c')!=null){
+     var modal = document.getElementById('cmpt320modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('cmpt354c') && document.getElementById('cmpt354c')!=null){
+   var modal = document.getElementById('cmpt354modal');
    modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat233c')){
-   var modal = document.getElementById('iat233modal');
+ }
+
+    if(senderElement != document.getElementById('ensc2c') && document.getElementById('ensc2c')!=null){
+     var modal = document.getElementById('enscmodal2');
+     modal.style.display = "none";
+   }
+    if(senderElement != document.getElementById('kin2c') && document.getElementById('kin2c')!=null){
+     var modal = document.getElementById('kinmodal2');
+     modal.style.display = "none";
+   }
+    if(senderElement != document.getElementById('msscc') && document.getElementById('msscc')!=null){
+   var modal = document.getElementById('msscmodal');
    modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat235c')){
-   var modal = document.getElementById('iat235modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat265c')){
-   var modal = document.getElementById('iat265modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat267c')){
-   var modal = document.getElementById('iat267modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat333c')){
-   var modal = document.getElementById('iat333modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat336c')){
-   var modal = document.getElementById('iat336modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat351c')){
-   var modal = document.getElementById('iat351modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat352c')){
-   var modal = document.getElementById('iat352modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat355c')){
-   var modal = document.getElementById('iat355modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat381c')){
-   var modal = document.getElementById('iat381modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat452c')){
-   var modal = document.getElementById('iat452modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat455c')){
-   var modal = document.getElementById('iat455modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('cmpt320c')){
-   var modal = document.getElementById('cmpt320modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('cmptc')){
-   var modal = document.getElementById('cmptmodal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('cmpt2c')){
-   var modal = document.getElementById('cmptmodal2');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('enscc')){
-   var modal = document.getElementById('enscmodal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('ensc2c')){
-   var modal = document.getElementById('enscmodal2');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('kinc')){
-   var modal = document.getElementById('kinmodal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('kin2c')){
-   var modal = document.getElementById('kinmodal2');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('statc')){
-   var modal = document.getElementById('statmodal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('physc')){
-   var modal = document.getElementById('physmodal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iatc')){
-   var modal = document.getElementById('iatmodal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('mathc')){
+ }
+    if(senderElement != document.getElementById('mathc') && document.getElementById('mathc')!=null){
    var modal = document.getElementById('mathmodal');
    modal.style.display = "none";
   }
-  if(senderElement != document.getElementById('macmc')){
-   var modal = document.getElementById('macmmodal');
+
+    if(senderElement != document.getElementById('macmc') && document.getElementById('macmc')!=null){
+     var modal = document.getElementById('macmmodal');
+     modal.style.display = "none";
+   }
+
+    if(senderElement != document.getElementById('cogsc') && document.getElementById('cogsc')!=null){
+     var modal = document.getElementById('cogsmodal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('cogs381c') && document.getElementById('cogs381c')!=null){
+     var modal = document.getElementById('cogs381modal');
+     modal.style.display = "none";
+    }
+
+    if(senderElement != document.getElementById('psycc') && document.getElementById('psycc')!=null){
+     var modal = document.getElementById('psycmodal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('psyc352c') && document.getElementById('psyc352c')!=null){
+     var modal = document.getElementById('psyc352modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('psyc362c') && document.getElementById('psyc362c')!=null){
+     var modal = document.getElementById('psyc362modal');
+     modal.style.display = "none";
+    }
+
+    // Upper Division Courses (IAT):
+    if(senderElement != document.getElementById('iat3332c') && document.getElementById('iat3332c')!=null){
+       var modal = document.getElementById('iat333modal2');
+       modal.style.display = "none";
+     }
+    if(senderElement != document.getElementById('iat3362c') && document.getElementById('iat3362c')!=null){
+     var modal = document.getElementById('iat336modal2');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat351c') && document.getElementById('iat351c')!=null){
+     var modal = document.getElementById('iat351modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat352c') && document.getElementById('iat352c')!=null){
+     var modal = document.getElementById('iat352modal');
+     modal.style.display = "none";
+    }
+    if(senderElement != document.getElementById('iat355c') && document.getElementById('iat355c')!=null){
+       var modal = document.getElementById('iat355modal');
+       modal.style.display = "none";
+     }
+    if(senderElement != document.getElementById('iat3812c') && document.getElementById('iat3812c')!=null){
+   var modal = document.getElementById('iat381modal2');
    modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('cogsc')){
-   var modal = document.getElementById('cogsmodal');
+ }
+    if(senderElement != document.getElementById('iat452c') && document.getElementById('iat452c')!=null){
+   var modal = document.getElementById('iat452modal');
    modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('psycc')){
-   var modal = document.getElementById('psycmodal');
+ }
+    if(senderElement != document.getElementById('iat455c') && document.getElementById('iat455c')!=null){
+   var modal = document.getElementById('iat455modal');
    modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('msscc')){
-   var modal = document.getElementById('msscmodal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('cmpt354c')){
-   var modal = document.getElementById('cmpt354modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('cogs381c')){
-   var modal = document.getElementById('cogs381modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('psyc352c')){
-   var modal = document.getElementById('psyc352modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('psyc362c')){
-   var modal = document.getElementById('psyc362modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat351c')){
-   var modal = document.getElementById('iat351modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat3513c')){
+ }
+
+  // Concentration Requirements
+  if(senderElement != document.getElementById('iat3513c') && document.getElementById('iat3513c')!=null){
    var modal = document.getElementById('iat351modal3');
    modal.style.display = "none";
   }
-  if(senderElement != document.getElementById('iat352c')){
-   var modal = document.getElementById('iat352modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat3523c')){
+  if(senderElement != document.getElementById('iat3523c') && document.getElementById('iat3523c')!=null){
    var modal = document.getElementById('iat352modal3');
    modal.style.display = "none";
   }
-  if(senderElement != document.getElementById('iat355c')){
-   var modal = document.getElementById('iat355modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat3553c')){
+  if(senderElement != document.getElementById('iat3553c') && document.getElementById('iat3553c')!=null){
    var modal = document.getElementById('iat355modal3');
    modal.style.display = "none";
   }
-  if(senderElement != document.getElementById('iat410c')){
+  if(senderElement != document.getElementById('iat410c') && document.getElementById('iat410c')!=null){
    var modal = document.getElementById('iat410modal');
    modal.style.display = "none";
   }
-  if(senderElement != document.getElementById('iat452c')){
-   var modal = document.getElementById('iat452modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat4523c')){
+  if(senderElement != document.getElementById('iat4523c') && document.getElementById('iat4523c')!=null){
    var modal = document.getElementById('iat452modal3');
    modal.style.display = "none";
   }
-  if(senderElement != document.getElementById('iat455c')){
-   var modal = document.getElementById('iat455modal');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat4553c')){
+  if(senderElement != document.getElementById('iat4553c') && document.getElementById('iat4553c')!=null){
    var modal = document.getElementById('iat455modal3');
    modal.style.display = "none";
   }
-  if(senderElement != document.getElementById('iat3332c')){
-   var modal = document.getElementById('iat333modal2');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat3362c')){
-   var modal = document.getElementById('iat336modal2');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat3512c')){
+
+  if(senderElement != document.getElementById('iat3512c') && document.getElementById('iat3512c')!=null){
    var modal = document.getElementById('iat351modal2');
    modal.style.display = "none";
   }
-  if(senderElement != document.getElementById('iat3522c')){
+  if(senderElement != document.getElementById('iat3522c') && document.getElementById('iat3522c')!=null){
    var modal = document.getElementById('iat352modal2');
    modal.style.display = "none";
   }
-  if(senderElement != document.getElementById('iat3552c')){
+  if(senderElement != document.getElementById('iat3552c') && document.getElementById('iat3552c')!=null){
    var modal = document.getElementById('iat355modal2');
    modal.style.display = "none";
   }
-  if(senderElement != document.getElementById('iat3812c')){
-   var modal = document.getElementById('iat381modal2');
-   modal.style.display = "none";
-  }
-  if(senderElement != document.getElementById('iat4522c')){
+  if(senderElement != document.getElementById('iat4522c') && document.getElementById('iat4522c')!=null){
    var modal = document.getElementById('iat452modal2');
    modal.style.display = "none";
   }
-  if(senderElement != document.getElementById('iat4552c')){
+  if(senderElement != document.getElementById('iat4552c') && document.getElementById('iat4552c')!=null){
    var modal = document.getElementById('iat455modal2');
    modal.style.display = "none";
   }
@@ -883,13 +904,13 @@ function closeallinfo(){
 
 
 
-//------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//Foundation requirements details clicks close
-  if(senderElement != document.getElementById('fal-x99')){
+  //------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  //Foundation requirements details clicks close
+  if(senderElement != document.getElementById('fal-x99') && document.getElementById('fal-x99')!=null){
    var modal = document.getElementById('fal-x99-modal');
    modal.style.display = "none";
   }
-  if(senderElement != document.getElementById('fan-x99')){
+  if(senderElement != document.getElementById('fan-x99') && document.getElementById('fan-x99')!=null){
    var modal = document.getElementById('fan-x99-modal');
    modal.style.display = "none";
   }
