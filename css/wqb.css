@@ -223,23 +223,23 @@ p.coop-instruction-detail {
 
 #iat100modal{
   /*remove these 2 line to get a overlay background*/
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0);
+  
+
 
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
 }
 #iat102modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
 }
 #iat103modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -249,8 +249,8 @@ p.coop-instruction-detail {
   background-color: var(--dark-gray);
 }
 #iat309modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -261,22 +261,22 @@ p.coop-instruction-detail {
       color: var(--dark-text-color);
 }
 #iat106modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
 }
 #iat167modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
 }
 #cmpt120modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -286,15 +286,15 @@ p.coop-instruction-detail {
   color: var(--dark-text-color);
 }
 #cmpt120modal2{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
 }
 #cmpt125modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -304,8 +304,8 @@ p.coop-instruction-detail {
   color: var(--dark-text-color);
 }
 #cmpt126modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -315,8 +315,8 @@ p.coop-instruction-detail {
   color: var(--dark-text-color);
 }
 #cmpt128modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -326,8 +326,8 @@ p.coop-instruction-detail {
   color: var(--dark-text-color);
 }
 #cmpt225modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -337,8 +337,8 @@ p.coop-instruction-detail {
   color: var(--white-text-color);
 }
 #macmmodal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -348,8 +348,8 @@ p.coop-instruction-detail {
   color: var(--white-text-color);
 }
 #macm2modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -359,8 +359,8 @@ p.coop-instruction-detail {
   color: var(--white-text-color);
 }
 #arch100modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -370,8 +370,8 @@ p.coop-instruction-detail {
   color: var(--white-text-color);
 }
 #cogs100modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -381,8 +381,8 @@ p.coop-instruction-detail {
   color: var(--white-text-color);
 }
 #arch131modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -392,8 +392,8 @@ p.coop-instruction-detail {
   color: var(--white-text-color);
 }
 #bpk142modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -403,8 +403,8 @@ p.coop-instruction-detail {
   color: var(--white-text-color);
 }
 #bus237modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -414,8 +414,8 @@ p.coop-instruction-detail {
   color: var(--white-text-color);
 }
 #cmpt1662modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -425,8 +425,8 @@ p.coop-instruction-detail {
   color: var(--white-text-color);
 }
 #cogs1002modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -436,8 +436,8 @@ p.coop-instruction-detail {
   color: var(--white-text-color);
 }
 #phil100modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -447,8 +447,8 @@ p.coop-instruction-detail {
   color: var(--white-text-color);
 }
 #crim101modal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -458,8 +458,8 @@ p.coop-instruction-detail {
   color: var(--white-text-color);
 }
 #mathmodal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -469,8 +469,8 @@ p.coop-instruction-detail {
   color: var(--dark-text-color);
 }
 #msscmodal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -480,8 +480,8 @@ p.coop-instruction-detail {
   color: var(--dark-text-color);
 }
 #physmodal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -491,8 +491,8 @@ p.coop-instruction-detail {
   color: var(--dark-text-color);
 }
 #statmodal{
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+   /* Fallback color */
+ /* Black w/ opacity */
   position: absolute;
   overflow: hidden; /* Enable scroll if needed */
   margin: 0rem;
@@ -502,8 +502,8 @@ p.coop-instruction-detail {
   color: var(--dark-text-color);
 }
 #kinmodal2{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -513,8 +513,8 @@ p.coop-instruction-detail {
       color: var(--dark-text-color);
 }
 #kinmodal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -524,15 +524,15 @@ p.coop-instruction-detail {
       color: var(--dark-text-color);
 }
 #enscmodal2{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #psycmodal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -542,8 +542,8 @@ p.coop-instruction-detail {
       color: var(--dark-text-color);
 }
 #cogsmodal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -553,8 +553,8 @@ p.coop-instruction-detail {
       color: var(--dark-text-color);
 }
 #enscmodal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -564,8 +564,8 @@ p.coop-instruction-detail {
       color: var(--dark-text-color);
 }
 #iatmodal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -575,8 +575,8 @@ p.coop-instruction-detail {
       color: var(--dark-text-color);
 }
 #cmptmodal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -586,8 +586,8 @@ p.coop-instruction-detail {
       color: var(--dark-text-color);
 }
 #cmptmodal2{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -597,43 +597,43 @@ p.coop-instruction-detail {
       color: var(--dark-text-color);
 }
 #cmpt166modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #macm101modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat201modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat202modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat222modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat233modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -643,57 +643,57 @@ p.coop-instruction-detail {
       color: var(--dark-text-color);
 }
 #iat235modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat265modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat267modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat333modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat336modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat351modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat3526modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat355modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -702,8 +702,8 @@ p.coop-instruction-detail {
       background-color: var(--dark-gray);
 }
 #iat381modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -712,43 +712,43 @@ p.coop-instruction-detail {
       background-color: var(--dark-gray);
 }
 #iat455modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #cmpt320modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #cmpt354modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #cogs381modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #psyc352modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #psyc362modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -757,8 +757,8 @@ p.coop-instruction-detail {
       background-color: var(--dark-gray);
 }
 #iat351modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -767,8 +767,8 @@ p.coop-instruction-detail {
       background-color: var(--dark-gray);
 }
 #iat352modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -777,8 +777,8 @@ p.coop-instruction-detail {
       background-color: var(--blue-text-color);
 }
 #iat410modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -788,8 +788,8 @@ p.coop-instruction-detail {
       color: var(--dark-text-color);
 }
 #iat452modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -798,37 +798,37 @@ p.coop-instruction-detail {
       background-color: var(--blue-text-color);
 }
 #iat455modal{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 
 #iat333modal2{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat336modal2{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat351modal2{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat351modal3{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -838,15 +838,15 @@ p.coop-instruction-detail {
       background-color: var(--dark-gray);
 }
 #iat352modal2{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat352modal3{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -856,15 +856,15 @@ p.coop-instruction-detail {
       background-color: var(--blue-text-color);
 }
 #iat355modal2{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
 }
 #iat355modal3{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -876,8 +876,8 @@ p.coop-instruction-detail {
       background-color: var(--dark-gray);
 }
 #iat381modal2{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -886,8 +886,8 @@ p.coop-instruction-detail {
       background-color: var(--dark-gray);
 }
 #iat452modal2, #iat452modal3{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -897,8 +897,8 @@ p.coop-instruction-detail {
 }
 
 #iat455modal2, #iat455modal3{
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+       /* Fallback color */
+     /* Black w/ opacity */
       position: absolute;
       overflow: hidden; /* Enable scroll if needed */
       margin: 0rem;
@@ -968,7 +968,7 @@ p.coop-instruction-detail {
 
   .modal-info {
     max-width: 90%;
-    height: 94%;
+    /*height: 94%;*/
     margin: 0 1.75rem 2rem 1rem;
     transform: translate(58%, -49%);
   }
