@@ -547,30 +547,72 @@ function showiat3553(){
   var y = event.pageY;
 
   var modal = document.getElementById('iat355modal3');
-modal.style.position = "absolute";
-modal.style.position = "fixed";
-modal.style.display = "block";
+  modal.style.position = "absolute";
+  modal.style.position = "fixed";
+  modal.style.display = "block";
 }
 function showiat4523(){
   var x = event.pageX;
   var y = event.pageY;
 
   var modal = document.getElementById('iat452modal3');
-modal.style.position = "absolute";
-modal.style.position = "fixed";
-modal.style.display = "block";
+  modal.style.position = "absolute";
+  modal.style.position = "fixed";
+  modal.style.display = "block";
 }
 function showiat4553(){
   var x = event.pageX;
   var y = event.pageY;
 
   var modal = document.getElementById('iat455modal3');
-modal.style.position = "absolute";
-modal.style.position = "fixed";
-modal.style.display = "block";
+  modal.style.position = "absolute";
+  modal.style.position = "fixed";
+  modal.style.display = "block";
 }
 
 
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Foundation requirements details clicks open
+function show_fal_x99(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('fal-x99-modal');
+  modal.style.position = "absolute";
+  modal.style.position = "fixed";
+  modal.style.display = "block";
+}
+function show_fan_x99(){
+  var x = event.pageX;
+  var y = event.pageY;
+
+  var modal = document.getElementById('fan-x99-modal');
+  modal.style.position = "absolute";
+  modal.style.position = "fixed";
+  modal.style.display = "block";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 function closeallinfo(){
   var senderElement = event.target;
@@ -608,234 +650,247 @@ function closeallinfo(){
        var modal = document.getElementById('cmpt125modal');
        modal.style.display = "none";
      }
- if(senderElement != document.getElementById('cmpt126c')){
+  if(senderElement != document.getElementById('cmpt126c')){
       var modal = document.getElementById('cmpt126modal');
       modal.style.display = "none";
     }
-if(senderElement != document.getElementById('cmpt128c')){
-     var modal = document.getElementById('cmpt128modal');
+  if(senderElement != document.getElementById('cmpt128c')){
+       var modal = document.getElementById('cmpt128modal');
+       modal.style.display = "none";
+     }
+  if(senderElement != document.getElementById('cmpt166c')){
+      var modal = document.getElementById('cmpt166modal');
+      modal.style.display = "none";
+    }
+  if(senderElement != document.getElementById('macm101c')){
+      var modal = document.getElementById('macm101modal');
+      modal.style.display = "none";
+    }
+
+  if(senderElement != document.getElementById('iat201c')){
+     var modal = document.getElementById('iat201modal');
      modal.style.display = "none";
    }
-if(senderElement != document.getElementById('cmpt166c')){
-    var modal = document.getElementById('cmpt166modal');
+  if(senderElement != document.getElementById('iat202c')){
+    var modal = document.getElementById('iat202modal');
     modal.style.display = "none";
   }
-if(senderElement != document.getElementById('macm101c')){
-    var modal = document.getElementById('macm101modal');
-    modal.style.display = "none";
-  }
-
-if(senderElement != document.getElementById('iat201c')){
-   var modal = document.getElementById('iat201modal');
+  if(senderElement != document.getElementById('iat222c')){
+   var modal = document.getElementById('iat222modal');
    modal.style.display = "none";
- }
-if(senderElement != document.getElementById('iat202c')){
-  var modal = document.getElementById('iat202modal');
-  modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat222c')){
- var modal = document.getElementById('iat222modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat233c')){
- var modal = document.getElementById('iat233modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat235c')){
- var modal = document.getElementById('iat235modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat265c')){
- var modal = document.getElementById('iat265modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat267c')){
- var modal = document.getElementById('iat267modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat333c')){
- var modal = document.getElementById('iat333modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat336c')){
- var modal = document.getElementById('iat336modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat351c')){
- var modal = document.getElementById('iat351modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat352c')){
- var modal = document.getElementById('iat352modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat355c')){
- var modal = document.getElementById('iat355modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat381c')){
- var modal = document.getElementById('iat381modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat452c')){
- var modal = document.getElementById('iat452modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat455c')){
- var modal = document.getElementById('iat455modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('cmpt320c')){
- var modal = document.getElementById('cmpt320modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('cmptc')){
- var modal = document.getElementById('cmptmodal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('cmpt2c')){
- var modal = document.getElementById('cmptmodal2');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('enscc')){
- var modal = document.getElementById('enscmodal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('ensc2c')){
- var modal = document.getElementById('enscmodal2');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('kinc')){
- var modal = document.getElementById('kinmodal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('kin2c')){
- var modal = document.getElementById('kinmodal2');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('statc')){
- var modal = document.getElementById('statmodal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('physc')){
- var modal = document.getElementById('physmodal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iatc')){
- var modal = document.getElementById('iatmodal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('mathc')){
- var modal = document.getElementById('mathmodal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('macmc')){
- var modal = document.getElementById('macmmodal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('cogsc')){
- var modal = document.getElementById('cogsmodal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('psycc')){
- var modal = document.getElementById('psycmodal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('msscc')){
- var modal = document.getElementById('msscmodal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('cmpt354c')){
- var modal = document.getElementById('cmpt354modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('cogs381c')){
- var modal = document.getElementById('cogs381modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('psyc352c')){
- var modal = document.getElementById('psyc352modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('psyc362c')){
- var modal = document.getElementById('psyc362modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat351c')){
- var modal = document.getElementById('iat351modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat3513c')){
- var modal = document.getElementById('iat351modal3');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat352c')){
- var modal = document.getElementById('iat352modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat3523c')){
- var modal = document.getElementById('iat352modal3');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat355c')){
- var modal = document.getElementById('iat355modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat3553c')){
- var modal = document.getElementById('iat355modal3');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat410c')){
- var modal = document.getElementById('iat410modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat452c')){
- var modal = document.getElementById('iat452modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat4523c')){
- var modal = document.getElementById('iat452modal3');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat455c')){
- var modal = document.getElementById('iat455modal');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat4553c')){
- var modal = document.getElementById('iat455modal3');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat3332c')){
- var modal = document.getElementById('iat333modal2');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat3362c')){
- var modal = document.getElementById('iat336modal2');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat3512c')){
- var modal = document.getElementById('iat351modal2');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat3522c')){
- var modal = document.getElementById('iat352modal2');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat3552c')){
- var modal = document.getElementById('iat355modal2');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat3812c')){
- var modal = document.getElementById('iat381modal2');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat4522c')){
- var modal = document.getElementById('iat452modal2');
- modal.style.display = "none";
-}
-if(senderElement != document.getElementById('iat4552c')){
- var modal = document.getElementById('iat455modal2');
- modal.style.display = "none";
-}
+  }
+  if(senderElement != document.getElementById('iat233c')){
+   var modal = document.getElementById('iat233modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat235c')){
+   var modal = document.getElementById('iat235modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat265c')){
+   var modal = document.getElementById('iat265modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat267c')){
+   var modal = document.getElementById('iat267modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat333c')){
+   var modal = document.getElementById('iat333modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat336c')){
+   var modal = document.getElementById('iat336modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat351c')){
+   var modal = document.getElementById('iat351modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat352c')){
+   var modal = document.getElementById('iat352modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat355c')){
+   var modal = document.getElementById('iat355modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat381c')){
+   var modal = document.getElementById('iat381modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat452c')){
+   var modal = document.getElementById('iat452modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat455c')){
+   var modal = document.getElementById('iat455modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('cmpt320c')){
+   var modal = document.getElementById('cmpt320modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('cmptc')){
+   var modal = document.getElementById('cmptmodal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('cmpt2c')){
+   var modal = document.getElementById('cmptmodal2');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('enscc')){
+   var modal = document.getElementById('enscmodal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('ensc2c')){
+   var modal = document.getElementById('enscmodal2');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('kinc')){
+   var modal = document.getElementById('kinmodal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('kin2c')){
+   var modal = document.getElementById('kinmodal2');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('statc')){
+   var modal = document.getElementById('statmodal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('physc')){
+   var modal = document.getElementById('physmodal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iatc')){
+   var modal = document.getElementById('iatmodal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('mathc')){
+   var modal = document.getElementById('mathmodal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('macmc')){
+   var modal = document.getElementById('macmmodal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('cogsc')){
+   var modal = document.getElementById('cogsmodal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('psycc')){
+   var modal = document.getElementById('psycmodal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('msscc')){
+   var modal = document.getElementById('msscmodal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('cmpt354c')){
+   var modal = document.getElementById('cmpt354modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('cogs381c')){
+   var modal = document.getElementById('cogs381modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('psyc352c')){
+   var modal = document.getElementById('psyc352modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('psyc362c')){
+   var modal = document.getElementById('psyc362modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat351c')){
+   var modal = document.getElementById('iat351modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat3513c')){
+   var modal = document.getElementById('iat351modal3');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat352c')){
+   var modal = document.getElementById('iat352modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat3523c')){
+   var modal = document.getElementById('iat352modal3');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat355c')){
+   var modal = document.getElementById('iat355modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat3553c')){
+   var modal = document.getElementById('iat355modal3');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat410c')){
+   var modal = document.getElementById('iat410modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat452c')){
+   var modal = document.getElementById('iat452modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat4523c')){
+   var modal = document.getElementById('iat452modal3');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat455c')){
+   var modal = document.getElementById('iat455modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat4553c')){
+   var modal = document.getElementById('iat455modal3');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat3332c')){
+   var modal = document.getElementById('iat333modal2');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat3362c')){
+   var modal = document.getElementById('iat336modal2');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat3512c')){
+   var modal = document.getElementById('iat351modal2');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat3522c')){
+   var modal = document.getElementById('iat352modal2');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat3552c')){
+   var modal = document.getElementById('iat355modal2');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat3812c')){
+   var modal = document.getElementById('iat381modal2');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat4522c')){
+   var modal = document.getElementById('iat452modal2');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('iat4552c')){
+   var modal = document.getElementById('iat455modal2');
+   modal.style.display = "none";
+  }
 
+
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Foundation requirements details clicks close
+  if(senderElement != document.getElementById('fal-x99')){
+   var modal = document.getElementById('fal-x99-modal');
+   modal.style.display = "none";
+  }
+  if(senderElement != document.getElementById('fan-x99')){
+   var modal = document.getElementById('fan-x99-modal');
+   modal.style.display = "none";
+  }
 }

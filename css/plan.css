@@ -29,8 +29,8 @@
   max-height: 2rem;
   min-width: 0.5rem;
   position: absolute;
-  top: 0.8em;
-  left: 81%;
+  top: -15px;
+  right: -15px;
 }
 
 #modalxbtn{
@@ -40,7 +40,7 @@
   max-height: 2rem;
   min-width: 0.5rem;
   position: absolute;
-  padding-left: 97.8%;
+  right: -15px;
   display: block;
   cursor: pointer;
 }
@@ -228,9 +228,6 @@ h5#nocourses {
   .modal-content {
     width:90%;
   }
-  #modalxbtn {
-    padding-left: 98.1%;
-  }
 }
 
 /* The Close Button */
@@ -313,6 +310,12 @@ h5#nocourses {
     width: 60%; /* Full width */
 }
 
+textarea {
+  border:  1px solid var(--main-border-color);
+  width: 50%;
+  transition: all 0.5s ease;
+}
+
 
 @media (max-width: 70em) {
   .planarea {
@@ -337,6 +340,16 @@ h5#nocourses {
     width: 95%;
     padding: 0;
   }
+
+  textarea {
+    width: 90%;
+  }
+}
+
+@media (max-width: 48em) {
+  #sharemodalcontent {
+    width: 90%;
+  }
 }
 
 
@@ -347,6 +360,8 @@ h5#nocourses {
 
   .term {
     max-width: 100%;
+    margin-right: 1.75rem;
+    margin-bottom: 2rem;
   }
 
   .termtitle {
