@@ -1,6 +1,4 @@
-.middle-container {
-  margin: 0 1em;
-}
+
 
 .req-section {
   margin-bottom: 1rem;
@@ -958,21 +956,32 @@ p.coop-instruction-detail {
   padding: 0.5rem 1.5rem 2rem;
 }
 
-.modal h5{
-  margin: 0.66rem auto 1rem;
-}
+/*--------------------------------------------------------------------------------------media query
+*/
+@media (max-width: 41em) {
+  .req-info {
+    width: 100%;
+  }
+  .info-row {
+    display: block;
+  }
 
-h5.courseinfolabel {
-  margin: 0.66rem auto;
-}
+  .modal-info {
+    max-width: 90%;
+    height: 94%;
+    margin: 0 1.75rem 2rem 1rem;
+    transform: translate(58%, -49%);
+  }
 
-h5.courseinfodesc2 {
-  margin-bottom: 1.2rem;
-}
+  h5.courseinfolabel, .modal h5 {
+    margin: 0.35em 0;
+    line-height: 1rem;
+  }
 
-.infoline{
-  background-color: var(--main-bg-red);
-  width: auto;
-  margin: 0.8rem 1.5rem;
-  height: 0.065rem;
-}
+  .infoline {
+    margin: 0.25rem 1.5rem;
+  }
+
+  .modal-info a {
+    margin: 0.5rem auto;
+  }
