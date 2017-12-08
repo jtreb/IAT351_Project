@@ -860,7 +860,7 @@ h5.courseinfodesc2 {
 
   .modal-info {
     max-width: 90%;
-    height: 94%;
+    /*height: 94%;*/
     margin: 0 1.75rem 2rem 1rem;
     transform: translate(58%, -49%);
   }
@@ -875,6 +875,6 @@ h5.courseinfodesc2 {
   }
 
   .modal-info a {
-    margin: 0.5rem auto;
+    margin: 0.5rem auto 1rem;
   }
 }
