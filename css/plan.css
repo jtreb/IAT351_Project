@@ -1,18 +1,7 @@
-#planbyreq{
-  margin:2rem;
-}
 .planarea{
   display: flex;
-  align-items: start;
-  padding: 1rem;
-
-    border-width: 0.03125rem;
-    border-color: var(--main-border-color);
-    border-style: solid;
-}
-
-.term{
-  display: block;
+  align-items: flex-start;
+  flex-wrap: nowrap;
 }
 
 #plan5{
@@ -25,10 +14,8 @@
   display: none;
 }
 
-
-
 .termbtns{
-  padding: 1rem;
+  margin: 1em 0 1em 1em;
   width: 4rem;
   min-width: 2.5rem;
 }
@@ -41,9 +28,9 @@
   max-width: 2rem;
   max-height: 2rem;
   min-width: 0.5rem;
-  position: relative;
-  top: 1.2em;
-  left: 13em;
+  position: absolute;
+  top: 0.8em;
+  left: 81%;
 }
 
 #modalxbtn{
@@ -53,7 +40,7 @@
   max-height: 2rem;
   min-width: 0.5rem;
   position: absolute;
-  padding-left: 59%;
+  padding-left: 97.8%;
   display: block;
   cursor: pointer;
 }
@@ -69,19 +56,31 @@
 }
 
 #plusbtn{
-
   cursor: pointer;
 }
+
 .planareagrid{
-
-    display: flex;
-    flex-direction: horizontal;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
-.term{
-  margin: 1rem;
+.term {
+  display: block;
+  margin: 1em;
+  position: relative;
+  max-width: 13.6em;
+  flex: 1;
 }
+
+.termtitle{
+  padding: 0.8rem;
+  width: 12rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
 .plancourse{
   border-width: 0.0625rem;
   border-color: var(--main-border-color);
@@ -96,19 +95,9 @@
   border-bottom: 0.0625em solid var(--main-border-color);
 }
 .potentialcourse{
-  border-width: 0.03125rem;
-  border-color: var(--main-border-color);
   padding: 0.8rem;
-  border-style: solid;
   margin:0rem;
   display: none;
-}
-
-.termtitle{
-  padding: 1rem;
-  width: 12rem;
-  font-size: 1.5rem;
-  text-align: left;
 }
 
 /*popup*/
@@ -125,12 +114,16 @@
     padding:1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    margin: 1.5rem 0.375rem 0.75rem 0.375rem;
+    margin: 0 0.375rem;
 }
 .tmpplan{
   display: flex;
   margin: auto;
   justify-content: center;
+}
+
+h5#nocourses {
+  margin: 0 auto;
 }
 
 #tempcourse0{
@@ -195,17 +188,21 @@
 }
 
 
-#semselect{
-  width: 20%;
-  margin: auto;
-  margin: 1rem;
+.selector{
+  margin: 0 1rem 1rem;
 }
+
+#addcourses {
+  margin: 0.5em auto 0;
+}
+
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 0;
+    right: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
@@ -216,11 +213,24 @@
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    /*margin: auto;*/
     padding: 0rem;
     text-align: center;
-    border: 0.0625rem solid var(--main-border-color);
     width: 60%; /* Could be more or less, depending on screen size */
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    transition: all 0.2s ease;
+}
+
+@media (max-width: 70em) {
+  .modal-content {
+    width:90%;
+  }
+  #modalxbtn {
+    padding-left: 98.1%;
+  }
 }
 
 /* The Close Button */
@@ -232,17 +242,16 @@
     text-align: center;
 }
 .closebtn{
-
-  padding-left:5rem;
-  padding: auto;
+  text-align: center;
+  transition: all 0.2s ease;
 }
 
-.closebtn:hover,
+/*.closebtn:hover,
 .closebtn:focus {
-    color: black;
+    color: var(--blue-text-color);
     text-decoration: none;
     cursor: pointer;
-}
+}*/
 
 #enrolled {
   background-color: var(--dark-gray);
@@ -262,11 +271,6 @@
   background-color: var(--blue-text-color);
 }
 
-.modal h5{
-  padding-top: 0.66rem;
-  padding-bottom: 0.66rem;
-
-}
 .plan-category{
   text-align: center;
   padding: 1rem;
@@ -280,22 +284,72 @@
 .shareicons{
   display: flex;
   margin: auto;
-  width: 40%;
+  width: 60%;
   text-align: center;
   padding: 1rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+.shareicons figure {
+  text-align: center;
+  width: 4em;
+  margin: 1rem;
+}
+
+.shareicons figcaption {
+  font-weight: 400;
+  font-size: 0.83em;
+}
+
 .socialmedia{
-  width: 10%;
+  width: 70%;
   min-width: 2rem;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin: 0.25em;
   align-items: center;
   cursor: pointer;
-
 }
 #sharemodalcontent {
-    width: 40%; /* Full width */
+    width: 60%; /* Full width */
+}
+
+
+@media (max-width: 70em) {
+  .planarea {
+    display: block;
+  }
+
+  .termbtns {
+    width: 20px;
+    margin: 1em auto;
+  }
+
+  .term {
+    margin: 0 1em 1em;
+  }
+
+  #share-plan.req-section div.container-border h5.subtitle,
+  #share-plan.req-section div.container-border h5.advdesc {
+    width: 95%;
+  }
+
+  #share-plan.req-section div.container-border div.shareicons {
+    width: 95%;
+    padding: 0;
+  }
+}
+
+
+@media (max-width: 32em) {
+  .planareagrid {
+    display: block;
+  }
+
+  .term {
+    max-width: 100%;
+  }
+
+  .termtitle {
+    width: auto;
+  }
 }

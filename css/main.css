@@ -36,14 +36,26 @@ body {
   float: none;
 }
 
+.intext-link {
+  color: var(--blue-text-color);
+  word-break: break-all;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease-out;
+}
+
+.intext-link:hover, .intext-link:focus{
+  border-bottom: solid 1px var(--blue-text-color);
+}
+
 .layout-container {
   display: flex;
   flex-wrap: nowrap;
 }
 
-.layout-container-item {
-  flex: 1 auto;
-}
+/*.layout-container-item {
+  flex: 1;
+}*/
 
 .leftBar {
   order: 1;
@@ -53,6 +65,11 @@ body {
 }
 .middle-container {
   order: 2;
+  flex: 1;
+}
+
+.container-border {
+  border: 0.0625em solid var(--main-border-color);
 }
 
 @media (max-width: 70em) {

@@ -20,12 +20,12 @@ function deleteTerm0() {
 function deleteTerm1() {
   deletenum = 1;
   var modal = document.getElementById('confirm');
-  modal.style.display = "block";
+   modal.style.display = "block";
 }
 function deleteTerm2() {
   deletenum = 2;
   var modal = document.getElementById('confirm');
-  modal.style.display = "block";
+   modal.style.display = "block";
 }
 function deleteTerm3() {
   deletenum = 3;
@@ -103,6 +103,7 @@ function  changespecs() {
     if(req == 0){
          var a = document.getElementById ("specreqselect0");
           a.style.display = "block";
+          a.style.margin = "0 auto 1.66rem";
 
           var b = document.getElementById ("specreqselect1");
           b.style.display = "none";
@@ -118,6 +119,7 @@ function  changespecs() {
 
          var b = document.getElementById ("specreqselect1");
          b.style.display = "block";
+         b.style.margin = "0 auto 1.66rem";
 
          var c = document.getElementById ("specreqselect2");
          c.style.display = "none";
@@ -133,6 +135,7 @@ function  changespecs() {
 
         var z = document.getElementById ("specreqselect2");
         z.style.display = "block";
+        z.style.margin = "0 auto 1.66rem";
         console.log(req);
 
              var a = document.getElementById ("courseselect0");
@@ -158,6 +161,7 @@ function  changespecs() {
 
               var h = document.getElementById ("courseselect7");
               h.style.display = "block";
+              h.style.margin = "0 auto 1.66rem";
               console.log(req);
   }
 }
@@ -170,6 +174,7 @@ function  changecoursesmajor() {
     if(req == 0){
          var a = document.getElementById ("courseselect0");
           a.style.display = "block";
+          a.style.margin = "0 auto 1.66rem";
 
           var b = document.getElementById ("courseselect1");
           b.style.display = "none";
@@ -200,6 +205,7 @@ function  changecoursesmajor() {
 
          var b = document.getElementById ("courseselect1");
          b.style.display = "block";
+         b.style.margin = "0 auto 1.66rem";
 
          var c = document.getElementById ("courseselect2");
          c.style.display = "none";
@@ -230,6 +236,7 @@ function  changecoursesmajor() {
 
         var c = document.getElementById ("courseselect2");
         c.style.display = "block";
+        c.style.margin = "0 auto 1.66rem";
 
         var d = document.getElementById ("courseselect3");
         d.style.display = "none";
@@ -259,6 +266,7 @@ function  changecoursesmajor() {
 
         var d = document.getElementById ("courseselect3");
         d.style.display = "block";
+        d.style.margin = "0 auto 1.66rem";
 
         var e = document.getElementById ("courseselect4");
         e.style.display = "none";
@@ -295,6 +303,7 @@ function  changecourseswqb() {
 
           var e = document.getElementById ("courseselect4");
           e.style.display = "block";
+          e.style.margin = "0 auto 1.66rem";
 
           var f = document.getElementById ("courseselect5");
           f.style.display = "none";
@@ -325,6 +334,7 @@ function  changecourseswqb() {
 
          var f = document.getElementById ("courseselect5");
          f.style.display = "block";
+         f.style.margin = "0 auto 1.66rem";
 
          var g = document.getElementById ("courseselect6");
          g.style.display = "none";
@@ -355,6 +365,7 @@ function  changecourseswqb() {
 
         var g = document.getElementById ("courseselect6");
         g.style.display = "block";
+        g.style.margin = "0 auto 1.66rem";
 
         var h = document.getElementById ("courseselect7");
         h.style.display = "none";

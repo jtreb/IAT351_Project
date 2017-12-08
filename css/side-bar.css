@@ -1,6 +1,6 @@
 .side-bar-container {
   display: inline-block;
-  width: 16em;
+  width: 15.75em;
 }
 
 .side-bar-container ul {
@@ -93,6 +93,17 @@
 .box-color-5 {
   background: var(--blue-text-color);
   color: var(--white-text-color);
+}
+.box-color-6 {
+  background-color: var(--main-bg-gray);
+  color: var(--main-bg-red);
+  border: 0.0625em solid var(--main-bg-red);
+}
+
+@media (min-width: 94em) {
+  .side-bar-container {
+    width: 20em;
+  }
 }
 
 

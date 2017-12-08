@@ -26,6 +26,8 @@
   <body onclick="closeallinfo()">
     <!-- Nav -->
     <nav>
+      <div class="background-overlay">
+      </div>
       <div class="hamburger-bar">
         <img class="hamburger-icon" src="../img/hamburger-icon.png" alt="A hamburger icon">
       </div>
@@ -42,7 +44,7 @@
     </nav>
 
     <section class="banner">
-      <h1>School of Interactive Arts & Technology (IAT)<h1>
+      <h1>School of Interactive Arts & Technology (IAT)</h1>
       <h2>Bachelor of Science (BSc) | Interactive Systems (IS)</h2>
     </section>
 
@@ -99,7 +101,7 @@
           <!-- Overview sidebar -->
           <li>
             <input type="checkbox" id="checkbox-3" name="checkbox-collapse" />
-            <label for="checkbox-3" class="sidebar-title">Overview</label>
+            <label for="checkbox-3" class="sidebar-title">Degree Overview</label>
             <div class="sidebar-content left-side-bar">
               <h4>Major:</h4>
               <p>School of Interactive Arts & Technology (IAT)</p>
@@ -149,7 +151,7 @@
       <!-- Main content -->
       <div class="middle-container layout-container-item">
         <!-- LOWER DIVISION REQUIREMENTS -->
-        <section id="lower-division-requirement" class="req-section">
+        <div id="lower-division-requirement" class="req-section adv-category">
           <h3>Lower Division Requirements</h3>
           <div class="req-section-container">
             <!-- FIRST YEAR CORE COURSES IAT -->
@@ -158,7 +160,7 @@
               <h5 class="req-instructions">Must complete <em>all</em> of these courses</h5>
               <section class="req-set">
                   <div class="course-group">
-                    <div class="course" onclick="showiat100()" id="iat100c">IAT 100</div>
+                    <div class="course"  onclick="showiat100()" id="iat100c">IAT 100</div>
                   </div>
                   <div class="course-group">
                     <div class="course" onclick="showiat102()" id="iat102c">IAT 102</div>
@@ -273,10 +275,10 @@
             <div class="triangle">
             </div>
           </div>
-        </section>
+        </div>
 
         <!-- UPPER DIVISION REQUIREMENTS -->
-        <section id="upper-division-requirement" class="req-section">
+        <div id="upper-division-requirement" class="req-section adv-category">
           <h3>Upper Division Requirements</h3>
           <div class="req-section-container">
             <!-- BSC UPPER DIVISION REQ -->
@@ -289,10 +291,13 @@
                     <div class="pre-reqs">
                       <div class="line"></div>
                       <div class="course"  onclick="showiat333()" id="iat333c">IAT 333</div>
-                      <div class="course" onclick="showiat334()" id="iat334c">IAT 334</div>
+                      <div class="course" onclick="showiat336()" id="iat336c">IAT 336</div>
+                      <div class="course enrolled" onclick="showiat351()" id="iat351c">IAT 351</div>
+                      <div class="course planned" onclick="showiat352()" id="iat352c">IAT 352</div>
                       <div class="course enrolled"  onclick="showiat355()" id="iat355c">IAT 355</div>
                       <div class="course enrolled"  onclick="showiat381()" id="iat381c">IAT 381</div>
-                      <div class="course" onclick="showiat445()" id="iat445c">IAT 445</div>
+                      <div class="course planned" onclick="showiat452()" id="iat452c">IAT 452</div>
+                      <div class="course" onclick="showiat455()" id="iat455c">IAT 455</div>
                     </div>
                   </div>
                   <div class="course-group">
@@ -351,7 +356,13 @@
                     <div class="course" onclick="showiat3332()" id="iat3332c">IAT 333</div>
                   </div>
                   <div class="course-group">
-                    <div class="course" onclick="showiat3342()" id="iat3342c">IAT 334</div>
+                    <div class="course" onclick="showiat3362()" id="iat3362c">IAT 336</div>
+                  </div>
+                  <div class="course-group">
+                    <div class="course enrolled" onclick="showiat3512()" id="iat3512c">IAT 351</div>
+                  </div>
+                  <div class="course-group">
+                    <div class="course planned" onclick="showiat3522()" id="iat3522c">IAT 352</div>
                   </div>
                   <div class="course-group">
                     <div class="course enrolled" onclick="showiat3552()" id="iat3552c">IAT 355</div>
@@ -360,7 +371,10 @@
                     <div class="course enrolled" onclick="showiat3812()" id="iat3812c">IAT 381</div>
                   </div>
                   <div class="course-group">
-                    <div class="course" onclick="showiat4452()" id="iat4452c">IAT 445</div>
+                    <div class="course planned" onclick="showiat4522()" id="iat4522c">IAT 452</div>
+                  </div>
+                  <div class="course-group">
+                    <div class="course" onclick="showiat4552()" id="iat4552c">IAT 455</div>
                   </div>
               </section>
             </div>
@@ -369,10 +383,10 @@
               <p class="number-of-credits">09</p>
             </div>
           </div>
-        </section>
+        </div>
 
         <!--CONCENTRATION REQUIREMENTS-->
-        <section id="concentration-requirement" class="req-section">
+        <div id="concentration-requirement" class="req-section adv-category">
           <h3>Concentration Requirements</h3>
           <div class="req-section-container">
             <!-- UPPER DIVISION COURSES (IAT) -->
@@ -381,10 +395,10 @@
               <h5 class="req-instructions">Must complete <em>all</em> of these courses</h5>
               <section class="req-set">
                 <div class="course-group">
-                  <div class="course incomplete" onclick="showiat351()" id="iat351c">IAT 351</div>
+                  <div class="course enrolled" onclick="showiat3513()" id="iat3513c">IAT 351</div>
                 </div>
                 <div class="course-group">
-                  <div class="course planned" onclick="showiat352()" id="iat352c">IAT 352</div>
+                  <div class="course planned" onclick="showiat3523()" id="iat3523c">IAT 352</div>
                 </div>
                 <div class="course-group">
                   <div class="course enrolled" onclick="showiat3553()" id="iat3553c">IAT 355</div>
@@ -393,20 +407,20 @@
                   <div class="course enrolled incomplete" onclick="showiat410()" id="iat410c">IAT 410</div>
                 </div>
                 <div class="course-group">
-                  <div class="course planned" onclick="showiat452()" id="iat452c">IAT 452</div>
+                  <div class="course planned" onclick="showiat4523()" id="iat4523c">IAT 452</div>
                 </div>
                 <div class="course-group">
-                  <div class="course" onclick="showiat455()" id="iat455c">IAT 455</div>
+                  <div class="course" onclick="showiat4553()" id="iat4553c">IAT 455</div>
                 </div>
               </section>
             </div>
             <div class="triangle">
             </div>
           </div>
-        </section>
+        </div>
 
         <!--APPLY FOR CONVOCATION/GRAD SCHOOL-->
-        <section id="apply-grad-school" class="req-section">
+        <div id="apply-grad-school" class="req-section adv-category">
           <h3>Apply for Convocation/Grad School</h3>
           <div class="req-section-container">
             <!-- UPPER DIVISION COURSES (IAT) -->
@@ -418,7 +432,7 @@
               <h5 class="req-instructions">Please make sure that <em>all</em> Major, WQB, Foundation Requirements are completed before applying</h5>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
 
@@ -444,8 +458,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -474,8 +488,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -497,7 +511,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
           </div>
@@ -505,8 +519,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -535,8 +549,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -565,8 +579,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -595,8 +609,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -617,7 +631,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
           </div>
@@ -625,8 +639,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -647,7 +661,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
           </div>
@@ -655,8 +669,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -677,7 +691,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
           </div>
@@ -685,8 +699,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -707,7 +721,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
           </div>
@@ -715,8 +729,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -745,8 +759,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -775,8 +789,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -805,8 +819,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -835,8 +849,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -865,8 +879,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -887,7 +901,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
         </div>
@@ -895,8 +909,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -925,8 +939,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -955,8 +969,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -985,8 +999,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -1016,8 +1030,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -1046,8 +1060,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -1057,9 +1071,9 @@
       </div>
 
       <!-- course Modal content -->
-      <div id="iat334modal" class="modal">
+      <div id="iat336modal" class="modal">
         <div class="modal-info" id="iat100modalcontent">
-          <h3 class="confirmtitle">IAT 334</h3>
+          <h3 class="confirmtitle">IAT 336</h3>
           <div class="courseinfoflex">
             <h5 class="courseinfolabel">Status:</h5>
             <h5 class="courseinfodesc">COMPLETED</h5>
@@ -1076,8 +1090,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -1087,9 +1101,9 @@
       </div>
 
       <!-- course Modal content -->
-      <div id="iat334modal2" class="modal">
+      <div id="iat336modal2" class="modal">
         <div class="modal-info" id="iat100modalcontent">
-          <h3 class="confirmtitle">IAT 334</h3>
+          <h3 class="confirmtitle">IAT 336</h3>
           <div class="courseinfoflex">
             <h5 class="courseinfolabel">Status:</h5>
             <h5 class="courseinfodesc">COMPLETED</h5>
@@ -1106,14 +1120,196 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
           <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
           </div>
         </div>
+      </div>
+
+      <!-- course Modal content -->
+      <div id="iat351modal" class="modal">
+        <div class="modal-info" id="iat100modalcontent">
+          <h3 class="confirmtitle">IAT 351</h3>
+          <div class="courseinfoflex">
+            <h5 class="courseinfolabel">Status:</h5>
+            <h5 class="courseinfodesc">ENROLLED <em> (Current Semester)</em></h5>
+            <h5 class="courseinfolabel">Semester Term:</h5>
+            <h5 class="courseinfodesc"><em> (Current Semester)</em></h5>
+            <h5 class="courseinfolabel">Credits Worth:</h5>
+            <h5 class="courseinfodesc">3.00</h5>
+            <h5 class="courseinfolabel">Grade:</h5>
+            <h5 class="courseinfodesc">N/A</h5>
+            <h5 class="courseinfolabel">WQB Status:</h5>
+            <h5 class="courseinfodesc">B-Humanities</h5>
+        </div>
+        <div class="infoline"></div>
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Course Title:</h5>
+          <h5 class="courseinfodesc2">Digital Image Design</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
+          <h5 class="courseinfolabel">Course Description:</h5>
+          <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- course Modal content -->
+      <div id="iat351modal2" class="modal">
+        <div class="modal-info" id="iat100modalcontent">
+          <h3 class="confirmtitle">IAT 351</h3>
+          <div class="courseinfoflex">
+            <h5 class="courseinfolabel">Status:</h5>
+            <h5 class="courseinfodesc">ENROLLED <em> (Current Semester)</em></h5>
+            <h5 class="courseinfolabel">Semester Term:</h5>
+            <h5 class="courseinfodesc"><em> (Current Semester)</em></h5>
+            <h5 class="courseinfolabel">Credits Worth:</h5>
+            <h5 class="courseinfodesc">3.00</h5>
+            <h5 class="courseinfolabel">Grade:</h5>
+            <h5 class="courseinfodesc">N/A</h5>
+            <h5 class="courseinfolabel">WQB Status:</h5>
+            <h5 class="courseinfodesc">B-Humanities</h5>
+        </div>
+        <div class="infoline"></div>
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Course Title:</h5>
+          <h5 class="courseinfodesc2">Digital Image Design</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
+          <h5 class="courseinfolabel">Course Description:</h5>
+          <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- course Modal content -->
+      <div id="iat351modal3" class="modal">
+        <div class="modal-info" id="iat100modalcontent">
+          <h3 class="confirmtitle">IAT 351</h3>
+          <div class="courseinfoflex">
+            <h5 class="courseinfolabel">Status:</h5>
+            <h5 class="courseinfodesc">ENROLLED <em> (Current Semester)</em></h5>
+            <h5 class="courseinfolabel">Semester Term:</h5>
+            <h5 class="courseinfodesc"><em> (Current Semester)</em></h5>
+            <h5 class="courseinfolabel">Credits Worth:</h5>
+            <h5 class="courseinfodesc">3.00</h5>
+            <h5 class="courseinfolabel">Grade:</h5>
+            <h5 class="courseinfodesc">N/A</h5>
+            <h5 class="courseinfolabel">WQB Status:</h5>
+            <h5 class="courseinfodesc">B-Humanities</h5>
+        </div>
+        <div class="infoline"></div>
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Course Title:</h5>
+          <h5 class="courseinfodesc2">Digital Image Design</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
+          <h5 class="courseinfolabel">Course Description:</h5>
+          <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- course Modal content -->
+      <div id="iat352modal" class="modal">
+        <div class="modal-info" id="iat100modalcontent">
+          <h3 class="confirmtitle">IAT 352</h3>
+          <div class="courseinfoflex">
+            <h5 class="courseinfolabel">Status:</h5>
+            <h5 class="courseinfodesc">PLANNED</h5>
+            <h5 class="courseinfolabel">Semester Term:</h5>
+            <h5 class="courseinfodesc"><div class="buttonplan">EDIT PLAN</div></h5>
+            <h5 class="courseinfolabel">Credits Worth:</h5>
+            <h5 class="courseinfodesc">3.00</h5>
+            <h5 class="courseinfolabel">Grade:</h5>
+            <h5 class="courseinfodesc">N/A</h5>
+            <h5 class="courseinfolabel">WQB Status:</h5>
+            <h5 class="courseinfodesc">B-Humanities</h5>
+        </div>
+        <div class="infoline"></div>
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Course Title:</h5>
+          <h5 class="courseinfodesc2">Digital Image Design</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
+          <h5 class="courseinfolabel">Course Description:</h5>
+          <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- course Modal content -->
+      <div id="iat352modal2" class="modal">
+        <div class="modal-info" id="iat100modalcontent">
+          <h3 class="confirmtitle">IAT 352</h3>
+          <div class="courseinfoflex">
+            <h5 class="courseinfolabel">Status:</h5>
+            <h5 class="courseinfodesc">PLANNED</h5>
+            <h5 class="courseinfolabel">Semester Term:</h5>
+            <h5 class="courseinfodesc"><div class="buttonplan">EDIT PLAN</div></h5>
+            <h5 class="courseinfolabel">Credits Worth:</h5>
+            <h5 class="courseinfodesc">3.00</h5>
+            <h5 class="courseinfolabel">Grade:</h5>
+            <h5 class="courseinfolabel">WQB Status:</h5>
+            <h5 class="courseinfodesc">B-Humanities</h5>
+        </div>
+        <div class="infoline"></div>
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Course Title:</h5>
+          <h5 class="courseinfodesc2">Digital Image Design</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
+          <h5 class="courseinfolabel">Course Description:</h5>
+          <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- course Modal content -->
+      <div id="iat352modal3" class="modal">
+        <div class="modal-info" id="iat100modalcontent">
+          <h3 class="confirmtitle">IAT 352</h3>
+          <div class="courseinfoflex">
+            <h5 class="courseinfolabel">Status:</h5>
+            <h5 class="courseinfodesc">PLANNED</h5>
+            <h5 class="courseinfolabel">Semester Term:</h5>
+            <h5 class="courseinfodesc"><div class="buttonplan">EDIT PLAN</div></h5>
+            <h5 class="courseinfolabel">Credits Worth:</h5>
+            <h5 class="courseinfodesc">3.00</h5>
+            <h5 class="courseinfolabel">Grade:</h5>
+            <h5 class="courseinfolabel">WQB Status:</h5>
+            <h5 class="courseinfodesc">B-Humanities</h5>
+        </div>
+        <div class="infoline"></div>
+        <div class="coursemoreinfo">
+          <h5 class="courseinfolabel">Course Title:</h5>
+          <h5 class="courseinfodesc2">Digital Image Design</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
+          <h5 class="courseinfolabel">Course Description:</h5>
+          <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
+          </h5>
+          <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+
+          </div>
+        </div>
+
       </div>
 
       <!-- course Modal content -->
@@ -1128,7 +1324,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
         </div>
@@ -1136,8 +1332,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -1158,7 +1354,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
         </div>
@@ -1166,8 +1362,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -1188,7 +1384,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
         </div>
@@ -1196,8 +1392,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -1220,7 +1416,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
           </div>
@@ -1228,8 +1424,8 @@
         <div class="coursemoreinfo">
           <h5 class="courseinfolabel">Course Title:</h5>
           <h5 class="courseinfodesc2">Digital Image Design</h5>
-          <h5 class="courseinfolabel">Pre-Requisite:</h5>
-          <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+          <h5 class="courseinfolabel">Prerequisite:</h5>
+          <h5 class="courseinfodesc2">None</h5>
           <h5 class="courseinfolabel">Course Description:</h5>
           <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
           </h5>
@@ -1251,7 +1447,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
           </div>
@@ -1259,8 +1455,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -1270,9 +1466,97 @@
       </div>
 
       <!-- course Modal content -->
-      <div id="iat445modal" class="modal">
+      <div id="iat452modal" class="modal">
         <div class="modal-info" id="iat100modalcontent">
-          <h3 class="confirmtitle">IAT 445</h3>
+          <h3 class="confirmtitle">IAT 452</h3>
+          <div class="courseinfoflex">
+            <h5 class="courseinfolabel">Status:</h5>
+            <h5 class="courseinfodesc">PLANNED</h5>
+            <h5 class="courseinfolabel">Semester Term:</h5>
+            <h5 class="courseinfodesc"><div class="buttonplan">EDIT PLAN</div></h5>
+            <h5 class="courseinfolabel">Credits Worth:</h5>
+            <h5 class="courseinfodesc">3.00</h5>
+            <h5 class="courseinfolabel">Grade:</h5>
+            <h5 class="courseinfolabel">WQB Status:</h5>
+            <h5 class="courseinfodesc">B-Humanities</h5>
+          </div>
+          <div class="infoline"></div>
+          <div class="coursemoreinfo">
+            <h5 class="courseinfolabel">Course Title:</h5>
+            <h5 class="courseinfodesc2">Digital Image Design</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
+            <h5 class="courseinfolabel">Course Description:</h5>
+            <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
+            </h5>
+            <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- course Modal content -->
+      <div id="iat452modal2" class="modal">
+        <div class="modal-info" id="iat100modalcontent">
+            <h3 class="confirmtitle">IAT 452</h3>
+            <div class="courseinfoflex">
+              <h5 class="courseinfolabel">Status:</h5>
+              <h5 class="courseinfodesc">PLANNED</h5>
+              <h5 class="courseinfolabel">Semester Term:</h5>
+              <h5 class="courseinfodesc"><div class="buttonplan">EDIT PLAN</div></h5>
+              <h5 class="courseinfolabel">Credits Worth:</h5>
+              <h5 class="courseinfodesc">3.00</h5>
+              <h5 class="courseinfolabel">Grade:</h5>
+              <h5 class="courseinfolabel">WQB Status:</h5>
+              <h5 class="courseinfodesc">B-Humanities</h5>
+            </div>
+            <div class="infoline"></div>
+            <div class="coursemoreinfo">
+              <h5 class="courseinfolabel">Course Title:</h5>
+              <h5 class="courseinfodesc2">Digital Image Design</h5>
+              <h5 class="courseinfolabel">Prerequisite:</h5>
+              <h5 class="courseinfodesc2">None</h5>
+              <h5 class="courseinfolabel">Course Description:</h5>
+              <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
+              </h5>
+              <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+            </div>
+          </div>
+      </div>
+
+      <!-- course Modal content -->
+      <div id="iat452modal3" class="modal">
+        <div class="modal-info" id="iat100modalcontent">
+            <h3 class="confirmtitle">IAT 452</h3>
+            <div class="courseinfoflex">
+              <h5 class="courseinfolabel">Status:</h5>
+              <h5 class="courseinfodesc">PLANNED</h5>
+              <h5 class="courseinfolabel">Semester Term:</h5>
+              <h5 class="courseinfodesc"><div class="buttonplan">EDIT PLAN</div></h5>
+              <h5 class="courseinfolabel">Credits Worth:</h5>
+              <h5 class="courseinfodesc">3.00</h5>
+              <h5 class="courseinfolabel">Grade:</h5>
+              <h5 class="courseinfolabel">WQB Status:</h5>
+              <h5 class="courseinfodesc">B-Humanities</h5>
+            </div>
+            <div class="infoline"></div>
+            <div class="coursemoreinfo">
+              <h5 class="courseinfolabel">Course Title:</h5>
+              <h5 class="courseinfodesc2">Digital Image Design</h5>
+              <h5 class="courseinfolabel">Prerequisite:</h5>
+              <h5 class="courseinfodesc2">None</h5>
+              <h5 class="courseinfolabel">Course Description:</h5>
+              <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
+              </h5>
+              <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+            </div>
+          </div>
+      </div>
+
+      <!-- course Modal content -->
+      <div id="iat455modal" class="modal">
+        <div class="modal-info" id="iat100modalcontent">
+          <h3 class="confirmtitle">IAT 455</h3>
           <div class="courseinfoflex">
             <h5 class="courseinfolabel">Status:</h5>
             <h5 class="courseinfodesc">COMPLETED</h5>
@@ -1289,8 +1573,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -1298,11 +1582,12 @@
 
           </div>
         </div>
+      </div>
 
-      </div>  <!-- course Modal content -->
-        <div id="iat445modal2" class="modal">
+      <!-- course Modal content -->
+      <div id="iat455modal2" class="modal">
           <div class="modal-info" id="iat100modalcontent">
-            <h3 class="confirmtitle">IAT 445</h3>
+            <h3 class="confirmtitle">IAT 455</h3>
             <div class="courseinfoflex">
               <h5 class="courseinfolabel">Status:</h5>
               <h5 class="courseinfodesc">COMPLETED</h5>
@@ -1319,12 +1604,43 @@
             <div class="coursemoreinfo">
               <h5 class="courseinfolabel">Course Title:</h5>
               <h5 class="courseinfodesc2">Digital Image Design</h5>
-              <h5 class="courseinfolabel">Pre-Requisite:</h5>
-              <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+              <h5 class="courseinfolabel">Prerequisite:</h5>
+              <h5 class="courseinfodesc2">None</h5>
               <h5 class="courseinfolabel">Course Description:</h5>
               <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
               </h5>
               <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- course Modal content -->
+        <div id="iat455modal3" class="modal">
+          <div class="modal-info" id="iat100modalcontent">
+            <h3 class="confirmtitle">IAT 455</h3>
+            <div class="courseinfoflex">
+              <h5 class="courseinfolabel">Status:</h5>
+              <h5 class="courseinfodesc">COMPLETED</h5>
+              <h5 class="courseinfolabel">Semester Term:</h5>
+              <h5 class="courseinfodesc">Fall 2014</h5>
+              <h5 class="courseinfolabel">Credits Worth:</h5>
+              <h5 class="courseinfodesc">3.00</h5>
+              <h5 class="courseinfolabel">Grade:</h5>
+              <h5 class="courseinfodesc">A-</h5>
+              <h5 class="courseinfolabel">WQB Status:</h5>
+              <h5 class="courseinfodesc">B-Humanities</h5>
+            </div>
+            <div class="infoline"></div>
+            <div class="coursemoreinfo">
+              <h5 class="courseinfolabel">Course Title:</h5>
+              <h5 class="courseinfodesc2">Digital Image Design</h5>
+              <h5 class="courseinfolabel">Prerequisite:</h5>
+              <h5 class="courseinfodesc2">None</h5>
+              <h5 class="courseinfolabel">Course Description:</h5>
+              <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
+              </h5>
+              <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
+
             </div>
           </div>
         </div>
@@ -1349,8 +1665,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -1379,8 +1695,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -1409,8 +1725,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -1439,8 +1755,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -1469,8 +1785,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -1491,7 +1807,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
           </div>
@@ -1499,8 +1815,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -1520,7 +1836,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
           </div>
@@ -1528,8 +1844,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -1550,7 +1866,7 @@
             <h5 class="courseinfolabel">Credits Worth:</h5>
             <h5 class="courseinfodesc">3.00</h5>
             <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
+            <h5 class="courseinfodesc">N/A</h5>
             <h5 class="courseinfolabel">WQB Status:</h5>
             <h5 class="courseinfodesc">B-Humanities</h5>
           </div>
@@ -1558,38 +1874,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
-            <h5 class="courseinfolabel">Course Description:</h5>
-            <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
-            </h5>
-            <a href="https://www.sfu.ca/students/calendar/2017/spring/courses/iat/100.html">More Details!</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- course Modal content -->
-      <div id="iat452modal" class="modal">
-        <div class="modal-info" id="iat100modalcontent">
-          <h3 class="confirmtitle">IAT 452</h3>
-          <div class="courseinfoflex">
-            <h5 class="courseinfolabel">Status:</h5>
-            <h5 class="courseinfodesc">PLANNED</h5>
-            <h5 class="courseinfolabel">Semester Term:</h5>
-            <h5 class="courseinfodesc"><div class="buttonplan">EDIT PLAN</div></h5>
-            <h5 class="courseinfolabel">Credits Worth:</h5>
-            <h5 class="courseinfodesc">3.00</h5>
-            <h5 class="courseinfolabel">Grade:</h5>
-            <h5 class="courseinfodesc">A-</h5>
-            <h5 class="courseinfolabel">WQB Status:</h5>
-            <h5 class="courseinfodesc">B-Humanities</h5>
-          </div>
-          <div class="infoline"></div>
-          <div class="coursemoreinfo">
-            <h5 class="courseinfolabel">Course Title:</h5>
-            <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>
@@ -1618,8 +1904,8 @@
           <div class="coursemoreinfo">
             <h5 class="courseinfolabel">Course Title:</h5>
             <h5 class="courseinfodesc2">Digital Image Design</h5>
-            <h5 class="courseinfolabel">Pre-Requisite:</h5>
-            <h5 class="courseinfodesc2">48 Credits, including a lower division W Course</h5>
+            <h5 class="courseinfolabel">Prerequisite:</h5>
+            <h5 class="courseinfodesc2">None</h5>
             <h5 class="courseinfolabel">Course Description:</h5>
             <h5 class="courseinfodesc2">This is a project-based course that introduces the theory and hands-on practice of art and design in digital media. As the introductory course in IAT, this course teaches the core fundamental principles in 2D visual design, sequential and animation design. Students learn the fundamentals of digital photography and vector image creation. The theory is contextualized in contemporary new media design practice and is broadly applicable across disciplines.
             </h5>

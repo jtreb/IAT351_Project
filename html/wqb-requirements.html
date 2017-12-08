@@ -23,12 +23,14 @@
   <body>
     <!-- Nav -->
     <nav>
+      <div class="background-overlay">
+      </div>
       <div class="hamburger-bar">
         <img class="hamburger-icon" src="../img/hamburger-icon.png" alt="A hamburger icon">
       </div>
       <div class="menu-items-container">
         <div class="menu-items">
-          <a href="major-requirements.html" class="nav-item first-nav-item">Major Requirements</a>
+          <a href="major-requirements.html" class="nav-item first-nav-item ">Major Requirements</a>
           <a href="wqb-requirements.html" class="nav-item current-nav-item">WQB Requirements</a>
           <a href="co-op-requirements.html" class="nav-item">Co-op Requirements</a>
           <a href="highschool-requirements.html" class="nav-item">Foundation Requirements</a>
@@ -39,165 +41,280 @@
     </nav>
 
     <section class="banner">
-      <h1>School of Interactive Arts & Technology (IAT)<h1>
+      <h1>School of Interactive Arts & Technology (IAT)</h1>
       <h2>Bachelor of Science (BSc) | Interactive Systems (IS)</h2>
     </section>
 
-    <!-- Side bars -->
-
-    <!-- Main content -->
-    <section class="req-section">
-    <section class="central-adv-area">
-        <div class="adv-category" id="general">
-            <h3 id="generaltitle">Notice</h3>
-            <h5 class="subtitle">Please Read This Information</h5>
-            <h5 class="advdesc">You must successfully complete 4 semester work terms of Co-op for a degree with a Co-op designation. However, students who successfully complete 3 semester work terms are eligible for a certificate of completion.</h5>
-            <div class="advline"></div>
-            <h5 class="subtitle">myExperience</h5>
-            <h5 class="advdesc">To manage your CO-OP Requirements, apply for a job-seeking status and/or to browse and apply for companies working with SFU for CO-OP experience, please visit myExperience at https://www.sfu.ca/wil/myexperience/
-            </h5>
-        </div>
-    </section>
-  </section>
-
-    <section class="req-section">
-      <h3>Writing (W) Requirement</h3>
-      <div class="req-section-container">
-        <!--  -->
-        <div class="req-section-inner-container">
-          <h5 class="req-title">Upper Division W Course from IAT:</h5>
-          <h5 class="req-instructions">Must complete <em>this</em> course</h5>
-          <section class="req-set">
-              <div class="course-group">
-                <div class="course incomplete">IAT 309</div>
+    <div class="layout-container">
+      <!-- Left Side bars -->
+      <div class="side-bar-container">
+        <ul>
+          <!-- Content -->
+          <li>
+            <input type="checkbox" id="checkbox-7" name="checkbox-collapse" />
+            <label for="checkbox-7" class="sidebar-title">Content</label>
+            <div class="sidebar-content">
+              <a href="#notice">Notice</a>
+              <a href="#writing-req">Writing (W) Requirement</a>
+              <a href="#quantitative-req">Quantitative (Q) Requirement</a>
+              <a href="#breadth-req">Breadth (B) Requirement</a>
+              <a href="#total-credit">Total WQB Credit Counter</a>
+            </div>
+          </li>
+          <!-- Legend -->
+          <li>
+            <input type="checkbox" id="checkbox-2" name="checkbox-collapse" />
+            <label for="checkbox-2" class="sidebar-title">Legend</label>
+            <div class="sidebar-content">
+              <div class="content-container">
+                <div class="content-item">
+                  <p class="content-text">Completed</p>
+                  <p class="content-text-box box-color-1">Course No.</p>
+                </div>
+                <div class="content-item">
+                  <p class="content-text">Incomplete</p>
+                  <p class="content-text-box box-color-2">Course No.</p>
+                </div>
+                <div class="content-item">
+                  <p class="content-text">Optional</p>
+                  <p class="content-text-box box-color-3">Course No.</p>
+                </div>
+                <div class="content-item">
+                  <p class="content-text">Enrolled</p>
+                  <p class="content-text-box box-color-4">Course No.</p>
+                </div>
+                <div class="content-item">
+                  <p class="content-text">Planned</p>
+                  <p class="content-text-box box-color-5">Course No.</p>
+                </div>
               </div>
-          </section>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Side bars -->
+      <div class="rightBar side-bar-container layout-container-item">
+        <ul>
+          <!-- Overview sidebar -->
+          <li>
+            <input type="checkbox" id="checkbox-3" name="checkbox-collapse" />
+            <label for="checkbox-3" class="sidebar-title">Degree Overview</label>
+            <div class="sidebar-content left-side-bar">
+              <h4>Major:</h4>
+              <p>School of Interactive Arts & Technology (IAT)</p>
+              <h4>Degree:</h4>
+              <p>Bachelor of Science (BSc)</p>
+              <h4>Concentration Declared:</h4>
+              <p>Interactive Systems (IS)</p>
+              <h4>Total WQB Credit Completed:</h4>
+              <p>45</p>
+            </div>
+          </li>
+          <!-- Currently enrolled sidebar -->
+          <li>
+            <input type="checkbox" id="checkbox-4" name="checkbox-collapse" />
+            <label for="checkbox-4" class="sidebar-title">Currently Enrolled In</label>
+            <div class="sidebar-content left-side-bar course-current-in">
+              <p>IAT 103W</p>
+              <p>IAT 355</p>
+              <p>IAT 381</p>
+              <p>PSYC 362</p>
+            </div>
+          </li>
+          <!-- Checklist sidebar -->
+          <li>
+            <input type="checkbox" id="checkbox-5" name="checkbox-collapse" />
+            <label for="checkbox-5" class="sidebar-title">Check List</label>
+            <div class="sidebar-content left-side-bar course-current-in">
+              <!-- Writing (W) Requirement -->
+              <h4 class="small-header-in-table">Writing (W) Requirement</h4>
+              <p>Upper Division W Course from IAT<img src="../img/Exclamation Mark (Circle).svg" align="right" class="exclamation-svg"></p>
+              <p>Lower or Upper Division W Course<img src="../img/Exclamation Mark (Circle).svg" align="right" class="exclamation-svg"></p>
+
+              <!-- Quantitative (Q) Requirement -->
+              <h4 class="small-header-in-table">Quantitative (Q) Requirement</h4>
+              <p>Lower or Upper Division Q Course<img src="../img/Checkmark (Circle).svg" align="right"class="check-svg"></p>
+
+              <!-- Breadth (B) Requirement -->
+              <h4 class="small-header-in-table">Breadth (B) Requirement</h4>
+              <p>Social Science Breadth<img src="../img/Exclamation Mark (Circle).svg" align="right" class="exclamation-svg"></p>
+              <p>Humanities Breadth<img src="../img/Checkmark (Circle).svg" align="right"class="check-svg"></p>
+              <p>Science Breadth<img src="../img/Checkmark (Circle).svg" align="right"class="check-svg"></p>
+              <p>Undesignated Breadth<img src="../img/Checkmark (Circle).svg" align="right"class="check-svg"></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main content -->
+      <div class="middle-container layout-container-item">
+        <!-- Notice -->
+        <div class="req-section adv-category" id="notice">
+          <h3 id="generaltitle">Notice</h3>
+          <div class="container-border">
+            <h5 class="advdesc">All students admitted to an undergraduate degree at SFU must complete a <em>minimum of 36 units of courses</em> designated as <em>Writing (W)</em>, <em>Quantitative (Q)</em>, or <em>Breadth (B)</em>, with a <em>grade of C- or better</em>  to receive the WQB credit. For additional information about WQB, please refer to:<a href="http://www.sfu.ca/students/calendar/fees-and-regulations/enrolment/WQB.html" class="intext-link">http://www.sfu.ca/students/calendar/fees-and-regulations/enrolment/WQB.html</a> </h5>
+          </div>
         </div>
-        <div class="triangle">
+
+        <!-- Writing (W) Requirement -->
+        <div class="req-section adv-category"  id="writing-req">
+          <h3>Writing (W) Requirement</h3>
+          <div class="container-border req-section-container">
+            <!--  -->
+            <div class="req-section-inner-container">
+              <h5 class="req-title">Upper Division W Course from IAT:</h5>
+              <h5 class="req-instructions">Must complete <em>this</em> course</h5>
+              <section class="req-set">
+                  <div class="course-group">
+                    <div class="course incomplete">IAT 309</div>
+                  </div>
+              </section>
+            </div>
+            <div class="triangle">
+            </div>
+            <!--  -->
+            <div class="req-section-inner-container">
+              <h5 class="req-title">Lower or Upper Division W Course:</h5>
+              <h5 class="req-instructions">Must complete <em>3 credits</em> worth of courses with a <em>W status</em></h5>
+              <section class="req-set">
+                  <div class="course-group">
+                    <div class="course enrolled">IAT 103W</div>
+                  </div>
+              </section>
+            </div>
+            <div class="triangle">
+              <h5 class="credits-completed">Total Credits Completed</h5>
+              <p class="number-of-credits">00</p>
+            </div>
+          </div>
         </div>
-        <!--  -->
-        <div class="req-section-inner-container">
-          <h5 class="req-title">Lower or Upper Division W Course:</h5>
-          <h5 class="req-instructions">Must complete <em>3 credits</em> worth of courses with a <em>W status</em></h5>
-          <section class="req-set">
-              <div class="course-group">
-                <div class="course enrolled">IAT 103W</div>
-              </div>
-          </section>
+
+        <!-- Quantitative (Q) Requirement -->
+        <div class="req-section adv-category" id="quantitative-req">
+          <h3>Quantitative (Q) Requirement</h3>
+          <div class="container-border req-section-container">
+            <!--  -->
+            <div class="req-section-inner-container">
+              <h5 class="req-title">Lower or Upper division Q Course:</h5>
+              <h5 class="req-instructions">Must complete <em>6 credits</em> worth of courses with a <em>Q status</em></h5>
+              <section class="req-set">
+                  <div class="course-group">
+                    <div class="course">CMPT 166</div>
+                  </div>
+                  <div class="course-group">
+                    <div class="course">CMPT 225</div>
+                  </div>
+                  <div class="course-group">
+                    <div class="course">MACM 101</div>
+                  </div>
+              </section>
+            </div>
+            <div class="triangle">
+              <h5 class="credits-completed">Total Credits Completed</h5>
+              <p class="number-of-credits">09</p>
+            </div>
+          </div>
         </div>
-        <div class="triangle">
-          <h5 class="credits-completed">Total Credits Completed</h5>
-          <p class="number-of-credits">0</p>
+
+        <!-- Breadth (B) Requirement -->
+        <div class="req-section adv-category" id="breadth-req">
+          <h3>Breadth (B) Requirement</h3>
+          <div class="container-border req-section-container">
+            <!--  -->
+            <div class="req-section-inner-container">
+              <h5 class="req-title">Social Sciences Breadth:</h5>
+              <h5 class="req-instructions">Must complete <em>6 credits</em> worth of courses with a <em>B-Soc status</em></h5>
+              <section class="req-set">
+                  <div class="course-group">
+                    <div class="course">CRIM 101</div>
+                  </div>
+              </section>
+            </div>
+            <div class="triangle">
+              <h5 class="credits-completed">Total Credits Completed</h5>
+              <p class="number-of-credits">03</p>
+            </div>
+            <!--  -->
+            <div class="req-section-inner-container">
+              <h5 class="req-title">Humanities Breadth:</h5>
+              <h5 class="req-instructions">Must complete <em>6 credits</em> worth of courses with a <em>B-Hum status</em></h5>
+              <section class="req-set">
+                  <div class="course-group">
+                    <div class="course">COGS 100</div>
+                  </div>
+                  <div class="course-group">
+                    <div class="course">PHIL 100W</div>
+                  </div>
+              </section>
+            </div>
+            <div class="triangle">
+              <h5 class="credits-completed">Total Credits Completed</h5>
+              <p class="number-of-credits">06</p>
+            </div>
+            <!--  -->
+            <div class="req-section-inner-container">
+              <h5 class="req-title">Science Breadth:</h5>
+              <h5 class="req-instructions">Must complete <em>6 credits</em> worth of courses with a <em>B-Sci status</em></h5>
+              <section class="req-set">
+                  <div class="course-group">
+                    <div class="course">ARCH 131</div>
+                  </div>
+                  <div class="course-group">
+                    <div class="course">BPK 142</div>
+                  </div>
+                  <div class="course-group">
+                    <div class="course">CMPT 166</div>
+                  </div>
+                  <div class="course-group">
+                    <div class="course">COGS 100</div>
+                  </div>
+                  <div class="course-group">
+                    <div class="course">MACM 101</div>
+                  </div>
+              </section>
+            </div>
+            <div class="triangle">
+              <h5 class="credits-completed">Total Credits Completed</h5>
+              <p class="number-of-credits">15</p>
+            </div>
+            <!--  -->
+            <div class="req-section-inner-container">
+              <h5 class="req-title">Undesignated Breadth:</h5>
+              <h5 class="req-instructions">Must complete <em>6 credits</em> worth of courses that are <em>not within your major</em></h5>
+              <section class="req-set">
+                  <div class="course-group">
+                    <div class="course">ARCH 100</div>
+                  </div>
+                  <div class="course-group">
+                    <div class="course">BUS 237</div>
+                  </div>
+              </section>
+            </div>
+            <div class="triangle">
+              <h5 class="credits-completed">Total Credits Completed</h5>
+              <p class="number-of-credits">06</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Total WQB Credit Counter -->
+        <div class="req-section adv-category" id="total-credit">
+          <h3>Total WQB Credit Counter</h3>
+          <div class="container-border req-section-container">
+            <!--  -->
+            <div class="req-section-inner-container">
+              <section class="req-set">
+              </section>
+            </div>
+            <div class="triangle">
+              <h5 class="credits-completed">Total Credits Completed</h5>
+              <p class="number-of-credits">45</p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section class="req-section">
-      <h3>Quantitative (Q) Requirement</h3>
-      <div class="req-section-container">
-        <!--  -->
-        <div class="req-section-inner-container">
-          <h5 class="req-title">Lower or Upper division Q Course:</h5>
-          <h5 class="req-instructions">Must complete <em>6 credits</em> worth of courses with a <em>Q status</em></h5>
-          <section class="req-set">
-              <div class="course-group">
-                <div class="course">CMPT 166</div>
-              </div>
-              <div class="course-group">
-                <div class="course">CMPT 225</div>
-              </div>
-              <div class="course-group">
-                <div class="course">MACM 101</div>
-              </div>
-          </section>
-        </div>
-        <div class="triangle">
-          <h5 class="credits-completed">Total Credits Completed</h5>
-          <p class="number-of-credits">09</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="req-section">
-      <h3>Breadth (B) Requirement</h3>
-      <div class="req-section-container">
-        <!--  -->
-        <div class="req-section-inner-container">
-          <h5 class="req-title">Social Sciences Breadth:</h5>
-          <h5 class="req-instructions">Must complete <em>6 credits</em> worth of courses with a <em>B-Soc status</em></h5>
-          <section class="req-set">
-              <div class="course-group">
-                <div class="course">CRIM 101</div>
-              </div>
-          </section>
-        </div>
-        <div class="triangle">
-          <h5 class="credits-completed">Total Credits Completed</h5>
-          <p class="number-of-credits">03</p>
-        </div>
-        <!--  -->
-        <div class="req-section-inner-container">
-          <h5 class="req-title">Humanties Breadth:</h5>
-          <h5 class="req-instructions">Must complete <em>6 credits</em> worth of courses with a <em>B-Hum status</em></h5>
-          <section class="req-set">
-              <div class="course-group">
-                <div class="course">COGS 100</div>
-              </div>
-              <div class="course-group">
-                <div class="course">PHIL 100W</div>
-              </div>
-          </section>
-        </div>
-        <div class="triangle">
-          <h5 class="credits-completed">Total Credits Completed</h5>
-          <p class="number-of-credits">06</p>
-        </div>
-        <!--  -->
-        <div class="req-section-inner-container">
-          <h5 class="req-title">Science Breadth:</h5>
-          <h5 class="req-instructions">Must complete <em>6 credits</em> worth of courses with a <em>B-Sci status</em></h5>
-          <section class="req-set">
-              <div class="course-group">
-                <div class="course">ARCH 131</div>
-              </div>
-              <div class="course-group">
-                <div class="course">BPK 142</div>
-              </div>
-              <div class="course-group">
-                <div class="course">CMPT 166</div>
-              </div>
-              <div class="course-group">
-                <div class="course">COGS 100</div>
-              </div>
-              <div class="course-group">
-                <div class="course">MACM 101</div>
-              </div>
-          </section>
-        </div>
-        <div class="triangle">
-          <h5 class="credits-completed">Total Credits Completed</h5>
-          <p class="number-of-credits">15</p>
-        </div>
-        <!--  -->
-        <div class="req-section-inner-container">
-          <h5 class="req-title">Undesignated Breadth:</h5>
-          <h5 class="req-instructions">Must complete <em>6 credits</em> worth of courses that are <em>not within your major</em></h5>
-          <section class="req-set">
-              <div class="course-group">
-                <div class="course">ARCH 100</div>
-              </div>
-              <div class="course-group">
-                <div class="course">BUS 237</div>
-              </div>
-          </section>
-        </div>
-        <div class="triangle">
-          <h5 class="credits-completed">Total Credits Completed</h5>
-          <p class="number-of-credits">06</p>
-        </div>
-      </div>
-      </div>
-    </section>
+    </div>
 
   </body>
 
