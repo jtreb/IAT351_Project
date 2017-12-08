@@ -3,6 +3,14 @@ $(document).ready(function() {
   $(".hamburger-icon").click(function(){
     $(".menu-items-container")
       .toggle(150);
+    $(".background-overlay")
+      .toggle(150);
+    });
+  $(".background-overlay").click(function(){
+    $(".menu-items-container")
+      .toggle(150);
+    $(".background-overlay")
+      .toggle(150);
     });
 //Testing comment
     //If the window is larger than 70 rem, show the menu items
@@ -11,7 +19,15 @@ $(document).ready(function() {
         console.log("Working");
         $(".menu-items-container")
           .show();
-        };
+        $(".background-overlay")
+          .hide();
+        }
+        // else {
+        //   $(".menu-items-container")
+        //     .show();
+        //   $(".background-overlay")
+        //     .show();
+        // };
       });
 });
 

@@ -25,12 +25,14 @@
   <body>
     <!-- Nav -->
     <nav>
+      <div class="background-overlay">
+      </div>
       <div class="hamburger-bar">
         <img class="hamburger-icon" src="../img/hamburger-icon.png" alt="A hamburger icon">
       </div>
       <div class="menu-items-container">
         <div class="menu-items">
-          <a href="major-requirements.html" class="nav-item first-nav-item">Major Requirements</a>
+          <a href="major-requirements.html" class="nav-item first-nav-item ">Major Requirements</a>
           <a href="wqb-requirements.html" class="nav-item">WQB Requirements</a>
           <a href="co-op-requirements.html" class="nav-item">Co-op Requirements</a>
           <a href="highschool-requirements.html" class="nav-item">Foundation Requirements</a>
@@ -292,10 +294,11 @@
     <!-- Share Modal content -->
     <div id="sharemodal" class="modal">
       <div class="modal-content" id="sharemodalcontent">
+        <img src="../img/delete.svg" class="deletetermbutton" id="modalxbtn" onclick="closeshare()"/>
+
         <h3 id="confirmtitle">Share</h3>
-        <p>Please enter a share message</p>
-        <textarea rows="4" cols="50">
-        </textarea>
+        <p>Add a message for sharing here</p>
+        <textarea rows="4" cols="50"></textarea>
         <!-- <div class="close">
           <h5 class="closebtn" onclick="closeshare()">SHARE</h5>
           <h5 class="closebtn" onclick="closeshare()">CANCEL</h5>
