@@ -110,14 +110,6 @@ p.coop-instruction-detail {
   line-height: normal;
 }
 
-@media (max-width: 41em) {
-  .req-info {
-    width: 100%;
-  }
-  .info-row {
-    display: block;
-  }
-}
 
 .enrolled {
   background-color: var(--dark-gray);
@@ -850,4 +842,39 @@ h5.courseinfodesc2 {
   width: auto;
   margin: 0.8rem 1.5rem;
   height: 0.065rem;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------media query
+*/
+@media (max-width: 41em) {
+  .req-info {
+    width: 100%;
+  }
+  .info-row {
+    display: block;
+  }
+
+  .modal-info {
+    max-width: 90%;
+    height: 94%;
+    margin: 0 1.75rem 2rem 1rem;
+    transform: translate(58%, -49%);
+  }
+
+  h5.courseinfolabel, .modal h5 {
+    margin: 0.35em 0;
+    line-height: 1rem;
+  }
+
+  .infoline {
+    margin: 0.25rem 1.5rem;
+  }
+
+  .modal-info a {
+    margin: 0.5rem auto;
+  }
 }
