@@ -21,12 +21,13 @@ $(document).ready(function() {
           .show();
         $(".background-overlay")
           .hide();
-        } else {
-          $(".menu-items-container")
-            .show();
-          $(".background-overlay")
-            .show();
-        };
+        }
+        // else {
+        //   $(".menu-items-container")
+        //     .show();
+        //   $(".background-overlay")
+        //     .show();
+        // };
       });
 });
 
