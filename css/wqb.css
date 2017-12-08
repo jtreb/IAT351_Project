@@ -1,0 +1,978 @@
+.middle-container {
+  margin: 0 1em;
+}
+
+.req-section {
+  margin-bottom: 1rem;
+}
+
+h3{
+  padding: 0.66rem;
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+  text-align: center;
+  margin: 0rem;
+  font-size: 0.8125rem;
+}
+
+.req-section-container {
+  border-style: solid;
+  border-width: 0.0625rem;
+  background-color: white;
+}
+
+.req-section-inner-container {
+  background-color: var(--main-bg-gray);
+  margin: 0 2.375rem;
+}
+
+.req-title {
+  padding: 0.8125rem 0.8125rem 0;
+  text-align: left;
+}
+
+.req-instructions {
+  text-align: center;
+  padding: 0.5875rem 0.8125rem 0;
+  margin-bottom: 0.5875rem;
+}
+
+.req-set, .coop-req-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1.6875rem;
+
+  margin: 0 1rem;
+}
+
+.coop-req-set {
+  display: block;
+}
+
+h5 {
+  margin: 0;
+}
+
+em {
+  text-transform: uppercase;
+  color: var(--main-bg-red);
+  font-style: normal;
+}
+
+.course, .req-block, .req-info {
+  width: 7.5rem;
+  height: 2.1875rem;
+  line-height: 2.1875rem;
+  text-align: center;
+
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+  font-size: 0.8125rem;
+
+  border-color: var( --main-border-color);
+  border-width: 0.0625rem;
+  border-style: solid;
+
+  margin: 0.3125rem;
+  cursor: pointer;
+}
+
+.req-block, .req-info {
+  margin: auto;
+  cursor: auto;
+}
+
+.req-info {
+  width: 68%;
+  height: auto;
+}
+
+.info-row {
+  display: flex;
+  margin: 1em 0;
+}
+
+.coop-instruction {
+  margin: 0 1em;
+  font-size: 0.83rem;
+  width: 8.2em;
+  text-align: left;
+  line-height: normal;
+}
+
+p.coop-instruction-detail {
+  margin: 0 1em;
+  font-size: 0.83rem;
+  font-weight: 400;
+  flex: 5;
+  text-align: left;
+  line-height: normal;
+}
+
+@media (max-width: 41em) {
+  .req-info {
+    width: 100%;
+  }
+  .info-row {
+    display: block;
+  }
+}
+
+.enrolled {
+  background-color: var(--dark-gray);
+}
+
+.incomplete {
+  background-color: white;
+  color: var(--dark-gray);
+}
+
+.optional {
+  background-color: var(--main-bg-gray);
+  color: var(--dark-gray);
+}
+
+.planned {
+  background-color: var(--blue-text-color);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 7rem solid transparent;
+  border-right: 7rem solid transparent;
+  border-top: 3.8rem solid var(--main-bg-gray);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 1rem;
+}
+
+.credits-completed {
+  margin-top: -4rem;
+  margin-left: -5rem;
+  width: 10rem;
+  text-align: center;
+}
+
+.number-of-credits {
+  color: var(--main-bg-red);
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: -0.7rem;
+  margin-top: 0.6rem;
+}
+
+.pre-reqs {
+  margin-top: -0.3125rem;
+  margin-bottom: 0.3125rem;
+}
+
+.req-container {
+  margin-bottom: 0.3125rem;
+}
+
+.pre-reqs > .course {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.line {
+  width: 0.078rem;
+  height: 1rem;
+  background-color: var(--main-bg-red);
+  margin: 0 auto;
+}
+
+.button {
+  color: white;
+  text-transform: uppercase;
+  background-color: var(--blue-text-color);
+  text-decoration: none;
+  font-size: 0.8125rem;
+
+  padding:1rem;
+  border-radius: 0.3125rem;
+  margin: 1.5rem 0.375rem 0.75rem 0.375rem;
+}
+.buttonplan {
+  width: 6.1875rem;
+  height: 2.1875rem;
+  line-height: 2.1875rem;
+  text-align: center;
+  float:right;
+  background-color: var(--blue-text-color);
+  color: var(--white-text-color);
+  font-size: 0.8125rem;
+
+  border-color: var( --main-border-color);
+  border-width: 0.0625rem;
+  border-style: solid;
+
+  margin: 0rem;
+}
+.last-set {
+  padding-bottom: 0;
+}
+
+.last-container {
+  padding-bottom: 1.5rem;
+}
+
+
+
+#iat100modal{
+  /*remove these 2 line to get a overlay background*/
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0);
+
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#iat102modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#iat103modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+
+#iat103modal h3{
+  background-color: var(--dark-gray);
+}
+#iat309modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+
+#iat309modal h3{
+      background-color: white;
+      color: var(--dark-text-color);
+}
+#iat106modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#iat167modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#cmpt120modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#cmpt120modal h3{
+  background-color: var(--main-bg-gray);
+  color: var(--dark-text-color);
+}
+#cmpt120modal2{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#cmpt125modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#cmpt125modal h3{
+  background-color: var(--main-bg-gray);
+  color: var(--dark-text-color);
+}
+#cmpt126modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#cmpt126modal h3{
+  background-color: var(--main-bg-gray);
+  color: var(--dark-text-color);
+}
+#cmpt128modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#cmpt128modal h3{
+  background-color: var(--main-bg-gray);
+  color: var(--dark-text-color);
+}
+#cmpt225modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#cmpt225modal h3{
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+}
+#macmmodal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#macmmodal h3{
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+}
+#macm2modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#macm2modal h3{
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+}
+#arch100modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#arch100modal h3{
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+}
+#cogs100modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#cogs100modal h3{
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+}
+#arch131modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#arch131modal h3{
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+}
+#bpk142modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#bpk142modal h3{
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+}
+#bus237modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#bus237modal h3{
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+}
+#cmpt1662modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#cmpt1662modal h3{
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+}
+#cogs1002modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#cogs1002modal h3{
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+}
+#phil100modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#phil100modal h3{
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+}
+#crim101modal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#crim101modal h3{
+  background-color: var(--main-bg-red);
+  color: var(--white-text-color);
+}
+#mathmodal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#mathmodal h3{
+  background-color: var(--main-bg-gray);
+  color: var(--dark-text-color);
+}
+#msscmodal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#msscmodal h3{
+  background-color: var(--main-bg-gray);
+  color: var(--dark-text-color);
+}
+#physmodal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#physmodal h3{
+  background-color: var(--main-bg-gray);
+  color: var(--dark-text-color);
+}
+#statmodal{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  position: absolute;
+  overflow: hidden; /* Enable scroll if needed */
+  margin: 0rem;
+}
+#statmodal h3{
+  background-color: var(--main-bg-gray);
+  color: var(--dark-text-color);
+}
+#kinmodal2{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#kinmodal2 h3{
+      background-color: var(--main-bg-gray);
+      color: var(--dark-text-color);
+}
+#kinmodal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#kinmodal h3{
+      background-color: var(--main-bg-gray);
+      color: var(--dark-text-color);
+}
+#enscmodal2{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#psycmodal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#cogsmodal h3{
+      background-color: var(--main-bg-gray);
+      color: var(--dark-text-color);
+}
+#cogsmodal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#enscmodal2 h3{
+      background-color: var(--main-bg-gray);
+      color: var(--dark-text-color);
+}
+#enscmodal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#enscmodal h3{
+      background-color: var(--main-bg-gray);
+      color: var(--dark-text-color);
+}
+#iatmodal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iatmodal h3{
+      background-color: var(--main-bg-gray);
+      color: var(--dark-text-color);
+}
+#cmptmodal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#cmptmodal h3{
+      background-color: var(--main-bg-gray);
+      color: var(--dark-text-color);
+}
+#cmptmodal2{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#cmptmodal2 h3{
+      background-color: var(--main-bg-gray);
+      color: var(--dark-text-color);
+}
+#cmpt166modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#macm101modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat201modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat202modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat222modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat233modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat233modal h3{
+      background-color: white;
+      color: var(--dark-text-color);
+}
+#iat235modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat265modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat267modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat333modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat336modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat351modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat3526modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat355modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat355modal h3{
+      background-color: var(--dark-gray);
+}
+#iat381modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat381modal h3{
+      background-color: var(--dark-gray);
+}
+#iat455modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#cmpt320modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#cmpt354modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#cogs381modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#psyc352modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#psyc362modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#psyc362modal h3{
+      background-color: var(--dark-gray);
+}
+#iat351modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat351modal h3{
+      background-color: var(--dark-gray);
+}
+#iat352modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat352modal h3{
+      background-color: var(--blue-text-color);
+}
+#iat410modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat410modal h3{
+      background-color: white;
+      color: var(--dark-text-color);
+}
+#iat452modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat452modal h3{
+      background-color: var(--blue-text-color);
+}
+#iat455modal{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+
+#iat333modal2{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat336modal2{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat351modal2{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat351modal3{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+/*enrolled*/
+#iat351modal2 h3, #iat351modal3 h3 {
+      background-color: var(--dark-gray);
+}
+#iat352modal2{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat352modal3{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+/*planned*/
+#iat352modal2 h3, #iat352modal3 h3 {
+      background-color: var(--blue-text-color);
+}
+#iat355modal2{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat355modal3{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat355modal2 h3{
+      background-color: var(--dark-gray);
+}
+#iat355modal3 h3{
+      background-color: var(--dark-gray);
+}
+#iat381modal2{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat381modal2 h3{
+      background-color: var(--dark-gray);
+}
+#iat452modal2, #iat452modal3{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+#iat452modal2 h3, #iat452modal3 h3{
+      background-color: var(--blue-text-color);
+}
+
+#iat455modal2, #iat455modal3{
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0); /* Black w/ opacity */
+      position: absolute;
+      overflow: hidden; /* Enable scroll if needed */
+      margin: 0rem;
+}
+
+
+
+.modal-info {
+  background-color: #fefefe;
+  text-align: center;
+  border: 0.0625rem solid var(--main-border-color);
+  width: 400px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  box-shadow: 3px 3px 10px rgba(51, 51, 51, 0.4);
+}
+.modal-info a{
+  color: var(--main-bg-red);
+  float: right;
+  font-size: 0.8rem;
+}
+
+
+
+.confirmtitle {
+  border-bottom: 0.0625rem solid var(--main-border-color);
+}
+
+
+.courseinfolabel{
+  text-align: left;
+    flex-basis: 50%;
+}
+
+.courseinfodesc{
+  text-align: right;
+  font-weight: 400;
+    flex-basis: 50%;
+}
+
+.courseinfodesc2{
+  text-align: left;
+  font-weight: 400;
+    flex-basis: 50%;
+}
+.courseinfoflex{
+  display: flex;
+  padding: 0.5rem 1.5rem 0;
+  flex-wrap: wrap;
+}
+.coursemoreinfo{
+  padding: 0.5rem 1.5rem 2rem;
+}
+
+.modal h5{
+  margin: 0.66rem auto 1rem;
+}
+
+h5.courseinfolabel {
+  margin: 0.66rem auto;
+}
+
+h5.courseinfodesc2 {
+  margin-bottom: 1.2rem;
+}
+
+.infoline{
+  background-color: var(--main-bg-red);
+  width: auto;
+  margin: 0.8rem 1.5rem;
+  height: 0.065rem;
+}
